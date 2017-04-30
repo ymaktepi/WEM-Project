@@ -1,5 +1,5 @@
 from wem.index.spec.iScraper import iScraper
-import time, pickle, requests
+import time, pickle, requests, random
 from wem.index.fakeUserAgent import FakeUserAgent
 
 class ctftimeScraper(iScraper):
@@ -53,7 +53,7 @@ class ctftimeScraper(iScraper):
                 print("Timeout Error with :", urlToTest)
                 time.sleep(3)
 
-            time.sleep(1)
+            time.sleep(random.random())
 
         # Save url list
         self._urlList = urls
