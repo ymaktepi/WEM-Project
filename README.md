@@ -1,10 +1,10 @@
-# Projet WEM
+# Projet Capture The Flag - Web Mining 2017 - HES-SO//Master
 
-## Auteurs
+### Auteurs
 
 Michael Caraccio, Joel Gugger et Nicolas Huguenin
 
-## 1. Descriptif du projet
+## 1. Contexte et objectifs du projet
 
 Nous souhaitons mettre en place un index permettant de catégoriser et recherché parmi des outils et des techniques utilisés lors de CTF (Capture the flag).
 
@@ -12,45 +12,24 @@ Le site [CTF time](https://ctftime.org/) nous permet de recenser une très grand
 
 La structure du site CTF Time est connue d'avance, nous pouvons donc indiquer à notre crawler les liens à visiter et nous pouvons rendre intelligente la récolte des données en ciblant certaine partie des pages du site.
 
-## 2. Objectifs
+### 1.1 Objectifs
 
 - Créer un crawler intelligent en fonction de la structure du site
 - Cibler de manière précise les contenus à extraire du site
 - Détecter un maximum d'informations sur le contenu des writeups (langage utilisé, outils utilisés, etc.)
 - Créer un index permettant de faire une recherche efficace
 
-## 3. Techniques d'analyse
+### 1.2. Structure du projet
 
-### 3.1 Use cases
+Le projet sera décomposé en 3 parties :
 
-1. **Recherche simple**
-- Selon les mots clés entrés, cela nous affichera une liste de page web correspondante à notre recherche.
-2. **Recherche avancée**
-- On peut cocher la / les catégories qui nous intéressent (web, crypto, forensics, etc).
-- Préciser le langage de programmation
-3. **Type d'affichage**
-- Liste de lien. Mets en avant les liens. Comme une recherche Google standard.
-- Liste de lien avec outils utilisés. À côté de chaque lien, on affichera l'outil.
+1. Le crawler nous permettant de découvrir le site
+2. Un indexe nous permettant de traiter les informations (pour ce faire nous devrons créer des dictionnaires nous permettant de catégoriser les contenus)
+3. Une interface permettant de récupérer l'information
 
-### 3.2 Indexations
 
-- Textes de la page ..
-- Language de programmation de la page
-- Outils utilisés : Cela nécessite d'avoir une base de données des outils et de les "détecter" dans la page
-- Selon le texte dans la page, il faut pouvoir définir une catégorie
-
-### 3.3 Languages et outils
-
-- **Languages** : Python
-
-- **Librairies** :
-
-[Scrapy](https://scrapy.org/)
-An open source and collaborative framework for extracting the data you need from websites.
-In a fast, simple, yet extensible way.
-
-### 3.4 Pages à analyser
-#### 3.4.1 Main page
+## 2 Données à analyser
+### 2.1 Main page
 La page à analyser est la page suivante : [https://ctftime.org/writeups](https://ctftime.org/writeups). Celle-ci contient les informations suivantes :
 
 1. **Event** -> Nom de l'événement
@@ -59,7 +38,7 @@ La page à analyser est la page suivante : [https://ctftime.org/writeups](https:
 4. **Author team** -> L'auteur du writeup
 5. **Action** -> Lien vers le writeup
 
-#### 3.4.2 Task page
+### 2.2 Task page
 Depuis la main page, on peut cliquer sur le lien de la tâche. Cela nous donnera la liste de tous les writeups concernant cette tâche. En effet, tout le monde peut proposer des writeups concernant une tâche. Cela est intéressant, car il permet de nous donner plusieurs résolutions possibles.
 
 Exemple : [https://ctftime.org/task/2411](https://ctftime.org/task/2411)
@@ -70,7 +49,7 @@ La page contient les informations suivantes :
 2. **Rating** -> Note
 3. **Author** team -> Nom de la team
 
-#### 3.4.3 Writeup page
+### 2.3 Writeup page
 Cette page contient soit un lien vers le site contenant le writeup :
 
 ![image 1](images/1.png)
@@ -79,7 +58,7 @@ Ou alors le writeup est directement affiché sur la page :
 
 ![image 2](images/2.png)
 
-### 3.5 Catégories
+### 2.4 Catégories
 
 1. Web Hacking
 2. Digital Puzzles
@@ -92,14 +71,14 @@ Ou alors le writeup est directement affiché sur la page :
 9. Cracking
 10. Networking
 
-### 3.6 Listes d'outils
+### 2.5 Listes d'outils
 
 - Liste d'outils de Kali, trier par catégorie : [Tools](http://tools.kali.org/tools-listing)
 - Liste d'outils catégorisée : [Tools](http://gexos.github.io/Hacking-Tools-Repository/)
 - Liste d'outils catégorisés : [Tools](https://github.com/carpedm20/awesome-hacking)
 - Liste d'outils catégorisée : [Awesome ctf](https://github.com/apsdehal/awesome-ctf)
 
-### 3.7 Listes de writeup (autre que ctftime)
+### 2.6 Listes de writeup (autre que ctftime)
 
 - [Awesome Pentest](https://github.com/enaqx/awesome-pentest)
 - [Awesome Hacking](https://github.com/carpedm20/awesome-hacking)
@@ -117,10 +96,50 @@ Ou alors le writeup est directement affiché sur la page :
 - [Github Team -  smokeleeteveryday](https://github.com/smokeleeteveryday/CTF_WRITEUPS)
 - [Github Team - VulnHub](https://github.com/VulnHub/ctf-writeups)
 
-## 4. Structure du projet
 
-Le projet sera décomposé en 3 parties :
+## 3. Planification, répartition du travail
+La planification et la répartition du travail a été effectuée dans la section "Projects" > "[Planification](https://github.com/nichuguen/WEM-Project/projects/1)" du GitHub.
 
-1. Le crawler nous permettant de découvrir le site
-2. Un indexe nous permettant de traiter les informations (pour ce faire nous devrons créer des dictionnaires nous permettant de catégoriser les contenus)
-3. Une interface permettant de récupérer l'information
+
+## 4. Fonctionnalités / cas d’utilisation
+### 4.1 Use cases
+
+1. **Recherche simple**
+- Selon les mots clés entrés, cela nous affichera une liste de page web correspondante à notre recherche.
+2. **Recherche avancée**
+- On peut cocher la / les catégories qui nous intéressent (web, crypto, forensics, etc).
+- Préciser le langage de programmation
+3. **Type d'affichage**
+- Liste de lien. Mets en avant les liens. Comme une recherche Google standard.
+- Liste de lien avec outils utilisés. À côté de chaque lien, on affichera l'outil.
+
+### 4.2 Indexations
+
+- Textes de la page ..
+- Language de programmation de la page
+- Outils utilisés : Cela nécessite d'avoir une base de données des outils et de les "détecter" dans la page
+- Selon le texte dans la page, il faut pouvoir définir une catégorie
+
+
+
+## 5. Techniques, algorithmes et outils utilisés
+### 5.1 Languages et outils
+
+- **Languages** : Python (crawler, indexation, API), Javascript (interface utilisateur)
+
+- **Librairies** :
+
+[Scrapy](https://scrapy.org/)
+An open source and collaborative framework for extracting the data you need from websites.
+In a fast, simple, yet extensible way.
+
+[Bootstrap](http://getbootstrap.com/)
+Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+
+[AngularJS](https://angular.io/)
+AngularJS est un framework Javascript porté par Google pour la création d'interfaces utilisateurs riches et intéractive.
+
+
+
+## 6. Conclusion
+TODO
