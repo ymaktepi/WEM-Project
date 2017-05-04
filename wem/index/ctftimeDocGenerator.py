@@ -7,6 +7,7 @@ import requests, time, re
 from lxml import etree
 from bs4 import BeautifulSoup
 
+
 class ctftimeDocGenerator(iDocGenerator):
     def __init__(self, scrapper):
         super().__init__()
@@ -14,33 +15,54 @@ class ctftimeDocGenerator(iDocGenerator):
         self._documents = None
         self._fakeUserAgent = FakeUserAgent()
 
-    def createDocumentTuple(self):
+    def createDocumentTuple(self, urlList):
         """
         Parse each page and store the information in a Document object
         """
 
-        urls = self._scrapper.getUrlList()
-        error = 0
-        counter = 1
+        #urls = self._scrapper.getUrlList()
+        urls = urlList
         docs = []
 
+
         for url in urls:
+            max_retry = 0
+            while max_retry < 3:
+                # Get ctftime url content
+                try:
+                    r = requests.get(url, timeout=5.0, headers=self._fakeUserAgent.random_headers())
+                    if (r.status_code == 200):
+                        metas = self.getMeta(r)
 
-            try:
-                r = requests.get(url, timeout=2.0, headers=self._fakeUserAgent.random_headers())
+                        while max_retry < 3:
 
-                if (r.status_code == 200):
-                    doc = Document(counter, self.getContent(r.content), self.getMeta(r))
-                    error = 0
-                    docs.append(doc)
-                else:
-                    error += 1
-                counter += 1
-            except requests.exceptions.Timeout:
-                print("Timeout Error with :", url)
-                time.sleep(3)
+                            # Get article url
+                            try:
+                                metaUrl = requests.get(metas['url'], timeout=5.0, headers=self._fakeUserAgent.random_headers())
+                                doc = Document(int(url.split("/")[-1]), metaUrl.content, metas)
+
+                                print(doc.getId())
+                                print(doc.getMeta())
+
+                                max_retry = 3
+
+                                docs.append(doc)
+
+                            except requests.exceptions.Timeout:
+                                print("Timeout Error with :", url)
+                                time.sleep(1)
+                                max_retry += 1
+                                continue
+                            break
+                except requests.exceptions.Timeout:
+                    print("Timeout Error with :", url)
+                    time.sleep(1)
+                    max_retry+=1
+                    continue
+                break
 
         self._documents = docs
+        print(self._documents)
 
     def getDocumentTuple(self):
         return self._documents

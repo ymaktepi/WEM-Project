@@ -29,6 +29,9 @@ class ctftimeDocManager(iDocManager):
         self._documents = pickle.load(open(filename, "rb"))
         return self._documents
 
+    def getFileName(self):
+        return self._pickleFile
+
     def getDocuments(self):
         """
         Return previously opened documents
