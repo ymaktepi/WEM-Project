@@ -52,11 +52,19 @@ class ctftimeDocGenerator(iDocGenerator):
                                 time.sleep(1)
                                 max_retry += 1
                                 continue
+                            except requests.exceptions.ConnectionError:
+                                print("Max retries exceeded with :", url)
+                                max_retry = 3
+                                continue
                             break
                 except requests.exceptions.Timeout:
                     print("Timeout Error with :", url)
                     time.sleep(1)
                     max_retry+=1
+                    continue
+                except requests.exceptions.ConnectionError:
+                    print("Max retries exceeded with :", url)
+                    max_retry = 3
                     continue
                 break
 
