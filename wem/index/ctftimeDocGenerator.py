@@ -15,13 +15,12 @@ class ctftimeDocGenerator(iDocGenerator):
         self._documents = None
         self._fakeUserAgent = FakeUserAgent()
 
-    def createDocumentTuple(self, urlList):
+    def createDocumentTuple(self):
         """
         Parse each page and store the information in a Document object
         """
 
-        #urls = self._scrapper.getUrlList()
-        urls = urlList
+        urls = self._scrapper.getUrlList()
         docs = []
 
 

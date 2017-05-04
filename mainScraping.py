@@ -7,12 +7,12 @@ if __name__ == '__main__':
     # Create url list
     #scrapper = ctftimeScraper().createUrlList()
 
-    scrapper = ctftimeScraper().openPickle('./save/ctftime_urls_1493571830.p')
+    scrapper = ctftimeScraper()
+    scrapper.openPickle('./save/ctftime_urls_1493571830.p')
 
-    mofos = ['https://ctftime.org/writeup/6632', 'https://ctftime.org/writeup/6631']
     # Create documents
     gen = ctftimeDocGenerator(scrapper)
-    gen.createDocumentTuple(mofos)
+    gen.createDocumentTuple()
 
     # Save documents in pickle
     docManager = ctftimeDocManager().saveToPickle(gen.getDocumentTuple())
