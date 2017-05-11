@@ -18,15 +18,21 @@ class ctftimeIndexer(iIndexer):
     def __init__(self):
         super().__init__()
 
+
+        self._index = None
+        self._indexFolderName = "indexdir"
+        self._documentList = []
         self._analyser = StandardAnalyzer() | LowercaseFilter() | StopFilter() | CharsetFilter(accent_map)
+
+    def createIndex(self, documentList):
 
         self._schema = Schema(id=ID(stored=True, unique=True),
                               text=TEXT(analyzer=self._analyser, stored=True),
                               title=TEXT(stored=True),
                               author=TEXT,
-                              tags=KEYWORD(lowercase=True, scorable=True),
+                              tags=KEYWORD(lowercase=True, scorable=True, stored=True),
                               event=TEXT,
-                              url=TEXT,
+                              url=TEXT(stored=True),
 
                               tag_title=TEXT,
 
@@ -38,20 +44,15 @@ class ctftimeIndexer(iIndexer):
                               meta_twitter_title=TEXT,
                               meta_twitter_description=TEXT
                               )
-        self._index = None
-        self._indexFolderName = "indexdir"
-        self._documentList = []
 
-    def createIndex(self, documentList):
-
-        writer = AsyncWriter(self._index)
+        self._writer = AsyncWriter(self._index)
 
         for doc in documentList:
 
             text = ' '.join(self.getContent(doc.getContentRaw()))
 
             metas = doc.getMeta()
-            writer.add_document (
+            self._writer.add_document (
                 text = text,
                 title = metas['title'],
                 author = metas['author'],
@@ -70,34 +71,16 @@ class ctftimeIndexer(iIndexer):
                 meta_twitter_description = metas['meta_twitter:description'] if 'meta_twitter:description' in metas else ''
             )
 
-        writer.commit(optimize=True)
-
-
-
-        with self._index.searcher() as searcher:
-            numdocs = searcher.doc_count()
-            print(numdocs)
-
-            results = searcher.document(tags="sqli")
-            print(results)
-
-        ix = open_dir(self._indexFolderName)
-        with ix.searcher() as searcher:
-            query = QueryParser("text", ix.schema).parse(u'begin')
-            results = searcher.search(query)
-            print(results)
-            for result in results:
-                print(result)
 
 
     def getIndex(self):
-        pass
+        return self._index
 
     def saveIndex(self):
-        pass
+        self._writer.commit(optimize=True)
 
     def restoreIndex(self):
-        pass
+        self._index = index.open_dir(self._indexFolderName)
 
     def createSchema(self):
         if not os.path.exists(self._indexFolderName):

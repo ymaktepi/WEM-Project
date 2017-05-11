@@ -27,7 +27,7 @@ class ctftimeScraper(iScraper):
     def createUrlList(self):
         """
         Create a list of urls
-        :return: list of urls
+        :return: name of the file
         """
 
         urls = []
@@ -60,14 +60,16 @@ class ctftimeScraper(iScraper):
         self.saveToPickle(self._urlList)
 
         print("List saved in : " + "./save/" + str(self._pickleFile))
+        return "./save/" + str(self._pickleFile)
 
     def saveToPickle(self, urls):
         """
         Save URLs in a pickle file
-        :return: 
+        :return: filename of the pickle
         """
         self._urlList = urls
         pickle.dump(self._urlList, open("./save/" + self._pickleFile, "wb"))
+        return "./save/" + self._pickleFile
 
     def openPickle(self, filename):
         """
