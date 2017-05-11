@@ -6,7 +6,7 @@ from wem.index.fakeUserAgent import FakeUserAgent
 import requests, time, re
 from lxml import etree
 from bs4 import BeautifulSoup
-
+import copy
 
 class ctftimeDocGenerator(iDocGenerator):
     def __init__(self, scrapper):
@@ -14,6 +14,7 @@ class ctftimeDocGenerator(iDocGenerator):
         self._scrapper = scrapper
         self._documents = None
         self._fakeUserAgent = FakeUserAgent()
+        self._deepMeta = ['title','description','keywords','og:title', 'og:description', 'twitter:title', 'twitter:description']
 
     def createDocumentTuple(self):
         """
@@ -31,14 +32,14 @@ class ctftimeDocGenerator(iDocGenerator):
                 try:
                     r = requests.get(url, timeout=5.0, headers=self._fakeUserAgent.random_headers())
                     if (r.status_code == 200):
-                        metas = self.getMeta(r)
+                        metas = self.getCTFTimeMeta(r)
 
                         while max_retry < 3:
 
                             # Get article url
                             try:
                                 metaUrl = requests.get(metas['url'], timeout=5.0, headers=self._fakeUserAgent.random_headers())
-                                doc = Document(int(url.split("/")[-1]), metaUrl.content, metas)
+                                doc = Document(int(url.split("/")[-1]), metaUrl.content, self.getWriteupMeta(metaUrl.content, metas))
 
                                 print(doc.getId())
                                 print(doc.getMeta())
@@ -74,26 +75,7 @@ class ctftimeDocGenerator(iDocGenerator):
     def getDocumentTuple(self):
         return self._documents
 
-    def visible(element):
-        if element.parent.name in ['style', 'script', '[document]', 'head', 'title']:
-            return False
-        elif re.match('<!--.*-->', str(element.encode('utf-8'))):
-            return False
-        return True
-
-    def getContent(self, text):
-
-        data = BeautifulSoup(text, 'html.parser').findAll(text=True)
-
-        result = list(filter(self.visible, data))
-
-        removeItems = ['<link rel=', '<script src=', '<link href=']
-        result = [i.strip().lower() for i in result]
-        result = [i for i in result if (not i.startswith(tuple(removeItems)) and len(i) > 3)]
-
-        return result
-
-    def getMeta(self, urlToTest):
+    def getCTFTimeMeta(self, urlToTest):
         """
         Get Meta information from the website
         :param urlToTest: website URL
@@ -115,5 +97,24 @@ class ctftimeDocGenerator(iDocGenerator):
             metas[key] = tree.xpath(value)[0] if (len(tree.xpath(value)) != 0) else ""
 
         metas['url'] = urlToTest.url if (metas['url'] == "") else metas['url']
+
+        return metas
+
+    def getWriteupMeta(self, text, metas):
+
+        soup = BeautifulSoup(text, "lxml")
+
+        # Get page title
+        title = soup.find('title')
+        try:
+            title = str(title.contents[0]) if title.content else ""
+            metas['tag_title'] = title
+        except:
+            metas['tag_title'] = ""
+
+        # Get meta tags
+        for c in self._deepMeta:
+            content = soup.find("meta", property=c)
+            metas['meta_'+c] = content["content"] if content else ""
 
         return metas

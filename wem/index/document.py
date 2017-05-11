@@ -13,3 +13,6 @@ class Document(object):
 
     def getMeta(self):
         return self._meta
+
+    def setMeta(self, value):
+        self._meta = value

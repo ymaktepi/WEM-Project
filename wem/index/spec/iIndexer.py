@@ -18,5 +18,5 @@ class iIndexer(metaclass=ABCMeta):
         pass
 
     @abstractclassmethod
-    def createIndex(self, documentGenerator):
+    def createIndex(self, documentList):
         pass
