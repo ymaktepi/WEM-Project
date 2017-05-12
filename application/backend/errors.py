@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import render_template
-from wem import app
+from backend import app
 
 
 @app.errorhandler(404)

@@ -4,13 +4,13 @@ from wem.index.ctftimeDocGenerator import ctftimeDocGenerator
 from wem.index.ctftimeIndexer import ctftimeIndexer
 from wem.index.quouairiManadgeure import QueryManager
 
-def main():
+def loadScraper():
     settings = {
         'get_url_web': False,
         'scraping_web': False,
         'index_web': False,
 
-        'file_urls':'/save/ctftime_urls_1493571830.p',
+        'file_urls': '/save/ctftime_urls_1493571830.p',
         'file_docs': '/save/ctftime_docs_1493991150.p'
     }
 
@@ -29,7 +29,6 @@ def main():
         print("Saved url list into: %s" % url_file)
     else:
         scrapper.openPickle(settings['file_urls'])
-
 
     # --------------------------------------------------------------------------
     # WEB SCRAPER
@@ -62,10 +61,4 @@ def main():
         # Load indexed documents
         indexer.restoreIndex()
 
-    with QueryManager(indexer.getIndex()) as qm:
-        for result in qm.textQuouairiz("javascript"):
-            print(result)
-
-
-if __name__ == '__main__':
-    main()
+    return indexer

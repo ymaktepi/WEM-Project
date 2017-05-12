@@ -1,0 +1,577 @@
+Vuln Scanners;Acunetix;http://www.acunetix.com/vulnerability-scanner/;Acunetix Web Vulnerability Scanner Is A Tool Designed To Discover Security Holes In Your Web Applications That An At-Tacker Would Likely Abuse To Gain Illicit Access To Your Systems And Data. It Looks For Multiple Vulnerabilities Includingsql Injection, Cross Site Scripting, And Weak Passwords.
+Python Fuzzing;afl-python;http://jwilk.net/software/python-afl;Enables American Fuzzy Lop Fork Server And Instrumentation For Pure-Python Code
+Python Forensics;aft;http://code.google.com/p/aft/;Android Forensic Toolkit
+Traffic Analysis/Inspection;AIEngine;https://bitbucket.org/camp0/aiengine;Is A Next Generation Interactive/Programmable Packet Inspection Engine With Capabilities Of Learning Without Any Human Intervention, Nids Functionality, Dns Domain Classification, Network Collector And Many Others. Aiengine Also Helps Network/Security Professionals To Identify Traffic And Develop Signatures For Use Them On Nids, Firewalls, Traffic Classifiers And So On.
+Forensics;Aircrack-Ng;http://www.aircrack-ng.org/;Crack 802.11 Wep And Wpa-Psk Keys
+Wireless;AirGrab WiFi Radar;http://www.airgrab.com/AirGrab_WiFi_Radar/;Airgrab Wifi Radar Is A Tool To Display Information About Apple Airport Base Stations And Other Wifi (802.11B/G/N) Wireless Access Points.
+Wireless;AirMagnet VoFi Analyzer;http://www.flukenetworks.com/enterprise-network/wireless-network/AirMagnet-VoFi-Analyzer;Airmagnet Vofi Analyzer Is The Industry‚ Only Solution For Troubleshooting Voice-Over-Wlan Problems In The Field. Vofi Analyzer Provides Full Analysis Of Encrypted Wlan Traffic, Scoring All Calls In Terms Of Call Quality And Proactively Identifying All Types Of Problems Including Phone Issues, Roaming Issues, Qos Issues, And Rf.
+Wireless;AirMobile agent;http://www.airmobile.se/airmobile_agent.htm;Client Application Is Downloaded In To Your Pda Or Windows Cellular Phone Where It Will Run In Quite Mode In The Background. If The Application Finds A Rouge Access Point It Will Investigate The Ap And See If It Posed A Direct Threat To Your Network.
+Wireless;Airpwn;http://airpwn.sourceforge.net/Airpwn.html;Airpwn Is A Framework For 802.11 (Wireless) Packet Injection. Airpwn Listens To Incoming Wireless Packets, And If The Data Matches A Pattern Specified In The Config Files, Custom Content Is Injected "Spoofed" From The Wireless Access Point. From The Perspective Of The Wireless Client, Airpwn Becomes The Server.
+Wireless;AirRadar 2;http://www.koingosw.com/products/airradar.php?affChecked=1;Airradar Allows You To Scan For Open Networks And Tag Them As Favourites Or Filter Them Out. View Detailed Network Information, Graph Network Signal Strength, And Automatically Join The Best Open Network In Range.
+Scanning;Amap;http://freeworld.thc.org/thc-amap;Amap Is A Next-Generation Scanning Tool, Which Identifies Applications And Services Even If They Are Not Listening On The Default Port By Creating A Bogus-Communication And Analyzing The Responses.
+Reverse;Androguard;https://github.com/androguard/androguard;Reverse Engineer Android Applications
+Reverse;Angr;https://github.com/angr/angr;Platform-Agnostic Binary Analysis Framework
+Python Fuzzing;antiparser;http://antiparser.sourceforge.net/;Fuzz Testing And Fault Injection Api
+Reverse;Apk2Gold;https://github.com/lxdvs/apk2gold;Yet Another Android Decompiler
+Reverse;ApkTool;http://ibotpeaches.github.io/Apktool/;Android Decompiler
+Web Scanners;Arachni;http://arachni-scanner.com/;Arachni Is A Fully Automated System Which Tries To Enforce The Fire And Forget Principle. As Soon As A Scan Is Started It Will Not Bother You For Anything Nor Require Further User Interaction.
+Penetration Testing Distributions;ArchStrike;https://archstrike.org/;An Arch Linux Repository For Security Professionals And Enthusiasts
+Forensics;Audacity;http://sourceforge.net/projects/audacity/;Analyze Sound Files (Mp3, M4A, Whatever)
+SSL Analysis Tools;autochrome;https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/march/autochrome/;Easy To Install A Test Browser With All The Appropriate Setting Needed For Web Application Testing With Native Burp Support, From Nccgroup.
+Scanning;Autoscan;http://autoscan-network.com/;Autoscan-Network Is A Network Scanner (Discovering And Managing Application). No Configuration Is Required To Scan Your Network. The Main Goal Is To Print The List Of Connected Equipments In Your Network.
+Forensic;Autospy;http://www.sleuthkit.org/autopsy/;A Digital Forensics Platform And Graphical Interface To The Sleuth Kit And Other Digital Forensics Tools
+Operating Systems;BackBox;https://backbox.org/;Based On Ubuntu
+Live CD;BackTrack;http://www.backtrack-linux.org/;Backtrack Is A Linux-Based Penetration Testing Arsenal That Aids Security Professionals In The Ability To Perform Assessments In A Purely Native Environment Dedicated To Hacking.
+Vuln Apps;Badstore;http://www.badstore.net/;Badstore.Net Is Dedicated To Helping You Understand How Hackers Prey On Web Application Vulnerabilities, And To Showing You How To Reduce Your Exposure.
+Reverse;Barf;https://github.com/programa-stic/barf-project;Binary Analysis And Reverse Engineering Framework
+Python Other useful libraries and tools;Beautiful Soup;http://www.crummy.com/software/BeautifulSoup/;Html Parser Optimized For Screen-Scraping
+Basic Penetration Testing Tools;BeeF;https://github.com/beefproject/beef;The Browser Exploitation Framework Project
+Basic Penetration Testing Tools;Bella;https://github.com/manwhoami/Bella;Bella Is A Pure Python Post-Exploitation Data Mining & Remote Administration Tool For Mac Os.
+Database Vulnerabilities;Berkeley DB;http://www.oracle.com/us/products/database/berkele y-db/index.html;Oracle Berkeley Db Is A Family Of Open Source, Embeddable Databases That Allows Developers To Incorporate Within Their Applications A Fast, Scalable, Transactional Database Engine With Industrial Grade Reliability And Availability.
+Attacks;Bettercap;https://github.com/evilsocket/bettercap;Framework To Perform Mitm (Man In The Middle) Attacks.
+Reverse;Binary Ninja;https://binary.ninja/;Binary Analysis Framework
+OSInt Tools;BinGoo;https://github.com/Hood3dRob1n/BinGoo;A Linux Bash Based Bing And Google Dorking Tool
+Forensic;BinText;http://www.mcafee.com/kr/downloads/free-tools/bintext.aspx;A Small, Very Fast And Powerful Text Extractor That Will Be Of Particular Interest To Programmers
+Reverse;BinUtils;http://www.gnu.org/software/binutils/binutils.html;Collection Of Binary Tools
+Reverse;BinWalk;https://github.com/devttys0/binwalk;Analyze, Reverse Engineer, And Extract Firmware Images.
+Forensics;Bkhive and Samdump2;http://sourceforge.net/projects/ophcrack/files/samdump2/;Dump System And Sam Files
+Live CD;BlackArch;http://www.blackarch.org/;Blackarch Is An Arch-Based Security Distribution. There Are Over 600 Tools In Blackarch'S Package Repository. The Blackarch Live Iso Comes With Multiple Window Managers, Including Dwm, Awesome, Fluxbox, Openbox, Wmii, I3, And Spectrwm. The Blackarch Package Repository Is Compatible With Existing Arch Installs.
+Operating Systems;BlackArch Linux;https://blackarch.org/;Based On Arch Linux
+Live CD;blackbuntu;http://sourceforge.net/projects/blackbuntu/;Penetration Testing Distribution Based On Ubuntu 10.10 Which Was Specially Designed For Security Training Students And Practitioners Of Information Security.
+SSL Analysis Tools;BlindElephant;http://blindelephant.sourceforge.net/;Web Application Fingerprinter
+Windows Utils;Bloodhound;https://github.com/adaptivethreat/Bloodhound/wiki;A Graphical Active Directory Trust Relationship Explorer
+Bluetooth;Blooover II;http://trifinite.org/trifinite_stuff_bloooverii.html;Blooover Ii Is A Tool For Audit Based On Java (J2Me). It Exists In Version Blooover Ii For Audit J2Me Mobiles And As A Breeeder Edition. Easy Utility For Vulnerability Testing.
+Bluetooth;Bluediving;http://bluediving.sourceforge.net/;Bluediving Is A Bluetooth Penetration Testing Suite.
+Scanning;Blues Port Scanner;http://www.bluebitter.de/portscn2.htm;A Good Port Scanner Is Just One Of The Basic Tools Anyone Who Is Seriously Interested In The Internet Needs. The Bluesportscan Is, I Think, The Fastest Scanner For 32Bit Windows Which You Can Found In The Net.
+Bluetooth;BlueScanner;http://sourceforge.net/projects/bluescanner/;Bluescanner Is A Bash Script That Implements A Scanner For Bluetooth Devices. It'S A Tool Designed To Extract As Much Information As Possible From Bluetooth Devices Without The Requeriment To Pair.
+Bluetooth;Bluesnarfer;http://www.alighieri.org/project.html;Bluesnarfer Steals Informations From A Wireless Device Through A Bluetooth Connection. The Connection Can Be Between Mobile Phones, Pdas Or Laptops. You Can Access To A Calendar, Contact List, Emails And Text Messages.
+Bluetooth;BlueSpam;http://www.mulliner.org/palm/bluespam.php;Bluespam Searches For All Discoverable Bluetooth Devices And Sends A File To Them (Spams Them) If They Support Obex. By Default A Small Text Will Be Send. To Customize The Message That Should Be Send You Need A Palm With An Sd/Mmc Card, Then You Create The Directory /Palm/Programs/Bluespam/Send/ And Put The File (Any Type Of File Will Work .Jpg Is Allways Fun) You Would Like To Send Into This Directory.
+Reverse;Boomerang;https://github.com/nemerle/boomerang;Decompile X86 Binaries To C
+Traffic Analysis/Inspection;Bro;http://bro-ids.org/;Is An Open-Source, Unix-Based Network Intrusion Detection System (Nids) That Passively Monitors Network Traffic And Looks For Suspicious Activity. Bro Detects Intrusions By First Parsing Network Traffic To Extract Its Application- Level Semantics And Then Executing Event-Oriented Analyzers That Compare The Activity With Patterns Deemed Troublesome. Its Analysis Includes Detection Of Specific Attacks (Including Those Defined By Signatures, But Also Those Defined In Terms Of Events) And Unusual Activities (E.G., Certain Hosts Connecting To Certain Services, Or Patterns Of Failed Connection Attempts).
+Passwords;Bruter;http://sourceforge.net/projects/worawita/;Bruter Is A Parallel Network Login Brute-Forcer On Win32. This Tool Is Intended To Demonstrate The Importance Of Choosing Strong Passwords. The Goal Of Bruter Is To Support A Variety Of Services That Allow Remote Authentication.
+Bluetooth;BTCrawler;http://sourceforge.net/projects/btcrawler/;An Application Used To To Discover Bluetooth Devices And The Services They Provide. Runs On J2Me Enabled Devices Supporting Midp 2.0 And Jsr082 (Java Api For Bluetooth)
+Bluetooth;BTScanner;http://www.pentest.co.uk/downloads.html;Btscanner For Xp Is A Bluetooth Environment Auditing Tool For Microsoft Windows Xp, Implemented Using The Bluecove Libraries (An Open Source Implementation Of The Jsr-82 Bluetooth Api For Java).
+Live CD;Bugtraq;http://bugtraq-team.com/;Bugtraq Is A Distribution Based On The 2.6.38 Kernel Has A Wide Range Of Penetration And Forensic Tools. Bugtraq Can Install From A Live Dvd Or Usb Drive, The Distribution Is Customized To The Last Package, Configured And Updated The Kernel And The Kernel Has Been Patched For Better Performance And To Recognize A Variety Of Hardware, Including Wireless Injection Patches Pentesting Other Distributions Do Not Recognize.
+Web Scanners;Burp Suite;http://www.portswigger.net/burp/;Burp Suite Is An Integrated Platform For Performing Security Testing Of Web Applications.
+Penetration Testing Distributions;Buscador;https://inteltechniques.com/buscador/;A Linux Virtual Machine That Is Pre-Configured For Online Investigators
+Passwords;CacheDump;http://www.off-by-one.net/;Cachedump, Licensed Under The Gpl, Demonstrates How To Recover Cache Entry Information: Username And Mscash.
+Passwords;Cain & Abel;http://www.oxid.it/cain.html;Cain & Abel Is A Password Recovery Tool For Microsoft Operating Systems. It Allows Easy Recovery Of Various Kind Of Passwords By Sniffing The Network.
+Web Scanners;CAL9000;https://www.owasp.org/index.php/Category:OWASP_C AL9000_Project;Cal9000 Is A Collection Of Web Application Security Testing Tools That Complement The Feature Set Of Current Web Proxies And Automated Scanners. Cal9000 Gives You The Flexibility And Functionality You Need For More Effective Manual Testing Efforts.
+Vuln Scanners;Canvas;http://www.immunitysec.com/products-canvas.shtml;Immunity'S Canvas Makes Available Hundreds Of Exploits, An Automated Exploitation System, And A Comprehensive, Reliable Exploit Development Framework To Penetration Testers And Security Professionals Worldwide.
+Python Debugging and reverse engineering;Capstone;http://www.capstone-engine.org/;Lightweight Multi-Platform, Multi-Architecture Disassembly Framework With Python Bindings
+Traffic Analysis/Inspection;CapTipper;https://github.com/omriher/CapTipper;Malicious Http Traffic Explorer
+Web Scanners;CAT;http://www.contextis.co.uk/research/tools/cat/;Cat Is Designed To Facilitate Manual Web Application Penetration Testing For More Complex, Demanding Application Testing Tasks.
+Vuln Scanners;CAT.NET;http://www.microsoft.com/en-us/download/details.aspx?id=19968;Cat.Net Is A Binary Code Analysis Tool That Helps Identify Common Variants Of Certain Prevailing Vulnerabilities That Can Give Rise To Common Attack Vectors Such As Cross-Site Scripting (Xss), Sql Injection And Xpath Injection.
+OSInt Tools;Censys;https://www.censys.io/;Collects Data On Hosts And Websites Through Daily Zmap And Zgrab Scans
+Hash Cracking Tools;CeWL;https://digi.ninja/projects/cewl.php;Generates Custom Wordlists By Spidering A Target'S Website And Collecting Unique Words
+Forensics;CFF Explorer;http://www.ntcore.com/exsuite.php;Pe Editor
+Sniffer;Chaosreader;http://chaosreader.sourceforge.net/;A Freeware Tool To Trace Tcp/Udp/... Sessions And Fetch Application Data From Snoop Or Tcpdump Logs. This Is A Type Of "Any-Snarf" Program, As It Will Fetch Telnet Sessions, Ftp Files, Http Transfers (Html, Gif, Jpeg, ...), Smtp Emails, ... From The Captured Data Inside Network Traffic Logs.
+Network;Charles Proxy;https://charlesproxy.com;A Cross-Platform Gui Web Debugging Proxy To View Intercepted Http And Https/Ssl Live Traffic
+Python Debugging and reverse engineering;CHIPSEC;https://github.com/chipsec/chipsec;Framework For Analyzing The Security Of Pc Platforms Including Hardware, System Firmware (Bios/Uefi) And Platform Components.
+Traffic Analysis/Inspection;Chopshop;https://github.com/MITRECND/chopshop;Is A Mitre Developed Framework To Aid Analysts In The Creation And Execution Of Pynids Based Decoders And Detectors Of Apt Tradecraft.
+Traffic Capture;clj-net-pcap;https://github.com/ruedigergad/clj-net-pcap;Clj-Net-Pcap Is A Packet Capturing Library For Clojure. Clj-Net-Pcap Uses Jnetpcap And Adds Convenience Functionality Around Jnetpcap For Easing The Usability. A  Paper On Clj-Net-Pcap Was Published In Scope Of Compsacw 2014.
+SSL Analysis Tools;cms-explorer;https://code.google.com/archive/p/cms-explorer/;Cms Explorer Is Designed To Reveal The The Specific Modules, Plugins, Components And Themes That Various Cms Driven Web Sites Are Running.
+Web;Commix;https://github.com/commixproject/commix;Automated All-In-One Os Command Injection And Exploitation Tool.
+Python Fuzzing;Construct;http://construct.readthedocs.org/;Library For Parsing And Building Of Data Structures (Binary Or Textual). Define Your Data Structures In A Declarative Manner
+Steganography;Convert;http://www.imagemagick.org/script/convert.php;Convert Images B/W Formats And Apply Filters
+Web Scanners;CookieDigger;http://www.mcafee.com/us/downloads/free-tools/cookiedigger.aspx;Cookiedigger Helps Identify Weak Cookie Generation And Insecure Implementations Of Session Management By Web Applications. The Tool Works By Collecting And Analyzing Cookies Issued By A Web Application For Multiple Users.
+Traffic Analysis/Inspection;CoralReef;http://www.caida.org/tools/measurement/coralreef/;Is A Software Suite Developed By Caida To Analyze Data Collected By Passive Internet Traffic Monitors. It Provides A Programming Library Libcoral, Similar To Libpcap With Extensions For Atm And Other Network Types, Which Is Available From Both C And Perl.
+Forensics;Creddump;https://github.com/moyix/creddump;Dump Windows Credentials
+OSInt Tools;creepy;https://github.com/ilektrojohn/creepy;A Geolocation Osint Tool
+Passwords;Crunch;http://sourceforge.net/projects/crunch-wordlist/;Crunch Is A Wordlist Generator Where You Can Specify A Standard Character Set Or A Character Set You Specify. Crunch Can Generate All Possible Combinations And Permutations.
+Services;CSWSH;http://ironwasp.org/cswsh.html;Cross-Site Websocket Hijacking Tester
+Reverse;ctf_import;https://github.com/docileninja/ctf_import;Run Basic Functions From Stripped Binaries Cross Platform
+Scanning;CurrPorts;http://freestickdownload.blogspot.com/2008/06/currport.html;Currports Will Display The List Of All Currently Opened Tcp/Ip And Udp Ports On Your Pc. For Each Port In The List, Information About The Process That Opened The Port Is Also Displayed.
+Vuln Scanners;Damn Small SQLi Scanner;http://unconciousmind.blogspot.com/;Dsss Supports Blind/Error Sqli Tests, Depth 1 Crawling And Advanced Comparison Of Different Attributes To Distinguish Blind Responses (Titles, Http Status Codes, Filtered Text Only Lengths And Fuzzy Comparison Of Contents Itself). If You Are Satisfied With Your Commercial Tool Scanning Results Then I Believe That You Could Even Be More Satisfied With This One.
+Vuln Apps;Damn Vulnerable Linux;http://www.damnvulnerablelinux.org/;Damn Vulnerable Linux (Dvl) Is Everything A Good Linux Distribution Isn‚Äôt. Its Developers Have Spent Hours Stuffing It With Broken, Ill-Configured, Outdated, And Exploitable Software That Makes It Vulnerable To Attacks. Dvl Isn‚Äôt Built To Run On Your Desktop ‚Äì It‚Äôs A Learning Tool For Security Students
+Vuln Apps;Damn Vulnerable Web Application (DVWA);http://www.dvwa.co.uk/;Damn Vulnerable Web App (Dvwa) Is A Php/Mysql Web Application That Is Damn Vulnerable. Its Main Goals Are To Be An Aid For Security Professionals To Test Their Skills And Tools In A Legal Environment, Help Web Developers Better Understand The Processes Of Securing Web Applications And Aid Teachers/Students To Teach/Learn Web Application Security In A Class Room Environment.
+Database Vulnerabilities;Database browser;http://www.dbsoftlab.com/database-editors/database-browser/overview.html;Database Browser Is An Universal Table Editor. This Easy To Use Tool Allows User To Connect To Any Database And Browse Or Modify Data,Run Sql Scripts, Export And Print Data.
+OSInt Tools;DataSploit;https://github.com/upgoingstar/datasploit;Osint Visualizer Utilizing Shodan, Censys, Clearbit, Emailhunter, Fullcontact, And Zoomeye Behind The Scenes.
+Database Vulnerabilities;Db2utils;http://www.cqure.net/wp/db2utils/;Db2Utils Is A Small Collection Of Db2 Utilities. It Currently Features Three Different Tools Db2Disco, Db2Fakesrv And Db2Getprofile.
+Database Vulnerabilities;DBPwAudit;http://www.cqure.net/wp/tools/database/dbpwaudit/;Dbpwaudit Is A Java Tool That Allows You To Perform Online Audits Of Password Quality For Several Database Engines. The Application Design Allows For Easy Adding Of Additional Database Drivers By Simply Copying New Jdbc Drivers To The Jdbc Directory.
+Network Tools;Debookee (MAC OS X);http://www.iwaxx.com/debookee/;Intercept Traffic From Any Device On Your Network
+Network Tools;DET;https://github.com/sensepost/DET;Det Is A Proof Of Concept To Perform Data Exfiltration Using Either Single Or Multiple Channel(S) At The Same Time
+Reverse;Detox;http://relentless-coding.org/projects/jsdetox/install;A Javascript Malware Analysis Tool
+Python PDF;Didier Stevens' PDF;http://blog.didierstevens.com/programs/pdf-tools;Analyse,Identify And Create Pdf Files
+Web Scanners;DIRB;http://dirb.sourceforge.net/;Dirb Is A Web Content Scanner. It Looks For Existing (And/Or Hidden) Web Objects. It Basically Works By Launching A Dictionary Based Attack Against A Web Server And Analizing The Response.
+Python Network;Dirtbags py-pcap;http://dirtbags.net/py-pcap.html;Read Pcap Files Without Libpcap
+Python Debugging and reverse engineering;diStorm;http://www.ragestorm.net/distorm/;Disassembler Library For Amd64, Licensed Under The Bsd License
+Exploits;DLLInjector;https://github.com/OpenSecurityResearch/dllinjector;Inject Dlls In Processes
+Forensics;Dnscat;https://wiki.skullsecurity.org/Dnscat;Hosts Communication Through Dns
+Network Tools;dnschef;http://thesprawl.org/projects/dnschef/;A Highly Configurable Dns Proxy For Pentesters
+Network Tools;DNSDumpster;https://dnsdumpster.com/;Online Dns Recon And Search Service
+Enumeration;dnsenum;http://code.google.com/p/dnsenum/;The Purpose Of Dnsenum Is To Gather As Much Information As Possible About A Domain.
+DNS Utilities;dnsgram;https://doc.powerdns.com/md/manpages/dnsgram.1/;Dnsgram Is A Debugging Tool For Intermittent Resolver Failures. It Takes One Or More Input Pcap Files And Generates Statistics On 5 Second Segments Allowing The Study Of Intermittent Resolver Issues.
+Enumeration;Dnsmap;http://www.gnucitizen.org/blog/new-version-of-dnsmap-out/;Dnsmap Is Mainly Meant To Be Used By Pentesters During The Information Gathering/Enumeration Phase Of Infrastructure Security Assessments.
+Reverse Engineering Tools;dnSpy;https://github.com/0xd4d/dnSpy;Dnspy Is A Tool To Reverse Engineer .Net Assemblies
+Enumeration;Dnsrecon;http://www.darkoperator.com/blog/2009/4/3/dns-recon-tool-written-in-ruby.html;I Wrote This Tool Back In Late 2006 And It Has Been My Favorite Tool For Enumeration Thru Dns, In Great Part Because I Wrote It And It Gives The Output In A Way That I Can Manipulate It In My Own Style.  One Of The Features That I Used The Most And Gave Me Excellent Results Is The Srv Record Enumeration.
+DNS Utilities;dnsreplay;https://doc.powerdns.com/md/manpages/dnsreplay.1/;Dnsreplay Takes Recorded Questions And Answers And Replays Them To The Specified Nameserver And Reporting Afterwards Which Percentage Of Answers Matched, Were Worse Or Better. Then Compares The Answers And Some Other Metrics With The Actual Ones With Those Found In The Dumpfile.
+DNS Utilities;dnsscan;https://doc.powerdns.com/md/manpages/dnsscan.1/;Dnsscan Takes One Or More Infiles In Pcap Format And Generates A List Of The Number Of Queries Per Query Type.
+DNS Utilities;dnsscope;https://doc.powerdns.com/md/manpages/dnsscope.1/;Dnsscope Takes An Input Pcap And Generates Some Simple Statistics Outputs These To Console.
+Enumeration;Dnstracer;http://www.mavetju.org/unix/dnstracer.php;Dnstracer Determines Where A Given Domain Name Server (Dns) Gets Its Information From, And Follows The Chain Of Dns Servers Back To The Servers Which Know The Data.
+DNS Utilities;dnswasher;https://doc.powerdns.com/md/manpages/dnswasher.1/;Dnswasher Takes An Input File In Pcap Format And Writes Out A Pcap File, While Obfuscating End-User Ip Addresses. This Is Useful To Share Data With Third Parties While Attempting To Protect The Privacy Of Your Users.
+OSInt Tools;dork-cli;https://github.com/jgor/dork-cli;Command-Line Google Dork Tool.
+Traffic Analysis/Inspection;DPDK;http://dpdk.org/;Is A Set Of Libraries And Drivers For Fast Packet Processing. It Was Designed To Run On Any Processors. The First Supported Cpu Was Intel X86 And It Is Now Extended To Ibm Power 8, Ezchip Tile-Gx And Arm. It Runs Mostly In Linux Userland. A Freebsd Port Is Available For A Subset Of Dpdk Features.
+Traffic Analysis/Inspection;DPKT;http://code.google.com/p/dpkt/;Python Packet Creation/Parsing Library.
+Scanning;Dr.Morena;http://www.securityfriday.com/tools/DrMorena.html;Dr.Morena Is A Tool To Confirm The Rule Configuration Of A Firewall. The Configuration Of A Firewall Is Done By Combining More Than One Rule.
+Network Tools;Dripcap;https://github.com/dripcap/dripcap;Caffeinated Packet Analyzer
+Network Tools;Dshell;https://github.com/USArmyResearchLab/Dshell;Network Forensic Analysis Framework
+Sniffer;dsniff;http://monkey.org/~dugsong/dsniff/;Dsniff Is A Collection Of Tools For Network Auditing And Penetration Testing. Dsniff, Filesnarf, Mailsnarf, Msgsnarf, Urlsnarf, And Webspy Passively Monitor A Network For Interesting Data.
+Enumeration;DumpSec;http://www.systemtools.com/somarsoft/;Somarsoft'S Dumpsec Is A Security Auditing Program For Microsoft Windows Nt/Xp/200X.
+Forensics;DVCS Ripper;https://github.com/kost/dvcs-ripper;Rips Web Accessible (Distributed) Version Control Systems
+Traffic Analysis/Inspection;ECap;https://bitbucket.org/nathanj/ecap/wiki;(External Capture) Is A Distributed Network Sniffer With A Web Front- End. Ecap Was Written Many Years Ago In 2005, But A Post On The Tcpdump-Workers Mailing List Requested A Similar Application... So Here It Is. It Would Be Fun To Update It And Work On It Again If There'S Any Interest.
+Windows Utils;Empire;https://www.powershellempire.com/;A Pure Powershell Post-Exploitation Agent
+Forensic;EnCase;https://www.guidancesoftware.com/products/Pages/encase-forensic/overview.aspx;The Shared Technology Within A Suite Of Digital Investigations Products By Guidance Software
+Passwords;Enumiax;http://enumiax.sourceforge.net/;Enumiax Is An Inter Asterisk Exchange Version 2 (Iax2) Protocol Username Brute-Force Enumerator. Enumiax May Operate In Two Distinct Modes  Sequential Username Guessing Or Dictionary Attack.
+Traffic Analysis/Inspection;EtherApe;http://etherape.sourceforge.net/;Is A Graphical Network Monitor For Unix Modeled After Etherman. Featuring Link Layer, Ip And Tcp Modes, It Displays Network Activity Graphically. Hosts And Links Change In Size With Traffic. Color Coded Protocols Display. It Supports Ethernet, Fddi, Token Ring, Isdn, Ppp And Slip Devices. It Can Filter Traffic To Be Shown, And Can Read Traffic From A File As Well As Live From The Network.
+Sniffer;Ettercap;http://ettercap.github.com/ettercap/;Ettercap Is A Suite For Man In The Middle Attacks On Lan. It Features Sniffing Of Live Connections, Content Filtering On The Fly And Many Other Interesting Tricks.
+Reverse Engineering Tools;Evan's Debugger;http://www.codef00.com/projects#debugger;Ollydbg-Like Debugger For Linux
+Social Engineering Tools;Evilginx;https://github.com/kgretzky/evilginx;Mitm Attack Framework Used For Phishing Credentials And Session Cookies From Any Web Service
+Basic Penetration Testing Tools;evilgrade;https://github.com/infobyte/evilgrade;The Update Explotation Framework
+Python Malware analysis;Exefilter;http://www.decalage.info/exefilter;Filter File Formats In E-Mails, Web Pages Or Files. Detects Many Common File Formats And Can Remove Active Content
+Steganography;Exif;http://manpages.ubuntu.com/manpages/trusty/man1/exif.1.html;Shows Exif Information In Jpeg Files
+Forensics;Exif Tool;http://www.sno.phy.queensu.ca/~phil/exiftool/;Read, Write And Edit File Metadata
+Steganography;Exiftool;https://linux.die.net/man/1/exiftool;Read And Write Meta Information In Files
+Steganography;Exiv2;http://www.exiv2.org/manpage.html;Image Metadata Manipulation Tool
+Python Misc;Exomind;http://corelabs.coresecurity.com/index.php?module=Wiki&action=view&type=tool&name=Exomind;Framework For Building Decorated Graphs And Developing Open-Source Intelligence Modules And Ideas, Centered On Social Network Services, Search Engines And Instant Messaging
+Basic Penetration Testing Tools;ExploitPack;https://github.com/juansacco/exploitpack;Graphical Tool For Penetration Testing With A Bunch Of Exploits
+Forensics;Extundelete;http://extundelete.sourceforge.net/;Used For Recovering Lost Data From Mountable Images
+Basic Penetration Testing Tools;faraday;https://github.com/infobyte/faraday;Collaborative Penetration Test And Vulnerability Management Platform
+OSInt Tools;fast-recon;https://github.com/DanMcInerney/fast-recon;Does Some Google Dorks Against A Domain
+Passwords;Fcrackzip;http://oldhome.schmorp.de/marc/fcrackzip.html;Naturally, Programs Are Born Out Of An Actual Need. The Situation With Fcrackzip Was No Different... I'M Not Using Zip Very Much, But Recently I Needed A Password Cracker.
+Cryptography;FeatherDuster;https://github.com/nccgroup/featherduster;An Automated, Modular Cryptanalysis Tool
+Operating Systems;Fedora Security Lab;https://labs.fedoraproject.org/security/;Based On Fedora
+Forensics;Fibratus;https://github.com/rabbitstack/fibratus;Tool For Exploration And Tracing Of The Windows Kernel
+Web Scanners;Fiddler;http://www.fiddler2.com/fiddler2/;Fiddler Is A Web Debugging Proxy Which Logs All Http(S) Traffic Between Your Computer And The Internet. Fiddler Allows You To Inspect All Http(S) Traffic, Set Breakpoints, And 'Fiddle' With Incoming Or Outgoing Data.
+SSL Analysis Tools;fimap;https://github.com/kurobeats/fimap;Find, Prepare, Audit, Exploit And Even Google Automatically For Lfi/Rfi Bugs
+Web Scanners;Fireforce;http://www.scrt.ch/en/attack/downloads/fireforce;Fireforce Is A Firefox Extension Designed To Perform Brute-Force Attacks On Get And Post Forms. Fireforce Can Use Dictionaries Or Generate Passwords Based On Several Character Types.
+Scanning;Firewalk;http://packetfactory.openwall.net/projects/firewalk/in dex.html;Firewalk Is An Active Reconnaissance Network Security Tool That Attempts To Determine What Layer 4 Protocols A  Given Ip Forwarding Device Will Pass. Firewalk  Works  By Sending Out Tcp Or Udp Packets With A Ttl One Greater Than The Targeted Gateway.
+Python Network;flowgrep;http://monkey.org/~jose/software/flowgrep/;Grep Through Packet Payloads Using Regular Expressions
+Forensics;Foremost;http://foremost.sourceforge.net/;Extract Particular Kind Of Files Using Headers
+Python Fuzzing;Forensic Fuzzing Tools;https://isecpartners.com/tools/application-security/forensic-fuzzing-tools.aspx;Generate Fuzzed Files, Fuzzed File Systems, And File Systems Containing Fuzzed Files In Order To Test The Robustness Of Forensics Tools And Examination Systems
+Networking Tools;fragroute;http://monkey.org/~dugsong/fragroute/;Fragroute Intercepts, Modifies, And Rewrites Egress Traffic Destined For A Specified Host.
+Python Debugging and reverse engineering;Frida;http://www.frida.re/;A Dynamic Instrumentation Framework Which Can Inject Scripts Into Running Processes
+Forensics;Fsck.ext4;http://linux.die.net/man/8/fsck.ext3;Used To Fix Corrupt Filesystems
+Passwords;FSCrack;http://www.mcafee.com/us/downloads/free-tools/fscrack.aspx;Gui For John The Ripper. Fscrack Is A Front End For John The Ripper (Jtr) That Provides A Graphical User Interface (Gui) For Access To Most Of Jtr‚Äôs Functions.
+Bluetooth;FTS4BT;http://www.fte.com/products/FTS4BT.aspx;Frontline Fts4Bt Bluetooth Protocol Analyzer. Developers And Test Engineers Rely On Fts4Bt To Get Them Through The Design, Debug, Test, Verify, And Qualification Cycle.
+Python Web;FunkLoad;http://funkload.nuxeo.org/;Functional And Load Web Tester
+Python Fuzzing;Fusil;http://fusil.readthedocs.org/;Python Library Used To Write Fuzzing Programs
+Python Fuzzing;Fuzzbox;https://isecpartners.com/tools/application-security/fuzzbox.aspx;Multi-Codec Media Fuzzer
+Python Fuzzing;fuzzer.py;http://sites.google.com/site/felipeandresmanzano/fuzzer.py?attredirects=0;Simple Fuzzer By Felipe Andres Manzano
+Web Scanners;Gamja;http://sourceforge.net/projects/gamja/;Gamja Will Find Xss(Cross Site Scripting) & Sql Injection Weak Point Also Url Parameter Validation Error. Who Knows That Which Parameter Is Weak Parameter? Gamja Will Be Helpful For Finding Vulnerability[ Xss , Validation Error , Sql Injection].
+Reverse;GDB;https://www.gnu.org/software/gdb/;The Gnu Project Debugger
+Reverse;GEF;https://github.com/hugsy/gef;Gdb Plugin
+Vuln Scanners;GFI LanGuard;http://www.gfi.com/products-and-solutions/network-security-solutions/gfi-languard;Gfi Languard Is A Network Security And Vulnerability Scanner Designed To Help With Patch Management, Network And Software Audits, And Vulnerability Assessments. The Price Is Based On The Number Of Ip Addresses You Wish To Scan. A Free Trial Version (Up To 5 Ip Addresses) Is Available.
+Python Web;Ghost.py;http://jeanphix.me/Ghost.py/;Webkit Web Client Written In Python
+OSInt Tools;github-dorks;https://github.com/techgaun/github-dorks;Cli Tool To Scan Github Repos/Organizations For Potential Sensitive Information Leak
+SSL Analysis Tools;GitTools;https://github.com/internetwache/GitTools;Automatically Find And Download Web-Accessible `.Git` Repositories
+Scanning;glypeahead;https://github.com/sensepost/glypeahead;By Default The Glype Proxy Script Has Few Restrictions On What Hosts/Ports Can Be Accessed Through It. In Addition, The Proxy Script Normally Displays All Curl-Related Error Messages.
+OSInt Tools;GooDork;https://github.com/k3170makan/GooDork;Command Line Go0Gle Dorking Tool
+OSInt Tools;Google Hacking Database;https://www.exploit-db.com/google-hacking-database/;A Database Of Google Dorks
+OSInt Tools;Google-dorks;https://github.com/JohnTroony/Google-dorks;Common Google Dorks And Others You Prolly Don'T Know
+Database Vulnerabilities;GreenSql;http://www.greensql.net/;Greensql Is An Open Source Database Firewall Used To Protect Databases From Sql Injection Attacks. Greensql Works As A Proxy And Has Built In Support For Mysql And Postgresql.
+Web Scanners;Grendel-Scan;http://sourceforge.net/projects/grendel/;A Tool For Automated Security Scanning Of Web Applications. Many Features Are Also Present For Manual Penetration Testing.
+File Format Analysis Tools;Hachoir;http://hachoir3.readthedocs.io/;Python Library To View And Edit A Binary Stream As Tree Of Fields And Tools For Metadata Extraction
+Web;Hackbar;https://addons.mozilla.org/en-US/firefox/addon/hackbar/;Firefox Addon For Easy Web Exploitation
+Python Misc;hacklib;https://github.com/leonli96/python-hacklib;Toolkit For Hacking Enthusiasts: Word Mangling, Password Guessing, Reverse Shell And Other Simple Tools
+Bluetooth;Haraldscan;http://code.google.com/p/haraldscan/;A Bluetooth Scanner For Linux And Mac Os X. Harald Scan Is Able To Determine Major And Minor Device Class Of Device, As Well As Attempt To Resolve The Device'S Mac Address To The Largest Known Bluetooth Mac Address Vendor List.
+Bruteforce;Hashcat;https://hashcat.net/hashcat/;Password Cracker
+Web Scanners;Havij;http://itsecteam.com/en/projects/project1_page2.htm;Havij Is An Automated Sql Injection Tool That Helps Penetration Testers To Find And Exploit Sql Injection Vulnerabilities On A Web Page.
+Hex Editors;HexEdit.js;https://hexed.it;Browser-Based Hex Editing
+Hex Editors;Hexinator;https://hexinator.com/) (commercial;World'S Finest Hex Editor
+DDoS Tools;HOIC;https://sourceforge.net/projects/high-orbit-ion-cannon/;Updated Version Of Low Orbit Ion Cannon, Has 'Boosters' To Get Around Common Counter Measures
+Vuln Apps;HoneyDrive;http://bruteforce.gr/honeydrive;Honeydrive Is A Virtual Appliance (Ova) With Xubuntu Desktop 12.04 32-Bit Edition Installed. It Contains Various Honeypot Software Packages Such As Kippo Ssh Honeypot, Dionaea Malware Honeypot, Honeyd Low-Interaction Honeypot, Glastopf Web Honeypot Along With Wordpot, Thug Honeyclient And More.
+Reverse;Hopper;http://www.hopperapp.com/;Reverse Engineering Tool (Disassembler) For Osx And Linux
+Networking Tools;hping;http://www.hping.org/;Hping Is A Command-Line Oriented Tcp/Ip Packet Assembler/Analyzer.
+Python Web;HTTPie;http://httpie.org;Human-Friendly Curl-Like Command Line Http Client
+Traffic Analysis/Inspection;HttpSniffer;https://github.com/caesar0301/http-sniffer;A Multi-Threading Tool To Sniff Tcp Flow Statistics And Embedded Http Headers From Pcap File. Each Tcp Flow Carrying Http Is Exported To Text File In Json Format.
+Web Scanners;HTTrack;http://www.httrack.com/;Httrack Is A Free And Easy-To-Use Offline Browser Utility. It Allows You To Download A World Wide Web Site From The Internet To A Local Directory, Building Recursively All Directories, Getting Html, Images, And Other Files From The Server To Your Computer.
+Forensic;HxD;http://mh-nexus.de/en/hxd/;A Hex Editor Which, Additionally To Raw Disk Editing And Modifying Of Main Memory (Ram), Handles Files Of Any Size
+Passwords;Hydra;http://freeworld.thc.org/thc-hydra/;A Very Fast Network Logon Cracker Which Support Many Different Services.Number One Of The Biggest Security Holes Are Passwords, As Every Password Security Study Shows.
+Anonymity Tools;I2P;https://geti2p.net/en/;The Invisible Internet Project
+Reverse Engineering Tools;IDA Free;https://www.hex-rays.com/products/ida/support/download_freeware.shtml;The Freeware Version Of Ida V5.0
+Reverse;IDA Pro;https://www.hex-rays.com/products/ida/;Most Used Reversing Software
+Python Debugging and reverse engineering;IDAPython;https://github.com/idapython/src;Ida Pro Plugin That Integrates The Python Programming Language, Allowing Scripts To Run In Ida Pro
+Scanning;Ike Scan;http://www.nta-monitor.com/tools-resources/security-tools/ike-scan;Ike-Scan Is A Command-Line Tool That Uses The Ike Protocol To Discover, Fingerprint And Test Ipsec Vpn Servers. It Is Available For Linux, Unix, Macos And Windows Under The Gpl License.
+Steganography;ImageMagick;http://www.imagemagick.org/script/index.php;Tool For Manipulating Images
+Reverse Engineering Tools;Immunity Debugger;http://debugger.immunityinc.com/;A Powerful New Way To Write Exploits And Analyze Malware
+Python Network;Impacket;http://oss.coresecurity.com/projects/impacket.html;Craft And Decode Network Packets. Includes Support For Higher-Level Protocols Such As Nmb And Smb
+Python Misc;InlineEgg;http://oss.coresecurity.com/projects/inlineegg.html;Toolbox Of Classes For Writing Small Assembly Programs In Python
+Network Tools;Intercepter-NG;http://sniff.su/;A Multifunctional Network Toolkit
+Traffic Analysis/Inspection;Ipsumdump;http://www.read.seas.harvard.edu/~kohler/ipsumdump/;Summarizes Tcp/Ip Dump Files Into A Self-Describing Ascii Format Easily Readable By Humans And Programs. Ipsumdump Can Read Packets From Network Interfaces, From Tcpdump Files, And From Existing Ipsumdump Files. It Will Transparently Uncompress Tcpdump Or Ipsumdump Files When Necessary. It Can Randomly Sample Traffic, Filter Traffic Based On Its Contents, Anonymize Ip Addresses, And Sort Packets From Multiple Dumps By Timestamp. Also, It Can Optionally Create A Tcpdump File Containing Actual Packet Data. It'S Also Convenient To Work With Click As A Inserted Module.
+Python Other useful libraries and tools;IPython;http://ipython.scipy.org/;Enhanced Interactive Python Shell With Many Features For Object Introspection, System Shell Access, And Its Own Special Command System
+Scanning;ircsnapshot;https://github.com/bwall/ircsnapshot;Ircsnapshot Is A Python Tool That Connects A Bot To A Server In Order To Fetch Users' Hostmasks, Names, And Channel Affiliations  Also Supports The Creation Of A World Map Using The Scraped Data. Useful For Reconnaissance On A Irc Server Full Of Suspected Bots. Supports Socks And Tor.
+Wireless;iStumbler;http://www.istumbler.net/;Istumbler Is The Leading Wireless Discovery Tool For Mac Os X, Providing Plugins For Finding Airport Networks, Bluetooth Devices, Bonjour Services And Location Information With Your Mac.
+Traffic Analysis/Inspection;ITA;http://ita.ee.lbl.gov/;The Internet Traffic Archive Is A Moderated Repository To Support Widespread Access To Traces Of Internet Network Traffic, Sponsored By Acm Sigcomm. The Traces Can Be Used To Study Network Dynamics, Usage Characteristics, And Growth Patterns, As Well As Providing The Grist For Trace- Driven Simulations. The Archive Is Also Open To Programs For Reducing Raw Trace Data To More Manageable Forms, For Generating Synthetic Traces, And For Analyzing Traces.
+Reverse;Jadx;https://github.com/skylot/jadx;Decompile Android Files
+Reverse;Java Decompilers;http://www.javadecompilers.com;An Online Decompiler For Java And Android Apks
+Traffic Capture;jNetPcap;http://jnetpcap.com;Jnetpcap Is A Packet Capturing Library For Java That Is Available For Linux And Windows. Jnetpcap Leverages Libpcap Respectively Winpcap And Employs The Java Native Interface (Jni) For Using The Functionality Provided By Libpcap/Winpcap.
+Bruteforce;John The Jumbo;https://github.com/magnumripper/JohnTheRipper;Community Enhanced Version Of John The Ripper
+Bruteforce;John The Ripper;http://www.openwall.com/john/;Password Cracker
+SSL Analysis Tools;joomscan;https://www.owasp.org/index.php/SSL Analysis Tools:OWASP_Joomla_Vulnerability_Scanner_Project;Joomla Cms Scanner
+DDoS Tools;JS LOIC;http://metacortexsecurity.com/tools/anon/LOIC/LOICv1.html;Javascript In-Browser Version Of Loic
+Python Malware analysis;jsunpack-n;https://github.com/urule99/jsunpack-n;Javascript Unpacker: Emulates Browser Functionality To Detect Exploits That Target Browser And Browser Plug-In Vulnerabilities
+File Extraction;Justniffer;http://justniffer.sourceforge.net/;Justniffer Is A Network Protocol Analyzer That Captures Network Traffic And Produces Logs In A Customized Way, Can Emulate Apache Web Server Log Files, Track Response Times And Extract All "Intercepted" Files From The Http Traffic.
+SSL Analysis Tools;Kadabra;https://github.com/D35m0nd142/Kadabra;Automatic Lfi Exploiter And Scanner
+SSL Analysis Tools;Kadimus;https://github.com/P0cL4bs/Kadimus;Lfi Scan And Exploit Tool
+File Format Analysis Tools;Kaitai Struct;http://kaitai.io/;File Formats And Network Protocols Dissection Language And Web Ide, Generating Parsers In C++, C#, Java, Javascript, Perl, Php, Python, Ruby
+Penetration Testing Distributions;Kali;https://www.kali.org/;A Linux Distribution Designed For Digital Forensics And Penetration Testing
+Operating Systems;Kali Linux;https://www.kali.org/;Based On Debian
+Live CD;Katana;http://www.hackfromacave.com/katana.html;Katana Is A Portable Multi-Boot Security Suite Which Brings Together Many Of Today'S Best Security Distributions And Portable Applications To Run Off A Single Flash Drive. It Includes  Such As Wireshark, Metasploit, Nmap, Cain & Abel, And Many More.Distributions Which Focus On Pen-Testing, Auditing, Forensics, System Recovery, Network Analysis, And Malware Removal. Katana Also Comes With Over 100 Portable Windows Applications
+Passwords;keimpx;https://github.com/inquisb/keimpx;Keimpx Is An Open Source Tool, Released Under A Modified Version Of Apache License 1.1. It Can Be Used To Quickly Check For The Usefulness Of Credentials Across A Network Over Smb.
+Python Debugging and reverse engineering;Keystone;http://www.keystone-engine.org;Lightweight Multi-Platform, Multi-Architecture Assembler Framework With Python Bindings
+Social Engineering Tools;King Phisher;https://github.com/securestate/king-phisher;Phishing Campaign Toolkit Used For Creating And Managing Multiple Simultaneous Phishing Attacks With Custom Email And Server Content
+Vuln Apps;Kioptrix;http://www.kioptrix.com/blog/?page_id=135;This Kioptrix Vm Image Are Easy Challenges. The Object Of The Game Is To Acquire Root Access Via Any Means Possible (Except Actually Hacking The Vm Server Or Player). The Purpose Of These Games Are To Learn The Basic Tools And Techniques In Vulnerability Assessment And Exploitation.
+Wireless;KisMAC;http://trac.kismac-ng.org/;Kismac Is An Open-Source And Free Sniffer/Scanner Application For Mac Os X. It Has An Advantage Over Macstumbler / Istumbler / Netstumbler In That It Uses Monitor Mode And Passive Scanning.
+Wireless;KisMac2;https://github.com/IGRSoft/KisMac2;Kismac2, Is An Active Project To Continue Where Original Development Of Kismac (Link Above) Has Stopped. The Lead Developer Is Vitalii Parovishnyk (Korich) - Http://Igrsoft.Com
+Wireless;Kismet;http://www.kismetwireless.net/;Kismet Is An 802.11 Layer2 Wireless Network Detector, Sniffer, And Intrusion Detection System. Kismet Will Work With Any Wireless Card Which Supports Raw Monitoring (Rfmon) Mode, And Can Sniff 802.11B, 802.11A, And 802.11G Traffic.
+Python Network;Knock Subdomain Scan;https://github.com/guelfoweb/knock;Enumerate Subdomains On A Target Domain Through A Wordlist
+Scanning;Knocker;http://knocker.sourceforge.net/;Knocker Is A Simple And Easy To Use Tcp Security Port Scanner Written In C To Analyze Hosts And All Of The Different Services Started On Them.
+Reverse;Krakatau;https://github.com/Storyyeller/Krakatau;Java Decompiler And Disassembler
+Vuln Apps;LAMPSecurity;http://sourceforge.net/projects/lampsecurity/;Lampsecurity Training Is Designed To Be A Series Of Vulnerable Virtual Machine Images Along With Complementary Documentation Designed To Teach Linux,Apache,Php,Mysql Security.
+Physical Access Tools;LAN Turtle;https://lanturtle.com/;A Covert "Usb Ethernet Adapter" That Provides Remote Access, Network Intelligence Gathering, And Mitm Capabilities When Installed In A Local Network.
+Attacks;Layer 2 attacks;https://github.com/tomac/yersinia;Attack Various Protocols On Layer 2
+Passwords;LCP;http://www.lcpsoft.com/english/index.htm;Main Purpose Of Lcp Program Is User Account Passwords Auditing And Recovery In Windows Nt/2000/Xp/2003.
+Enumeration;LDAP Browser;http://www.ldapbrowser.com/;Ldap Browser Is A Premier Windows Explorer-Like Ldap Directory Client Available For Win32 Platforms.
+Traffic Analysis/Inspection;Libcrafter;http://code.google.com/p/libcrafter/;Is A High Level Library For C++ Designed To Make Easier The Creation And Decoding Of Network Packets. It Is Able To Craft Or Decode Packets Of Most Common Network Protocols, Send Them On The Wire, Capture Them And Match Requests And Replies.
+Python Network;libdnet;http://code.google.com/p/libdnet/;Low-Level Networking Routines, Including Interface Lookup And Ethernet Frame Transmission
+Python Forensics;LibForensics;http://code.google.com/p/libforensics/;Library For Developing Digital Forensics Applications
+Exploits;libformatstr;https://github.com/hellman/libformatstr;Simplify Format String Exploitation.
+Traffic Analysis/Inspection;Libnet;http://libnet.sourceforge.net/;Is A Collection Of Routines To Help With The Construction And Handling Of Network Packets. It Provides A Portable Framework For Low-Level Network Packet Shaping, Handling And Injection. Libnet Features Portable Packet Creation Interfaces At The Ip Layer And Link Layer, As Well As A Host Of Supplementary And Complementary Functionality. Using Libnet, Quick And Simple Packet Assembly Applications Can Be Whipped Up With Little Effort.
+Traffic Analysis/Inspection;Libnids;http://libnids.sourceforge.net/;Designed By Rafal Wojtczuk, Is An Implementation Of An E-Component Of Network Intrusion Detection System. It Emulates The Ip Stack Of Linux 2.0.X. Libnids Offers Ip Defragmentation, Tcp Stream Assembly And Tcp Port Scan Detection. The Most Valuable Feature Of Libnids Is Reliability. A Number Of Tests Were Conducted, Which Proved That Libnids Predicts Behaviour Of Protected Linux Hosts As Closely As Possible.
+Traffic Capture;Libpcap/Tcpdump;http://www.tcpdump.org/;The Official Site Of Tcpdump, A Powerful Command-Line Packet Analyzer  And Libpcap, A Portable C/C++ Library For Network Traffic Capture.
+SSL Analysis Tools;liffy;https://github.com/hvqzao/liffy;Lfi Exploitation Tool
+Web Scanners;LiLith;http://michaelhendrickx.com/lilith;Lilith Is A Tool Written In Perl To Audit Web Applications. This Tool Analyses Webpages And Looks For Html <Form> Tags, Which Often Refer To Dynamic Pages That Might Be Subject To Sql Injection Or Other Flaws.
+Linux Utils;Linux Exploit Suggester;https://github.com/PenturaLabs/Linux_Exploit_Suggester;Linux Exploit Suggester Based On Operating System Release Number.
+Passwords;Lodowep;http://www.cqure.net/wp/lodowep/;Lodowep Is A Tool For Analyzing Password Strength Of Accounts On A Lotus Domino Webserver System. The Tool Supports Both Session- And Basic-Authentication.
+DDoS Tools;LOIC;https://github.com/NewEraCracker/LOIC/;An Open Source Network Stress Tool For Windows
+Python Other useful libraries and tools;lxml;http://lxml.de/;Most Feature-Rich And Easy-To-Use Library For Working With Xml And Html In The Python Language
+Python Other useful libraries and tools;M2Crypto;http://chandlerproject.org/bin/view/Projects/MeTooCrypto;Most Complete Openssl Wrapper
+Network Tools;mallory;https://github.com/justmao945/mallory;Http/Https Proxy Over Ssh
+OSInt Tools;Maltego;http://www.paterva.com/web7/;Proprietary Software For Open Source Intelligence And Forensics, From Paterva.
+Forensics;Malzilla;http://malzilla.sourceforge.net/;Malware Hunting Tool
+Network Tools;Mass Scan;https://github.com/robertdavidgraham/masscan;Tcp Port Scanner, Spews Syn Packets Asynchronously, Scanning Entire Internet In Under 5 Minutes.
+Networking;Masscan;https://github.com/robertdavidgraham/masscan;Mass Ip Port Scanner, Tcp Port Scanner
+Python Other useful libraries and tools;matplotlib;http://matplotlib.sourceforge.net/;Make 2D Plots Of Arrays
+Python Other useful libraries and tools;Mayavi;http://code.enthought.com/projects/mayavi/;3D Scientific Data Visualization And Plotting
+Vuln Scanners;MBSA;http://technet.microsoft.com/en-us/security/cc184923;Microsoft Baseline Security Analyzer (Mbsa) Is An Easy-To-Use Tool Designed For The It Professional That Helps Small And Medium-Sized Businesses Determine Their Security State In Accordance With Microsoft Security Recommendations And Offers Specific Remediation Guidance.
+Passwords;Medusa;http://www.foofus.net/~jmk/medusa/medusa.html;Medusa Is Intended To Be A Speedy, Massively Parallel, Modular, Login Brute-Forcer. The Goal Is To Support As Many Services Which Allow Remote Authentication As Possible.
+Reverse Engineering Tools;Medusa disassembler;https://github.com/wisk/medusa;An Open Source Interactive Disassembler
+OSInt Tools;metagoofil;https://github.com/laramies/metagoofil;Metadata Harvester
+Exploits;Metasploit;http://www.metasploit.com/;Penetration Testing Software
+Vuln Scanners;Metasploit Framework;http://www.metasploit.com/;The Metasploit Framework Is An Advanced Open-Source Platform For Developing, Testing, And Using Exploit Code.
+Vuln Apps;Metasploitable;http://sourceforge.net/projects/metasploitable/;Metasploitable Is An Intentionally Vulnerable Linux Virtual Machine. This Vm Can Be Used To Conduct Security Training, Test Security Tools, And Practice Common Penetration Testing Techniques.
+Windows Utils;mimikatz;http://blog.gentilkiwi.com/mimikatz;Credentials Extraction Tool For Windows Os
+Scanning;MingSweeper;http://www.hoobie.net/mingsweeper/;Mingsweeper Is A Network Reconnaissance Tool Designed To Facilitate Large Address Space,High Speed Node Discovery And Identification.
+Python Fuzzing;Mistress;http://www.packetstormsecurity.org/fuzzer/mistress.rar;Probe File Formats On The Fly And Protocols With Malformed Data, Based On Pre-Defined Patterns
+Network;mitmproxy;https://mitmproxy.org/;An Interactive, Ssl-Capable Man-In-The-Middle Proxy For Http With A Console Interface
+Network;mitmsocks4j;https://github.com/Akdeniz/mitmsocks4j;Man-In-The-Middle Socks Proxy For Java
+Traffic Capture;Moloch;https://github.com/aol/moloch;Moloch Is A Open Source Large Scale Full Pcap Capturing, Indexing And Database System.
+Python Debugging and reverse engineering;mona.py;https://www.corelan.be/index.php/2011/07/14/mona-py-the-manual/;Pycommand For Immunity Debugger That Replaces And Improves On Pvefindaddr
+Network Tools;Morpheus;https://github.com/r00t-3xp10it/morpheus;Automated Ettercap Tcp/Ip Hijacking Tool
+Vuln Apps;Moth;http://www.bonsai-sec.com/en/research/moth.php;Moth Is A Vmware Image With A Set Of Vulnerable Web Applications And Scripts, That You May Use For, Testing Web Application Security Scanners, Testing Static Code Analysis Tools (Sca), Giving An Introductory Course To Web Application Security
+Scanning;Multi Threaded TCP Port Scanner 3.0;http://www.secpoint.com/Multi-Threaded-TCP-Port-Scanner.html;This Tool Could Be Used To Scan Ports Of Certain Ip. It Also Could Describe Each Port With Standard Name (Well-Known And Registered Ports).
+Traffic Analysis/Inspection;Multitail;http://www.vanheusden.com/multitail;Now Has A Colorscheme Included For Monitoring The Tcpdump Output. It Can Also Filter, Convert Timestamps To Timestrings And Much More.
+Database Vulnerabilities;MYSQLAudit;http://www.darkoperator.com/tools-and-scripts/;Python Script For Basic Auditing Of Common Security Misconfigurations In Mysql.
+Traffic Capture;n2disk;http://www.ntop.org/products/n2disk/) (Commercial;A Multi-Gigabit Network Traffic Recorder With Indexing Capabilities. N2Disk Is A Network Traffic Recorder Application. With N2Disk You Can Capture Full- Sized Network Packets At Multi-Gigabit Rate (Above 10 Gigabit/S On Adequate Hardware) From A Live Network Interface, And Write Them Into Files Without Any Packet Loss.
+Enumeration;NBTEnum;http://www.secguru.com/link/nbtenum_netbios_enume ration_utility;Netbios Enumeration Utility (Nbtenum) Is A Utility For Windows That Can Be Used To Enumerate Netbios Information From One Host Or A Range Of Hosts.
+Enumeration;nbtscan;http://www.unixwiz.net/tools/nbtscan.html#download;This Tool That Scans For Open Netbios Nameservers On A Local Or Remote Tcp/Ip Network, And This Is A First Step In Finding Of Open Shares.
+Passwords;Ncrack;http://nmap.org/ncrack/;Ncrack Is A High-Speed Network Authentication Cracking Tool. It Was Built To Help Companies Secure Their Networks By Proactively Testing All Their Hosts And Networking Devices For Poor Passwords.
+Networking Tools;Nemesis;http://nemesis.sourceforge.net/;Nemesis Is A Command-Line Network Packet Crafting And Injection Utility For Unix-Like And Windows Systems. Nemesis, Is Well Suited For Testing Network Intrusion Detection Systems, Firewalls, Ip Stacks And A Variety Of Other Tasks. As A Command-Line Driven Utility, Nemesis Is Perfect For Automation And Scripting.
+Vuln Scanners;Nessus;http://www.tenable.com/products/nessus;Nessus Detects, Scans, And Profiles Numerous Devices And Resources To Increase Security And Compliance Across Your Network.
+Scanning;Netcat;http://netcat.sourceforge.net/;Netcat Is A Featured Networking Utility Which Reads And Writes Data Across Network Connections, Using The Tcp/Ip Protocol. It Is Designed To Be A Reliable "Back-End" Tool That Can Be Used Directly Or Easily Driven By Other Programs And Scripts.
+Traffic Analysis/Inspection;NetDude;http://netdude.sourceforge.net/;(Network Dump Data Displayer And Editor). From Their Webpage, "It Is A Gui-Based Tool That Allows You To Make Detailed Changes To Packets In Tcpdump Tracefiles."
+Vuln Apps;NETinVM;http://informatica.uv.es/~carlos/docencia/netinvm/#id7;Netinvm Is A Single Vmware Or Virtualbox Virtual Machine Image That Contains, Ready To Run, A Series Of User-Mode Linux (Uml) Virtual Machines Which, When Started, Conform A Whole Computer Network Inside The Vmware Or Virtualbox Virtual Machine.
+Traffic Analysis/Inspection;Netsniff-ng;www.github.com/borkmann/netsniff-ng;Netsniff-Ng Is A Toolkit Of Free Linux Networking Utilities, A Swiss Army Knife For Your Daily Linux Network Plumbing If You Will.
+Web Scanners;Netsparker;https://www.mavitunasecurity.com/netsparker/;Netsparker Is A Web Application Security Scanner, With Support For Both Detection And Exploitation Of Vulnerabilities. It Aims To Be False Positive‚Äìfree By Only Reporting Confirmed Vulnerabilities After Successfully Exploiting Or Otherwise Testing Them.
+Wireless;NetStumbler;http://www.netstumbler.com/;Netstumbler Delivers A Tool That Helps You Detect 802.11 A/B/G Wlan Standards. While Wardriving Is Its Main Use, The Application Also Facilitates The Verifying Of Network Configurations.
+Traffic Analysis/Inspection;Network Expect;http://www.netexpect.org/;Is A Framework That Allows To Easily Build Tools That Can Interact With Network Traffic. Following A Script, Traffic Can Be Injected Into The Network, And Decisions Can Be Taken, And Acted Upon, Based On Received Network Traffic. An Interpreted Language Provides Branching And High-Level Control Structures To Direct The Interaction With The Network. Network Expect Uses Libpcap For Packet Capture And Libwireshark (From The Wireshark Project) For Packet Dissection Tasks. (Gpl, Bsd/Linux/Osx).
+Live CD;Network Security Toolkit (NST);http://networksecuritytoolkit.org/nst/index.html;This Bootable Iso Live Cd/Dvd (Nst Live) Is Based On Fedora. The Toolkit Was Designed To Provide Easy Access To Best-Of-Breed Open Source Network Security Applications And Should Run On Most X86/X86_64 Platforms.
+Network Tools;Network Tools;http://network-tools.com/;Different Network Tools: Ping, Lookup, Whois, Etc
+Scanning;NetworkActiv Scan;http://www.networkactiv.com/;Networkactiv Port Scanner Is A Network Exploration And Administration Tool That Allows You To Scan And Explore Internal Lans And External Wans.
+Forensics;NetworkMiner;http://www.netresec.com/?page=NetworkMiner;Network Forensic Analysis Tool
+Python Other useful libraries and tools;NetworkX;http://networkx.lanl.gov/;Graph Library (Edges, Nodes)
+Network Tools;Netzob;https://github.com/netzob/netzob;Reverse Engineering, Traffic Generation And Fuzzing Of Communication Protocols
+Vulnerability Scanners;Nexpose;https://www.rapid7.com/products/nexpose/;Vulnerability Management & Risk Management Software
+Traffic Capture;Ngrep;http://ngrep.sourceforge.net/;Strives To Provide Most Of Gnu Grep'S Common Features, Applying Them To The Network Layer. Ngrep Is A Pcap-Aware Tool That Will Allow You To Specify Extended Regular Or Hexadecimal Expressions To Match Against Data Payloads Of Packets. It Currently Recognizes Tcp, Udp And Icmp Across Ethernet, Ppp, Slip, Fddi, Token Ring And Null Interfaces, And Understands Bpf Filter Logic In The Same Fashion As More Common Packet Sniffing Tools, Such As Tcpdump And Snoop.
+Vulnerability Scanners;Nikto;https://cirt.net/nikto2;Web Application Vulnerability Scanner
+Web Scanners;Nikto2;http://www.cirt.net/nikto2;Nikto Is An Open Source (Gpl) Web Server Scanner Which Performs Comprehensive Tests Against Web Servers For Multiple Items, Including Over 6500 Potentially Dangerous Files/Cgis.
+Networking;Nipe;https://github.com/GouveaHeitor/nipe;Nipe Is A Script To Make Tor Network Your Default Gateway.
+Networking;Nmap;https://nmap.org/;Open Source Utility For Network Discovery And Security Auditing
+Bruteforce;Nozzlr;https://github.com/intrd/nozzlr;Nozzlr Is A Bruteforce Framework, Trully Modular And Script-Friendly.
+Scanning;Nsat;http://nsat.sourceforge.net/;Nsat Is A Robust Scanner Which Is Designed For: Different Kinds Of Wide-Ranging Scans, Keeping Stable For Days. Scanning On Multi-User Boxes (Local Stealth And Non-Priority Scanning Options).
+Scanning;Nscan;http://nscan.hypermart.net/;Nscan Itself Is A Port Scanner, Which Uses Connect() Method To Find The List Of The Host'S Open Ports. The Difference From The Most Of Other Portscanners Is It'S Flexibility And Speed.
+Penetration Testing Distributions;NST;http://networksecuritytoolkit.org/;Network Security Toolkit Distribution
+Traffic Analysis/Inspection;Ntop;http://www.ntop.org/;Ntop Is A Network Traffic Probe That Shows The Network Usage, Similar To What The Popular Top Unix Command Does. Ntop Is Based On Libpcap And It Has Been Written In A Portable Way In Order To Virtually Run On Every Unix Platform And On Win32 As Well.
+Traffic Analysis/Inspection;Ntopng;http://www.ntop.org/products/ntop/;Ntopng Is The Next Generation Version Of The Original Ntop, A Network Traffic Probe That Shows The Network Usage, Similar To What The Popular Top Unix Command Does. Ntop Is Based On Libpcap And It Has Been Written In A Portable Way In Order To Virtually Run On Every Unix Platform, Macosx And On Win32 As Well.
+Reverse Engineering Tools;OllyDbg;http://www.ollydbg.de/;An X86 Debugger That Emphasizes Binary Code Analysis
+Scanning;Onesixtyone;http://www.phreedom.org/software/onesixtyone/;Onesixtyone Is An Snmp Scanner Which Utilizes A Sweep Technique To Achieve Very High Performance. It Can Scan An Entire Class B Network In Under 13 Minutes.
+Python PDF;Opaf;http://code.google.com/p/opaf/;Open Pdf Analysis Framework.Converts Pdf To An Xml Tree That Can Be Analyzed And Modified.
+Traffic Capture;OpenFPC;http://www.openfpc.org/;Openfpc Is A Set Of Scripts That Combine To Provide A Lightweight Full-Packet Network Traffic Recorder & Buffering Tool. Its Design Goal Is To Allow Non-Expert Users To Deploy A Distributed Network Traffic Recorder On Cots Hardware While Integrating Into Existing Alert And Log Tools.
+Vuln Scanners;OpenVAS;http://www.openvas.org/;Openvas Is A Framework Of Several Services And Tools Offering A Comprehensive And Powerful Vulnerability Scanning And Vulnerability Management Solution.
+Bruteforce;Ophcrack;http://ophcrack.sourceforge.net/;Windows Password Cracker Based On Rainbow Tables.
+Database Vulnerabilities;Oracle Auditing Tools;http://www.cqure.net/wp/test/;The Oracle Auditing Tools Is A Toolkit That Could Be Used To Audit Security Within Oracle Database Servers.
+Python PDF;Origapy;http://www.decalage.info/python/origapy;Python Wrapper For The Origami Ruby Module Which Sanitizes Pdf Files
+Database Vulnerabilities;Oscanner;http://www.cqure.net/wp/oscanner/;Oscanner Is An Oracle Assessment Framework Developed In Java. It Has A Plugin-Based Architecture And Comes With A Couple Of Plugins.
+Steganography;Outguess;https://www.freebsd.org/cgi/man.cgi?query=outguess+&apropos=0&sektion=0&manpath=FreeBSD+Ports+5.1-RELEASE&format=html;Universal Steganographic Tool
+Scanning;OutputPBNJ;http://pbnj.sourceforge.net/;Pbnj Is A Suite Of Tools To Monitor Changes On A Network Over Time. It Does This By Checking For Changes On The Target Machine(S), Which Includes The Details About The Services Running On Them As Well As The Service State.
+Vuln Apps;OWASP Broken Web Applications Project;https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project;The Broken Web Applications (Bwa) Project Produces A Virtual Machine Running A Variety Of Applications With Known Vulnerabilities
+Vuln Apps;OWASP Insecure Web App Project;https://www.owasp.org/index.php/Category:OWASP_Insecure_Web_App_Project;Insecurewebapp Is A Web Application That Includes Common Web Application Vulnerabilities. It Is A Target For Automated And Manual Penetration Testing, Source Code Analysis, Vulnerability Assessments And Threat Modeling.
+Vuln Apps;OWASP Vicnum;http://vicnum.ciphertechs.com/;Vicnum Is An Owasp Project Consisting Of Vulnerable Web Applications Based On Games Commonly Used To Kill Time. These Applications Demonstrate Common Web Security Problems Such As Cross Site Scripting, Sql Injections, And Session Management Issues.
+Web;OWASP ZAP;https://www.owasp.org/index.php/Projects/OWASP_Zed_Attack_Proxy_Project;Intercepting Proxy To Replay, Debug, And Fuzz Http Requests And Responses
+SSL Analysis Tools;OWASP Zed Attack Proxy;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project;Penetration Testing Tool For Web Applications
+Python Debugging and reverse engineering;Paimei;https://github.com/OpenRCE/paimei;Reverse Engineering Framework
+Python Other useful libraries and tools;Pandas;http://pandas.pydata.org/;Library Providing High-Performance, Easy-To-Use Data Structures And Data Analysis Tools
+Network;Paros;http://sourceforge.net/projects/paros/;A Java-Based Http/Https Proxy For Assessing Web Application Vulnerability
+Penetration Testing Distributions;Parrot;https://www.parrotsec.org/;A Distribution Similar To Kali, With Multiple Architecture
+Operating Systems;Parrot Security OS;https://www.parrotsec.org/;Based On Debian
+Network Tools;passivedns;https://github.com/gamelinux/passivedns;A Network Sniffer That Logs All Dns Server Replies For Use In A Passive Dns Setup
+Network Tools;passivedns-client;https://github.com/chrislee35/passivedns-client;Provides A Library And A Query Tool For Querying Several Passive Dns Providers
+Bruteforce;Patator;https://github.com/lanjelot/patator;Patator Is A Multi-Purpose Brute-Forcer, With A Modular Design.
+Python Web;pathod / pathoc;http://pathod.net/;Pathological Daemon/Client For Tormenting Http Clients And Servers
+Traffic Analysis/Inspection;Pcap2har;https://github.com/andrewf/pcap2har;A Program To Convert .Pcap Network Capture Files To Http Archive Files Using Library Dpkt.
+File Extraction;pcapfex;https://github.com/vikwin/pcapfex;Packet Capture Forensic Evidence Extractor (Pcapfex) Is A Tool That Finds And Extracts Files From Packet Capture Files. Its Power Lies In Its Ease Of Use. Just Provide It A Pcap File, And It Will Try To Extract All Of The Files. It Is An Extensible Platform, So Additional File Types To Recognize And Extract Can Be Added Easily.
+Forensics;PDF Streams Inflater;http://malzilla.sourceforge.net/downloads.html;Find And Extract Zlib Files Compressed In Pdf Files
+Python PDF;PDFMiner;http://www.unixuser.org/~euske/python/pdfminer/index.html;Extract Text From Pdf Files
+Vuln Scanners;Peach Fuzzer;http://peachfuzzer.com/;Peach Is A Smartfuzzer That Is Capable Of Performing Both Generation And Mutation Based Fuzzing. Peach Requires The Creation Of Peachpit Files That Define The Structure, Type Information, And Relationships In The Data To Be Fuzzed.
+Python Fuzzing;Peach Fuzzing Platform;http://peachfuzz.sourceforge.net/;Extensible Fuzzing Framework For Generation And Mutation Based Fuzzing (V2 Was Written In Python)
+Reverse;PEDA;https://github.com/longld/peda;Gdb Plugin (Only Python2.7)
+Python PDF;peepdf;http://eternal-todo.com/tools/peepdf-pdf-analysis-tool;Python Tool To Analyse And Explore Pdf Files To Find Out If They Can Be Harmful
+Python Debugging and reverse engineering;pefile;https://github.com/erocarrera/pefile;Read And Work With Portable Executable (Aka Pe) Files
+Python Misc;Pentestly;https://github.com/praetorian-inc/pentestly;Python And Powershell Internal Penetration Testing Framework
+Operating Systems;Pentoo;http://www.pentoo.ch/;Based On Gentoo
+Forensic;PEview;http://wjradburn.com/software/;A Quick And Easy Way To View The Structure And Content Of 32-Bit Portable Executable (Pe) And Component Object File Format (Coff) Files
+Python Other useful libraries and tools;Pexpect;https://github.com/pexpect/pexpect;Control And Automate Other Programs, Similar To Don Libes Expect System
+Traffic Capture;PF_RING;http://www.ntop.org/products/pf_ring/;Pf_Ring Is A New Type Of Network Socket That Dramatically Improves The Packet Capture Speed. Available For Linux Kernels 2.6.32 And Newer. No Need To Patch The Kernel. Pf_Ring-Aware Drivers For Increased Packet Capture Acceleration.
+Python Malware analysis;phoneyc;https://github.com/honeynet/phoneyc;Pure Python Honey Client Implementation
+Passwords;phrasen|drescher;http://www.leidecker.info/projects/phrasendrescher/in dex.shtml;Phrasen|Drescher (P|D) Is A Modular And Multi Processing Pass Phrase Cracking Tool. It Comes With A Number Of Plugins But A Simple Plugin Api Allows An Easy Development Of New Plugins.
+Network;pig;https://github.com/rafael-santiago/pig;A Linux Packet Crafting Tool
+Sniffer;Pirni Sniffer;http://code.google.com/p/n1mda-dev/wiki/PirniUsageGuide;Pirni Is The Worlds First Native Network Sniffer For Iphone. The Iphone'S Wifi Has Some Major Drawbacks In It'S Hardware Design, Thus We Can Not Properly Set The Device In Promiscious Mode.
+Cryptography;PkCrack;https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html;A Tool For Breaking Pkzip-Encryption
+Traffic Analysis/Inspection;pkt2flow;https://github.com/caesar0301/pkt2flow;A Simple Utility To Classify Packets Into Flows. It'S So Simple That Only One Task Is Aimed To Finish.  For Deep Packet Inspection Or Flow Classification, It'S So Common To Analyze The Feature Of One Specific Flow. I Have Make The Attempt To Use Made-Ready Tools Like Tcpflows, Tcpslice, Tcpsplit, But All These Tools Try To Either Decrease The Trace Volume (Under Requirement) Or Resemble The Packets Into Flow Payloads (Over Requirement). I Have Not Found A Simple Tool To Classify The Packets Into Flows Without Further Processing.
+Reverse;Plasma;https://github.com/joelpx/plasma;An Interactive Disassembler For X86/Arm/Mips Which Can Generate Indented Pseudo-Code With Colored Syntax.
+Steganography;Pngtools;http://www.stillhq.com/pngtools/;For Various Analysis Related To Pngs
+Physical Access Tools;Poisontap;https://samy.pl/poisontap/;Siphons Cookies, Exposes Internal (Lan-Side) Router And Installs Web Backdoor On Locked Computers
+Vuln Scanners;Porkbind;http://innu.org/;Porkbind Is A Multi-Threaded Nameserver Scanner That Can Recursively Query Nameservers Of Subdomains For Version Strings. (I.E. Sub.Host.Dom'S Nameservers Then Host.Dom'S Nameservers)
+Scanning;PortSentry;http://sourceforge.net/projects/sentrytools/;The Sentry Tools Provide Host-Level Security Services For The Unix Platform. Portsentry, Logcheck/Logsentry, And Hostsentry Protect Against Portscans, Automate Log File Auditing, And Detect Suspicious Login Activity On A Continuous Basis.
+Web;Postman;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en;Add On For Chrome For Debugging Network Requests
+Traffic Analysis/Inspection;potiron;https://github.com/CIRCL/potiron;Normalizes, Indexes, Enriches And Visualizes Network Captures.
+Web Scanners;Powerfuzzer;http://www.powerfuzzer.com/;Powerfuzzer Is A Highly Automated And Fully Customizable Web Fuzzer (Http Protocol Based Application Fuzzer) Based On Many Other Open Source Fuzzers Available And Information Gathered From Numerous Security Resources And Websites.
+Windows Utils;PowerSploit;https://github.com/PowerShellMafia/PowerSploit;A Powershell Post-Exploitation Framework
+Network Tools;PRET;https://github.com/RUB-NDS/PRET;Printer Exploitation Toolkit Offers Commands Useful For Printer Attacks And Fuzzing
+Python Web;ProxMon;https://www.isecpartners.com/tools/application-security/proxmon.aspx;Processes Proxy Logs And Reports Discovered Issues
+Web Scanners;ProxyScan.pl;http://freecode.com/projects/proxyscan;Proxyscan.Pl Is A Security Penetration Testing Tool To Scan For Hosts And Ports Through A Web Proxy Server. Features Include Various Http Methods Such As Get, Connect, Head As Well As Host And Port Ranges.
+Network Tools;pwnat;https://github.com/samyk/pwnat;Punches Holes In Firewalls And Nats
+Reverse;Pwndbg;https://github.com/pwndbg/pwndbg;A Gdb Plugin That Provides A Suite Of Utilities To Hack Around Gdb Easily.
+Exploits;Pwntools;https://github.com/Gallopsled/pwntools;Ctf Framework For Writing Exploits
+Python Misc;py-mangle;http://code.google.com/p/pymangle/;Command Line Tool And A Python Library Used To Create Word Lists For Use With Other Penetration Testing Tools
+Python Debugging and reverse engineering;PyBFD;https://github.com/Groundworkstech/pybfd/;Python Interface To The Gnu Binary File Descriptor (Bfd) Library
+Python Malware analysis;pyClamAV;http://xael.org/norman/python/pyclamav/index.html;Add Virus Detection Capabilities To Your Python Software
+Python Debugging and reverse engineering;pydasm;http://code.google.com/p/libdasm/source/browse/trunk/pydasm/pydasm.c;Python Interface To The Libdasm, X86 Disassembling Library
+Python Debugging and reverse engineering;PyDbgEng;http://pydbgeng.sourceforge.net/;Python Wrapper For The Microsoft Windows Debugging Engine
+Python Debugging and reverse engineering;PyEMU;http://code.google.com/p/pyemu/;Fully Scriptable Ia-32 Emulator, Useful For Malware Analysis
+Python Malware analysis;pyew;https://github.com/joxeankoret/pyew;Command Line Hexadecimal Editor And Disassembler, Mainly To Analyze Malware
+Python Misc;PyMangle;http://code.google.com/p/pymangle/;Command Line Tool And A Python Library Used To Create Word Lists For Use With Other Penetration Testing Tools
+Python Network;pynids;http://jon.oberheide.org/pynids/;Libnids Wrapper Offering Sniffing, Ip Defragmentation, Tcp Stream Reassembly And Port Scan Detection
+Python Other useful libraries and tools;pyparsing;http://pyparsing.wikispaces.com/;General Parsing Module
+Python Network;pypcap;http://code.google.com/p/pypcap/;Python Bindings For Libpcap
+Python PDF;pyPDF2;http://mstamy2.github.io/PyPDF2/;Pure Python Pdf Toolkit: Extract Info, Spilt, Merge, Crop, Encrypt, Decrypt...
+Python Other useful libraries and tools;PyQt;http://www.riverbankcomputing.co.uk/software/pyqt;Python Bindings For The Qt, Application Framework And Gui Library
+Traffic Analysis/Inspection;pyshark;http://kiminewt.github.io/pyshark/;A Python Wrapper For Tshark, Allowing Python Packet Parsing Using Wireshark Dissectors. There Are Quite A Few Python Packet Parsing Modules, This One Is Different Because It Doesn'T Actually Parse Any Packets, It Simply Uses Tshark'S (Wireshark Command-Line Utility) Ability To Export Xmls To Use Its Parsing.
+Python Network;Pytbull;http://pytbull.sourceforge.net/;Flexible Ids/Ips Testing Framework (Shipped With More Than 300 Tests)
+Python PDF;python-poppler-qt4;https://github.com/wbsoft/python-poppler-qt4;Python Binding For The Poppler Pdf Library, Including Qt4 Support
+Python Debugging and reverse engineering;python-ptrace;http://python-ptrace.readthedocs.org/;Debugger Using Ptrace (Linux, Bsd And Darwin System Call To Trace Processes) Written In Python
+Python Web;python-spidermonkey;http://code.google.com/p/python-spidermonkey/;Bridge To The Mozilla Spidermonkey Javascript Engine Allows For The
+Exploits;Qira;https://github.com/BinaryAnalysisPlatform/qira;Qemu Interactive Runtime Analyser
+Reverse;RABCDAsm;https://github.com/CyberShadow/RABCDAsm;Collection Of Utilities Including An Actionscript 3 Assembler/Disassembler.
+Reverse;radare2;https://github.com/radare/radare2;A Portable Reversing Framework
+Passwords;RainbowCrack;http://project-rainbowcrack.com/;Rainbowcrack Is A General Propose Implementation Of Philippe Oechslin'S Faster Time-Memory Trade-Off Technique.
+Vuln Scanners;Rapid7 NeXpose;http://www.rapid7.com/products/nexpose/editions-and-features.jsp;Rapid7 Nexpose Is A Vulnerability Scanner Which Aims To Support The Entire Vulnerability Management Lifecycle, Including Discovery, Detection, Verification, Risk Classification, Impact Analysis, Reporting And Mitigation. It Integrates With Rapid7'S Metasploit For Vulnerability Exploitation
+Web Scanners;Ratproxy;http://code.google.com/p/ratproxy/;A Semi-Automated, Largely Passive Web Application Security Audit Tool, Optimized For An Accurate And Sensitive Detection, And Automatic Annotation, Of Potential Problems And Security-Relevant Design Patterns Based On The Observation Of Existing, User-Initiated Traffic In Complex Web 2.0 Environments.
+Sniffer;RawCap;http://www.netresec.com/?page=RawCap;Rawcap Is A Free Command Line Network Sniffer For Windows That Uses Raw Sockets.
+Wireless Network Tools;Reaver;https://code.google.com/archive/p/reaver-wps;Brute Force Attack Against Wifi Protected Setup
+OSInt Tools;recon-ng;https://bitbucket.org/LaNMaSteR53/recon-ng;A Full-Featured Web Reconnaissance Framework Written In Python
+Basic Penetration Testing Tools;redsnarf;https://github.com/nccgroup/redsnarf;Post-Exploitation Tool For Grabbing Credentials
+Forensics;Registry Dumper;http://www.kahusecurity.com/downloads/RegistryDumper_v0.2.7z;Dump Your Registry
+Forensics;RegistryViewer;http://www.gaijin.at/en/getitpage.php?id=regview;Used To View Windows Registries
+Python Forensics;Rekall;http://www.rekall-forensic.com;Memory Analysis Framework Developed By Google
+Operating Systems;REMnux;https://remnux.org/;Based On Debian
+Services;Request Bin;http://requestb.in/;Lets You Inspect Http Requests To A Particular Url
+Python Web;Requests;http://python-requests.org/;Elegant And Simple Http Library, Built For Human Beings
+Forensics;ResourcesExtract;http://www.nirsoft.net/utils/resources_extract.html;Extract Various Filetypes From Exes
+Windows Utils;Responder;https://github.com/SpiderLabs/Responder;A Llmnr, Nbt-Ns And Mdns Poisoner
+Reverse;Revelo;http://www.kahusecurity.com/tools/Revelo_v0.6.zip;Analyze Obfuscated Javascript Code
+Python Misc;RevHosts;http://www.securityfocus.com/tools/3851;Enumerate Virtual Hosts For A Given Ip Address
+Vuln Scanners;RIPS;http://rips-scanner.sourceforge.net/;Rips Is A Tool Written In Php To Find Vulnerabilities In Php Applications Using Static Code Analysis.
+Exploits;ROP Gadget;https://github.com/JonathanSalwan/ROPgadget;Framework For Rop Exploitation
+Basic Penetration Testing Tools;routersploit;https://github.com/reverse-shell/routersploit;Automated Penetration Testing Software For Router
+Cryptography;RSATool;https://github.com/ius/rsatool;Generate Private Key With Knowledge Of P And Q
+Python Other useful libraries and tools;RTGraph3D;http://www.secdev.org/projects/rtgraph3d/;Create Dynamic Graphs In 3D
+Live CD;Samurai;http://samurai.inguardians.com/;The Samurai Web Testing Framework Is A Live Linux Environment That Has Been Pre-Configured To Function As A Web Pen-Testing Environment. The Cd Contains The Best Of The Open Source And Free Tools That Focus On Testing And Attacking Websites.
+Traffic Analysis/Inspection;Sanitize;http://ita.ee.lbl.gov/html/contrib/sanitize.html;Sanitize Is A Collection Of Five Bourne Shell Scripts For Reducing Tcpdump Traces In Order To Address Security And Privacy Concerns, By Renumbering Hosts And Stripping Out Packet Contents. Each Script Takes As Input A Tcpdump Trace File And Generates To Stdout A Reduced, Ascii File In Fixed-Column Format.
+File Extraction;scalpel;https://github.com/sleuthkit/scalpel;Scalpel Is An Open Source Data Carving Tool.
+Web Scanners;ScanEx;http://www.blueinfy.com/tools.html;This Is A Simple Utility Which Runs Against Target Site And Look For External References And Cross Domain Malicious Injections. There Are Several Vulnerable Sites Which Get Manipulated With These Types Of Injections And Compromised.
+Scanning;ScanPBNJ;http://pbnj.sourceforge.net/;Scanpbnj Performs An Nmap Scan And Then Stores The Results In A Database. The Scanpbnj Stores Information About The Machine That Has Been Scanned. Scanpbnj Stores The Ip Address, Operating System, Hostname And A Localhost Bit.
+Networking Tools;Scapy;http://www.secdev.org/projects/scapy/;Scapy Is A Powerful Interactive Packet Manipulation Program. It Is Able To Forge Or Decode Packets Of A Wide Number Of Protocols, Send Them On The Wire, Capture Them, Match Requests And Replies, And Much More.
+Python Network;Scapy3k;http://github.com/phaethon/scapy;Send, Sniff And Dissect And Forge Network Packets. Usable Interactively Or As A Library
+Web Scanners;Scrawlr;https://h30406.www3.hp.com/campaigns/2008/wwca mpaign/1-57C4K/index.php;Scrawlr, Developed By The Hp Web Security Research Group In Coordination With The Msrc, Is Short For Sql Injector And Crawler. Scrawlr Will Crawl A Website While Simultaneously Analyzing The Parameters Of Each Individual Web Page For Sql Injection Vulnerabilities.
+Vulnerability Scanners;Secapps;https://secapps.com/;Integrated Web Application Security Testing Environment
+Vuln Apps;SecuriBench;http://suif.stanford.edu/~livshits/securibench/;Stanford Securibench Is A Set Of Open Source Real-Life Programs To Be Used As A Testing Ground For Static And Dynamic Security Tools. Release .91A Focuses On Web-Based Applications Written In Java.
+Scanning;SendIP;http://www.earth.li/projectpurple/progs/sendip.html;Sendip Has A Large Number Of Command Line Options To Specify The Content Of Every Header Of A Ntp, Bgp, Rip, Ripng, Tcp, Udp, Icmp Or Raw Ipv4 And Ipv6 Packet. It Also Allows Any Data To Be Added To The Packet.
+Social Engineering Tools;SET;https://github.com/trustedsec/social-engineer-toolkit;The Social-Engineer Toolkit From Trustedsec
+Forensics;Shellbags;https://github.com/williballenthin/shellbags;Investigate Nt\_User.Dat Files
+OSInt Tools;Shodan;https://www.shodan.io/;Shodan Is The World'S First Search Engine For Internet-Connected Devices
+Python Other useful libraries and tools;Sikuli;http://groups.csail.mit.edu/uid/sikuli/;Visual Technology To Search And Automate Guis Using Screenshots. Scriptable In Jython
+Python Misc;simplejson;https://github.com/simplejson/simplejson/;Json Encoder/Decoder
+Forensic;sleuthkit;https://github.com/sleuthkit/sleuthkit;A Library And Collection Of Command-Line Digital Forensics Tools
+DDoS Tools;SlowLoris;https://github.com/gkbrk/slowloris;Dos Tool That Uses Low Bandwidth On The Attacking Side
+Steganography;SmartDeblur;https://github.com/Y-Vladimir/SmartDeblur;Used To Deblur And Fix Defocused Images
+Network Tools;smbmap;https://github.com/ShawnDEvans/smbmap;A Handy Smb Enumeration Tool
+OSInt Tools;Sn1per;https://github.com/1N3/Sn1per;Automated Pentest Recon Scanner
+Traffic Analysis/Inspection;Sniff;http://www.thedumbterminal.co.uk/software/sniff.html;Makes Output From The Tcpdump Program Easier To Read And Parse.
+OSInt Tools;snitch;https://github.com/Smaash/snitch;Information Gathering Via Dorks
+Traffic Analysis/Inspection;Snort;http://www.snort.org/;Snort Is An Open Source Network Intrusion Prevention And Detection System (Ids/Ips) Developed By Sourcefire, Now Owned By Cisco. Combining The Benefits Of Signature, Protocol And Anomaly- Based Inspection, Snort Is The Most Widely Deployed Ids/Ips Technology Worldwide. With Millions Of Downloads And Approximately 500,000 Registered Users, Snort Has Become The De Facto Standard For Ips.
+Vuln Scanners;Social-Engineer Toolkit (SET);http://www.social-engineer.org/framework/Computer_Based_Social_Engineering_Tools:_Social_Engineer_Toolkit_(SET);The Social-Engineer Toolkit (Set) Is Specifically Designed To Perform Advanced Attacks Against The Human Element. Set Was Designed To Be Released With The Http://Www.Social-Engineer.Org Launch And Has Quickly Became A Standard Tool In A Penetration Testers Arsenal.
+Traffic Analysis/Inspection;Socket Sentry;http://code.google.com/p/socket-sentry;Socket Sentry Is A Real-Time Network Traffic Monitor For Kde Plasma In The Same Spirit As Tools Like Iftop And Netstat.
+Network Tools;SPARTA;http://sparta.secforce.com/;Network Infrastructure Penetration Testing Tool
+OSInt Tools;Spiderfoot;http://www.spiderfoot.net/;Multi-Source Osint Automation Tool With A Web Ui And Report Visualizations
+Sniffer;Spike proxy;http://www.immunitysec.com/resources-freesoftware.shtml;Not All Web Applications Are Built In The Same Ways, And Hence, Many Must Be Analyzed Individually. Spike Proxy Is A Professional-Grade Tool For Looking For Application-Level Vulnerabilities In Web Applications.
+Python Network;Spoodle;https://github.com/vjex/spoodle;A Mass Subdomain + Poodle Vulnerability Scanner
+Web Scanners;Springenwerk;http://sourceforge.net/projects/springenwerk/;Springenwerk Is A Free Cross Site Scripting (Xss) Security Scanner Written In Python.
+Python Web;spynner;https://github.com/makinacorpus/spynner;Programmatic Web Browsing Module For Python With Javascript/Ajax Support Evaluation And Calling Of Javascript Scripts And Functions
+Database Vulnerabilities;SQL Auditing Tools;http://www.cqure.net/wp/sql-auditing-tools/;Sqlat Is A Suite Of Tools Which Could Be Usefull For Pentesting A Ms Sql Server. The Tools Are Still In Development But Tend To Be Quite Stable. The Tools Do Dictionary Attacks, Upload Files, Read Registry And Dump The Sam.
+Database Vulnerabilities;sqlininja;http://sqlninja.sourceforge.net/;Sqlininja Exploits Web Applications That Use Microsoft Sql Server As A Database Backend. Its Focus Is On Getting A Running Shell On The Remote Host. Sqlninja Doesn'T Find An Sql Injection In The First Place, But Automates The Exploitation Process Once One Has Been Discovered.
+Web;SQLMap;https://github.com/sqlmapproject/sqlmap;Automatic Sql Injection And Database Takeover Tool
+Web Scanners;Sqlsus;http://sqlsus.sourceforge.net/;Sqlsus Is An Open Source Mysql Injection And Takeover Tool, Written In Perl.
+Passwords;SSHatter;http://freecode.com/projects/sshatter;Sshatter Uses A Brute Force Technique To Determine How To Log Into An Ssh Server. It Rigorously Tries Each Combination In A List Of Usernames And Passwords To Determine Which Ones Successfully Log In.
+SSL Analysis Tools;sslstrip;https://www.thoughtcrime.org/software/sslstrip/;A Demonstration Of The Https Stripping Attacks
+SSL Analysis Tools;sslstrip2;https://github.com/LeonardoNve/sslstrip2;Sslstrip Version To Defeat Hsts
+SSL Analysis Tools;SSLyze;https://github.com/nabla-c0d3/sslyze;Ssl Configuration Scanner
+Steganography;Steganabara;https://www.openhub.net/p/steganabara;Tool For Stegano Analysis Written In Java
+Steganography;Stegbreak;https://linux.die.net/man/1/stegbreak;Launches Brute-Force Dictionary Attacks On Jpg Image
+Steganography;Steghide;http://steghide.sourceforge.net/;Hide Data In Various Kind Of Images
+Steganography;Stegsolve;http://www.caesum.com/handbook/Stegsolve.jar;Apply Various Steganography Techniques To Images
+Networking Tools;Stunnel;http://www.stunnel.org/;The Stunnel Program Is Designed To Work As An Ssl Encryption Wrapper Between Remote Client And Local (Inetd-Startable) Or Remote Server.
+Python Network;SubBrute;https://github.com/TheRook/subbrute;Fast Subdomain Enumeration Tool
+Scanning;subdomain-bruteforcer;https://github.com/TheRook/subbrute;Subdomain-Bruteforcer Is A Multi-Threaded Python Tool For Enumerating Subdomains From A Dictionary File. Particularily Useful For Finding Admin Panels Or Other Dodgy Web Practices.
+Python Other useful libraries and tools;Suds;https://fedorahosted.org/suds/;Lightweight Soap Client For Consuming Web Services
+Python Fuzzing;Sulley;https://github.com/OpenRCE/sulley;Fuzzer Development And Fuzz Testing Framework Consisting Of Multiple Extensible Components
+Scanning;SuperScan 4;http://www.mcafee.com/us/downloads/free-tools/superscan.aspx;Powerful Tcp Port Scanner, Pinger, Resolver. Superscan 4 Is An Update Of The Highly Popular Windows Port Scanning Tool, Superscan
+Reverse;Swftools;http://www.swftools.org/;Collection Of Utilities To Work With Swf Files
+Windows Utils;Sysinternals Suite;https://technet.microsoft.com/en-us/sysinternals/bb842062;The Sysinternals Troubleshooting Utilities
+DDoS Tools;T50;https://sourceforge.net/projects/t50/;The More Fast Network Stress Tool
+Python Fuzzing;TAOF;http://sourceforge.net/projects/taof/;Proxyfuzz, A Man-In-The-Middle Non-Deterministic Network Fuzzer
+Scanning;TCP Fast Scan;http://www.stev.org/page/TCP-Fast-Scan.aspx;A Very Very Fast Tcp Port Scanner For Linux. Runs Very Quickly. Can Scan A Lot Of Hosts / Ports + Ranges At A Time.
+Traffic Analysis/Inspection;TCP-Reduce;http://ita.ee.lbl.gov/html/contrib/tcp-reduce.html;Tcp-Reduce Is A Collection Of Bourne Shell Scripts For Reducing Tcpdump Traces To One-Line Summaries Of Each Tcp Connection Present In The Trace. The Scripts Look Only At Tcp Syn/Fin/Rst Packets. Connections Without Syn Packets In The Trace (Such As Those On- Going At The Beginning Of The Trace) Will Not Appear In The Summary. Garbaged Packets (Those Missing Some Of Their Contents) Are Reported To Stderr As Bogon'S And Are Discarded. Occasionally The Script Gets Fooled By Retransmissions With Altered Sequence Numbers, And Reports Erroneous Huge Connection Sizes - Always Check Large Connections (Say 100 Mb Or More) For Plausibility.
+Traffic Analysis/Inspection;Tcpdpriv;http://ita.ee.lbl.gov/html/contrib/tcpdpriv.html;Tcpdpriv Is Program For Eliminating Confidential Information (User Data And Addresses) From Packets Collected On A Network Interface (Or, From Trace Files Created Using The -W Argument To Tcpdump). Tcpdpriv Removes The Payload Of Tcp And Udp, And The Entire Ip Payload For Other Protocols. It Implements Several Address Scrambling Methods  The Sequential Numbering Method And Its Variants, And A Hash Method With Preserving Address Prefix.
+Network;tcpdump;http://www.tcpdump.org/;A Powerful Command-Line Packet Analyzer  And Libpcap, A Portable C/C++ Library For Network Traffic Capture
+Network Tools;tcpdump/libpcap;http://www.tcpdump.org/;A Common Packet Analyzer That Runs Under The Command Line
+Traffic Analysis/Inspection;Tcpflow;https://github.com/simsong/tcpflow;A Program That Captures Data Transmitted As Part Of Tcp Connections (Flows), And Stores The Data In A Way That Is Convenient For Protocol Analysis Or Debugging. A Program Like Tcpdump Shows A Summary Of Packets Seen On The Wire, But Usually Doesn'T Store The Data That'S Actually Being Transmitted. In Contrast, Tcpflow Reconstructs The Actual Data Streams And Stores Each Flow In A Separate File For Later Analysis.
+File Extraction;Tcpick;http://tcpick.sourceforge.net/;Is A Textmode Sniffer Libpcap-Based That Can Track, Reassemble And Reorder Tcp Streams. Tcpick Is Able To Save The Captured Flows In Different Files Or Displays Them In The Terminal, And So It Is Useful To Sniff Files That Are Transmitted Via Ftp Or Http. It Can Display All The Stream On The Terminal, When The Connection Is Closed In Different Display Modes Like Hexdump, Hexdump + Ascii, Only Printable Characters, Raw Mode And So On.
+Traffic Analysis/Inspection;Tcplook;http://ita.ee.lbl.gov/html/contrib/tracelook.html;Tracelook Is An Tcl/Tk Program For Graphically Viewing The Contents Of Trace Files Created Using The -W Argument To Tcpdump. Tracelook Should Look At All Protocols, But Presently Only Looks At Tcp Connections. The Program Is Slow And Uses System Resources Prodigiously.
+Sniffer;Tcpreplay;http://tcpreplay.synfin.net/trac/;Tcpreplay Is A Suite Of Bsd Licensed Tools Written By Aaron Turner For Unix (And Win32 Under Cygwin) Operating Systems Which Gives You The Ability To Use Previously Captured Traffic In Libpcap Format To Test A Variety Of Network Devices
+Traffic Analysis/Inspection;Tcpslice;ftp://ftp.ee.lbl.gov/tcpslice.tar.gz;Tcpslice Is A Tool For Extracting Portions Of Packet Trace Files Generated Using Tcpdump'S -W Flag. It Can Combine Multiple Trace Files, And/Or Extract Portions Of One Or More Traces Based On Time.
+Traffic Analysis/Inspection;Tcpsplit;http://www.icir.org/mallman/software/tcpsplit/;A Tool To Break A Single Libpcap Packet Trace Into Some Number Of Sub- Traces, Breaking The Trace Along Tcp Connection Boundaries So That A Tcp Connection Doesn'T End Up Split Across Two Sub-Traces. This Is Useful For Making Large Trace Files Tractable For In- Depth Analysis And For Subsetting A Trace For Developing Analysis On Only Part Of A Trace.
+Traffic Analysis/Inspection;Tcpstat;http://www.frenchfries.net/paul/tcpstat/;Tcpstat Reports Certain Network Interface Statistics Much Like Vmstat Does For System Statistics. Tcpstat Gets Its Information By Either Monitoring A Specific Interface, Or By Reading Previously Saved Tcpdump Data From A File.
+Traffic Analysis/Inspection;Tcptrace;http://tcptrace.org/index.html;A Tool Written By Shawn Ostermann At Ohio University, For Analysis Of Tcp Dump Files. It Can Take As Input The Files Produced By Several Popular Packet- Capture Programs, Including Tcpdump, Snoop, Etherpeek, Hp Net Metrix, And Windump. Tcptrace Can Produce Several Different Types Of Output Containing Information On Each Connection Seen, Such As Elapsed Time, Bytes And Segments Sent And Received, Retransmissions, Round Trip Times, Window Advertisements, Throughput, And More. It Can Also Produce A Number Of Graphs For Further Analysis.
+Networking Tools;tcptraceroute;http://michael.toren.net/code/tcptraceroute/;Tcptraceroute Is A Traceroute Implementation Using Tcp Packets. The More Traditional Traceroute(8) Sends Out Either Udp Or Icmp Echo Packets With A Ttl Of One, And Increments The Ttl Until The Destination Has Been Reached.
+File Extraction;Tcpxtract;http://tcpxtract.sourceforge.net/;Is A Tool For Extracting Files From Network Traffic Based On File Signatures. Extracting Files Based On File Type Headers And Footers (Sometimes Called "Carving") Is An Age Old Data Recovery Technique.
+Network Tools;tgcd;http://tgcd.sourceforge.net/;A Simple Unix Network Utility To Extend The Accessibility Of Tcp/Ip Based Network Services Beyond Firewalls
+Database Vulnerabilities;THC-ORACLE;http://freeworld.thc.org/thc-orakel/;Thc Presents A Crypto Paper Analyzing The Database Authentication Mechansim Used By Oracle. Thc Further Releases Practical Tools To Sniff And Crack The Password Of An Oracle Database Within Seconds.
+Database Vulnerabilities;thc-orakelcrackert11g;http://freeworld.thc.org/thc-orakelcrackert11g/;Orakelcrackert Is An Oracle 11G Database Password Hash Cracker Using A Weakness In The Oracle Password Storage Strategy. With Oracle 11G, Case Sensitive Sha1 Based Hashing Is Introduced.
+Web Scanners;THCSSLCheck;http://freeworld.thc.org/root/tools/;Windows Tool That Checks The Remote Ssl Stack For Supported Ciphers And Version.
+Penetration Testing Distributions;The Pentesters Framework;https://github.com/trustedsec/ptf;Ptf Attempts To Install All Of Your Penetration Testing Tools (Latest And Greatest), Compile Them, Build Them, And Make It So That You Can Install/Update Your Distribution On Any Machine. Everything Is Organized In A Fashion That Is Cohesive To The Penetration Testing Execution Standard (Ptes) And Eliminates A Lot Of Things That Are Hardly Used.
+Passwords;The ssh bruteforcer;http://www.edge-security.com/edgessh.php;Is A Tool To Perform Dictionary Attacks To The Ssh Servers, It'S A Simple Tool, You Set The Target Server, Target Account, Wordlist, Port And Wait..
+OSInt Tools;theHarvester;https://github.com/laramies/theHarvester;E-Mail, Subdomain And People Names Harvester
+OSInt Tools;Threat Crowd;https://www.threatcrowd.org/;A Search Engine For Threats
+SSL Analysis Tools;tls_prober;https://github.com/WestpointLtd/tls_prober;Fingerprint A Server'S Ssl/Tls Implementation
+Web;tools.web-max.ca;http://tools.web-max.ca/encode_decode.php;Base64 Base85 Md4,5 Hash, Sha1 Hash Encoding/Decoding
+Anonymity Tools;Tor;https://www.torproject.org/;The Free Software For Enabling Onion Routing Online Anonymity
+SSL Analysis Tools;tplmap;https://github.com/epinna/tplmap;Automatic Server-Side Template Injection And Web Server Takeover Tool
+Networking Tools;tracetcp;http://tracetcp.sourceforge.net/;Tracetcp Is A Command Line Traceroute Utility For Win32 That Uses Tcp Syn Packets Rather Than Icmp/Udp Packets That The Usual Implementations Use, Thus Bypassing Gateways That Block Traditional Traceroute Packets.
+Traffic Analysis/Inspection;TraceWrangler;https://www.tracewrangler.com/;Tracewrangler Is A Network Capture File Toolkit Running On Windows (Or On Linux, Using Wine) That Supports Pcap As Well As The New Pcapng File Format, Which Is Now The Standard File Format Used By Wireshark. The Most Prominent Use Case For Tracewrangler Is The Easy Sanitization And Anonymization Of Pcap And Pcapng Files (Sometimes Called "Trace Files", "Capture Files" Or "Packet Captures"), Removing Or Replacing Sensitive Data While Being Easy To Use.
+Python Forensics;TrIDLib;http://mark0.net/code-tridlib-e.html;Identify File Types From Their Binary Signatures. Now Includes Python Binding
+Traffic Analysis/Inspection;Tstat;http://tstat.tlc.polito.it/;A Passive Sniffer Able To Provide Several Insight On The Traffic Patterns At Both The Network And Transport Levels With A Tremendous Set Of Flow Features.
+Traffic Capture;TTT;http://www.csl.sony.co.jp/person/kjc/kjc/software.html#ttt;(Tele Traffic Tapper) Is Yet Another Descendant Of Tcpdump But It Is Capable Of Real-Time, Graphical, And Remote Traffic-Monitoring. Ttt Won'T Replace Tcpdump, Rather, It Helps You Find Out What To Look Into With Tcpdump. Ttt Monitors The Network And Automatically Picks Up The Main Contributors Of The Traffic Within The Time Window. The Graphs Are Updated Every Second By Default.
+Python Web;Twill;http://twill.idyll.org/;Browse The Web From A Command-Line Interface. Supports Automated Web Testing
+Python Other useful libraries and tools;Twisted;http://twistedmatrix.com/;Event-Driven Networking Engine
+Sniffer;Ufasoft Snif;http://www.ufasoft.com/sniffer/;Ufasoft Snif Is A Network Sniffer, Designed For Capturing And Analysis Of The Packets Going Through The Network. Using The Packet Driver, It Requests All The Packets From The Network Card Driver (Even The Packets Not Addressed To This Computer).
+DDoS Tools;UFONet;https://github.com/epsylon/ufonet;Ufonet Abuses Osi Layer 7-Http To Create/Manage 'Zombies' And To Conduct Different Attacks Using  Get/Post, Multithreading, Proxies, Origin Spoofing Methods, Cache Evasion Techniques, Etc.
+Python Debugging and reverse engineering;uhooker;http://oss.coresecurity.com/projects/uhooker.htm;Intercept Calls To Api Calls Inside Dlls, And Also Arbitrary Addresses Within The Executable File In Memory
+Scanning;Umap(UPNP Map);http://packetstormsecurity.com/files/90598/umap-bypass.txt;Umap (Upnp Map) Attempts To Scan Open Tcp Ports On The Hosts Behind A Upnp Enabled Internet Gateway Device(Igd) Nat.
+Reverse;Uncompyle;https://github.com/gstarnberger/uncompyle;Decompile Python 2.7 Binaries (.Pyc)
+Scanning;Unicornscan;http://www.unicornscan.org/;Unicornscan Is A New Information Gathering And Correlation Engine Built For And By Members Of The Security Research And Testing Communities.
+Python Fuzzing;untidy;http://untidy.sourceforge.net/;General Purpose Xml Fuzzer
+Operating Systems;URIX OS;http://urix.us/;Based On Opensuse
+Physical Access Tools;USB Rubber Ducky;http://usbrubberducky.com/;Customizable Keystroke Injection Attack Platform Masquerading As A Usb Thumbdrive
+Forensics;UsbForensics;http://www.forensicswiki.org/wiki/USB_History_Viewing;Contains Many Tools For Usb Forensics
+Exploits;V0lt;https://github.com/P1kachu/v0lt;Security Ctf Toolkit
+OSInt Tools;vcsmap;https://github.com/melvinsh/vcsmap;A Plugin-Based Tool To Scan Public Version Control Systems For Sensitive Information
+Python Debugging and reverse engineering;vdb / vtrace;http://code.google.com/p/vdebug/;Vtrace Is A Cross-Platform Process Debugging Api Implemented In Python, And Vdb Is A Debugger Which Uses It
+File Format Analysis Tools;Veles;https://codisec.com/veles/;Binary Data Visualization And Analysis Tool
+Vuln Apps;Virtual Hacking Lab;http://sourceforge.net/projects/virtualhacking/;A Mirror Of Deliberately Insecure Applications And Old Softwares With Known Vulnerabilities. Used For Proof-Of-Concept /Security Training/Learning Purposes. Available In Either Virtual Images Or Live Iso Or Standalone Formats.
+OSInt Tools;Virus Total;https://www.virustotal.com/;Virustotal Is A Free Service That Analyzes Suspicious Files And Urls And Facilitates The Quick Detection Of Viruses, Worms, Trojans, And All Kinds Of Malware.
+Wireless;Vistumbler;http://www.vistumbler.net/;Vistumbler Is A Wireless Network Scanner Written In Autoit For Vista, Windows 7, And Windows 8. Wifidb Is A Database Written In Php To Store Vistumbler Vs1 Files. Keeps Track Of Total Access Points W/Gps, Maps To Kml, Signal Graphs, Statistics, And More.
+Forensics;Volatility;https://github.com/volatilityfoundation/volatility;To Investigate Memory Dumps
+Vuln Apps;VulnApp;http://www.nth-dimension.org.uk/blog.php?id=88;Vulnapp, Is A Bsd Licensed Asp.Net Application Implementing Some Of The Most Common Applications We Come Across On Our Penetration Testing Engagements.
+Vuln Scanners;VulnDetector;http://bcable.net/project.php?vulndetector;Vulndetector Is A Project Aimed To Scan A Website And Detect Various Web Based Security Vulnerabilities In The Website. Currently, Vulndetector Can Detect Cross Site Scripting (Xss) And Sql Injection (Sqli) Vulnerabilities On A Web Based Script, But Has No Easy To Use Interface.
+Vulnerability Scanners;Vuls;https://github.com/future-architect/vuls;Vulnerability Scanner For Linux/Freebsd, Agentless, Written In Go
+Web;W3af;https://github.com/andresriancho/w3af;Web Application Attack And Audit Framework.
+Traffic Analysis/Inspection;WAND;http://research.wand.net.nz/;A Wonderful Collection Of Tools Built On Libtrace To Process Network Traffic, Which Is From The University Of Waikato. I Love This Project!
+Web Scanners;Wapiti;http://wapiti.sourceforge.net/;Wapiti Allows You To Audit The Security Of Your Web Applications. It Performs "Black-Box" Scans, I.E. It Does Not Study The Source Code Of The Application But Will Scans The Webpages Of The Deployed Webapp, Looking For Scripts And Forms Where It Can Inject Data.
+SSL Analysis Tools;Wappalyzer;https://wappalyzer.com/;Wappalyzer Uncovers The Technologies Used On Websites
+Wireless;WaveStumbler;http://www.cqure.net/wp/tools/other/wavestumbler/;Wavestumbler Is Console Based 802.11 Network Mapper For Linux. It Reports The Basic Ap Stuff Like Channel, Wep, Essid, Mac Etc.
+Vuln Apps;WAVSEP;https://code.google.com/p/wavsep/;The Web Application Vulnerability Scanner Evaluation Project, Is A Vulnerable Web Application Designed To Help Assessing The Features, Quality And Accuracy Of Web Application Vulnerability Scanners. This Evaluation Platform Contains A Collection Of Unique Vulnerable Web Pages That Can Be Used To Test The Various Properties Of Web Application Scanners.
+Reverse Engineering Tools;WDK/WinDbg;https://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx;Windows Driver Kit And Windbg
+Web Scanners;Webfuzzer;http://gunzip.altervista.org/g.php?f=projects#webfuzzer;Webfuzzer Is A Tool That Can Be Useful For Both Pen Testers And Web Masters, It'S A Poor Man Web Vulnerability Scanner.
+Web Scanners;WebGoat;http://www.owasp.org/index.php/Category:OWASP_W ebGoat_Project;Webgoat Is A Deliberately Insecure J2Ee Web Application Maintained By Owasp Designed To Teach Web Application Security Lessons.
+Vulnerability Scanners;WebReaver;http://www.webreaver.com/;Web Application Vulnerability Scanner For Mac Os X
+Web Scanners;Websecurify;http://www.websecurify.com/;The Websecurify Suite Is A Web Application Security Solution Designed To Run Entirely From Your Web Browser.
+Web Scanners;WebSlayer;http://www.owasp.org/index.php/Category:OWASP_Webslayer_Project;Webslayer Is A Tool Designed For Bruteforcing Web Applications, It Can Be Used For Finding Not Linked Resources (Directories, Servlets, Scripts, Etc), Bruteforce Get And Post Parameters, Bruteforce Forms Parameters (User/Password), Fuzzing, Etc. The Tools Has A Payload Generator And A Easy And Powerful Results Analyzer.
+SSL Analysis Tools;weevely3;https://github.com/epinna/weevely3;Weaponized Web Shell
+Windows Utils;wePWNise;https://labs.mwrinfosecurity.com/tools/wepwnise/;Generates Architecture Independent Vba Code To Be Used In Office Documents Or Templates And Automates Bypassing Application Control And Exploit Mitigation Software
+Web Scanners;WhatWeb;https://github.com/urbanadventurer/WhatWeb/wiki;Whatweb Identifies Websites. Its Goal Is To Answer The Question, ‚Äúwhat Is That Website?‚Äù. Whatweb Recognises Web Technologies Including Content Management Systems (Cms), Blogging Platforms, Statistic/Analytics Packages, Javascript Libraries, Web Servers, And Embedded Devices.
+Python Other useful libraries and tools;Whoosh;https://bitbucket.org/mchaput/whoosh/;Fast, Featureful Full-Text Indexing And Searching Library Implemented In Pure Python
+Social Engineering Tools;wifiphisher;https://github.com/sophron/wifiphisher;Automated Phishing Attacks Against Wi-Fi Networks
+Wireless;WifiScanner;http://wifiscanner.sourceforge.net/;Wifiscanner Is A Tool That Has Been Designed To Discover Wireless Node (I.E Access Point And Wireless Clients). It Is Distributed Under The Gpl License.
+Operating Systems;Wifislax;http://www.wifislax.com/;Based On Slackware
+Wireless Network Tools;Wifite;https://github.com/derv82/wifite;Automated Wireless Attack Tool
+Web Scanners;Wikto;http://www.sensepost.com/labs/tools/pentest/wikto;Wikto Is Nikto For Windows - But With A Couple Of Fancy Extra Features Including Fuzzy Logic Error Code Checking, A Back-End Miner, Google Assisted Directory Mining And Real Time Http Request/Response Monitoring.
+Reverse;WinDbg;http://www.windbg.org/;Windows Debugger Distributed By Microsoft
+Python Web;Windmill;http://www.getwindmill.com/;Web Testing Tool Designed To Let You Painlessly Automate And Debug Your Web Application
+Windows Utils;Windows Credentials Editor;http://www.ampliasecurity.com/research/windows-credentials-editor/;Security Tool To List Logon Sessions And Add, Change, List And Delete Associated Credentials
+Windows Utils;Windows Exploit Suggester;https://github.com/GDSSecurity/Windows-Exploit-Suggester;Detects Potential Missing Patches On The Target
+Python Fuzzing;Windows IPC Fuzzing Tools;https://isecpartners.com/tools/application-security/windows-ipc-fuzzing-tools.aspx;Tools Used To Fuzz Applications That Use Windows Interprocess Communication Mechanisms
+Forensics;Windows Registry Viewers;http://www.forensicswiki.org/wiki/Windows_Registry;More Registry Viewers
+Forensic;WinHex;http://www.winhex.com/winhex/;A Hexadecimal Editor, Helpful In The Realm Of Computer Forensics, Data Recovery, Low-Level Data Processing, And It Security
+Traffic Analysis/Inspection;WinPcap;http://www.tcpdump.org/wpcap.html;An Extract Of A Message From Guy Harris On State Of Winpcap And Windump.
+Wireless;WirelessMon;http://www.passmark.com/products/wirelessmonitor.htm;Wirelessmon Is A Software Tool That Allows Users To Monitor The Status Of Wireless Wifi Adapter(S) And Gather Information About Nearby Wireless Access Points And Hot Spots In Real Time.
+Networking;Wireshark;https://www.wireshark.org/;Analyze The Network Dumps
+Traffic Analysis/Inspection;Wireshark suit;http://wiki.wireshark.org/Tools;The Well-Known Tool Suit To Support Packet Analyzer And Protocol Decoder. It Also Includes A Few Practical Tools And Scripts To Support Most Of The Common Usage.
+Enumeration;wmi client;http://dev.zenoss.org/svn/trunk/inst/externallibs/;This Dcom/Wmi Client Implementation Is Based On Samba4 Sources. It Uses Rpc/Dcom Mechanisms To Interact With Wmi Services On Windows 2000/Xp/2003 Machines.
+Python Misc;wmiexec.py;https://github.com/CoreSecurity/impacket/blob/master/examples/wmiexec.py;Execute Powershell Commands Quickly And Easily Via Wmi
+SSL Analysis Tools;Wordpress Exploit Framework;https://github.com/rastating/wordpress-exploit-framework;A Ruby Framework For Developing And Using Modules Which Aid In The Penetration Testing Of Wordpress Powered Websites And Systems.
+SSL Analysis Tools;WPScan;https://wpscan.org/;Black Box Wordpress Vulnerability Scanner
+SSL Analysis Tools;WPSploit;https://github.com/espreto/wpsploit;Wpsploit - Exploiting Wordpress With Metasploit
+Python Fuzzing;WSBang;https://www.isecpartners.com/tools/application-security/wsbang.aspx;Perform Automated Security Testing Of Soap Based Web Services
+Web Scanners;WSDigger;http://www.mcafee.com/us/downloads/free-tools/wsdigger.aspx;Wsdigger Is A Free Open Source Tool Designed By Mcafee Foundstone To Automate Black-Box Web Services Security Testing (Also Known As Penetration Testing). Wsdigger Is More Than A Tool, It Is A Web Services Testing Framework.
+Python Web;WSMap;https://www.isecpartners.com/tools/application-security/wsmap.aspx;Find Web Service Endpoints And Discovery Files
+Passwords;Wyd;http://linux.softpedia.com/get/Security/Wyd-23540.shtml;Wyd.Pl Was Born Out Of Those Two Of Situations: 1. A Penetration Test Should Be Performed And The Default Wordlist Does Not Contain A Valid Password. 2. During A Forensic Crime Investigation A Password Protected File Must Be Opened Without Knowing The The Password.
+Reverse Engineering Tools;x64_dbg;http://x64dbg.com/;An Open-Source X64/X32 Debugger For Windows
+Wireless;Xirrus Wi-Fi Inspector;http://www.xirrus.com/Products/Wi-Fi-Inspector;Xirrus Wi-Fi Inspector Is A Powerful Tool For Managing And Troubleshooting The Wi-Fi On A Windows Xp Sp2 Or Later, Vista, Or 7 Laptop. Built In Tests Enable You To Characterize The Integrity And Performance Of Your Wi-Fi Connection.
+Cryptography;XORTool;https://github.com/hellman/xortool;A Tool To Analyze Multi-Byte Xor Cipher
+File Extraction;Xplico;http://www.xplico.org/about;The Goal Of Xplico Is Extract From An Internet Traffic Capture The Applications Data Contained. For Example, From A Pcap File Xplico Extracts Each Email (Pop, Imap, And Smtp Protocols), All Http Contents, Each Voip Call (Sip), Ftp, Tftp, And So On. Xplico Isn'T A Network Protocol Analyzer. Xplico Is An Open Source Network Forensic An Alysis Tool (Nfat). Xplico Is Released Under The Gnu General Public License And With Some Scripts Under Creative Commons Attribution-Noncommercial-Sharealike 3.0 Unported (Cc By-Nc-Sa 3.0) License.
+Traffic Analysis/Inspection;Xplot;http://www.xplot.org/;The Program Xplot Was Written In The Late 1980S To Support The Analysis Of Tcp Packet Traces.
+Web;XSSer;http://xsser.sourceforge.net/;Automated Xss Testor
+Web Scanners;XSSploit;http://www.scrt.ch/en/attack/downloads/xssploit;Xssploit Is A Multi-Platform Cross-Site Scripting Scanner And Exploiter Written In Python. It Has Been Developed To Help Discovery And Exploitation Of Xss Vulnerabilities In Penetration Testing Missions.
+Reverse;Xxxswf;https://bitbucket.org/Alexander_Hanel/xxxswf;A Python Script For Analyzing Flash Files.
+Traffic Capture;Yaf;https://tools.netsa.cert.org/yaf/yaf.html;It'S A Reliable Piece Of Software, Quite Solid And Able To Generate Flow Records From Pcap. This Is Very Nice For Indexing Huge Pcap Or Even Doing Packet Capture. The Recent Version Can Even Extract Payloads And Put In The Flow Records.
+Python Malware analysis;yara-python;https://github.com/plusvic/yara/tree/master/yara-python;Identify And Classify Malware Samples
+Traffic Analysis/Inspection;yaraPcap;https://github.com/kevthehermit/YaraPcap;Process Http Pcaps With Yara
+Traffic Analysis/Inspection;yaraprocessor;https://github.com/MITRECND/yaraprocessor;With Yaraprocessor Yara Can Be Run Against Individual Packet Payloads As Well As A Concatenation Of Some Or All Of The Payloads. It Was Originally Written For Use In Chopshop, But Can Also Be Used Without It.
+Networking Tools;Yersinia;http://www.yersinia.net/;Yersinia Is A Network Tool Designed To Take Advantage Of Some Weakeness In Different Network Protocols. It Pretends To Be A Solid Framework For Analyzing And Testing The Deployed Networks And Systems.
+Reverse;Z3;https://github.com/Z3Prover/z3;A Theorem Prover From Microsoft Research
+Network;ZAP;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project;The Zed Attack Proxy (Zap) Is An Easy To Use Integrated Penetration Testing Tool For Finding Vulnerabilities In Web Applications
+Network Tools;Zarp;https://github.com/hatRiot/zarp;Zarp Is A Network Attack Tool Centered Around The Exploitation Of Local Networks
+Scanning;Zenmap;http://nmap.org/;Zenmap Is The Official Nmap Security Scanner Gui. It Is A Multi-Platform (Linux, Windows, Mac Os X, Bsd, Etc.
+Networking;Zmap;https://zmap.io/;An Open-Source Network Scanner

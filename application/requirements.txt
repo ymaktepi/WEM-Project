@@ -1,2 +1,5 @@
 Flask
 Whoosh
+requests
+beautifulsoup4
+lxml

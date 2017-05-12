@@ -20,7 +20,7 @@ class ctftimeIndexer(iIndexer):
 
 
         self._index = None
-        self._indexFolderName = "indexdir"
+        self._indexFolderName = "/indexdir"
         self._documentList = []
         self._analyser = StandardAnalyzer() | LowercaseFilter() | StopFilter() | CharsetFilter(accent_map)
         self._schema = Schema(id=ID(stored=True, unique=True),
@@ -41,6 +41,7 @@ class ctftimeIndexer(iIndexer):
                               meta_twitter_title=TEXT(stored=True),
                               meta_twitter_description=TEXT(analyzer=self._analyser, stored=True)
                               )
+
 
     def createIndex(self, documentList):
 
@@ -69,7 +70,6 @@ class ctftimeIndexer(iIndexer):
                 meta_twitter_title = metas['meta_twitter:title'] if 'meta_twitter:title' in metas else '',
                 meta_twitter_description = metas['meta_twitter:description'] if 'meta_twitter:description' in metas else ''
             )
-
 
 
     def getIndex(self):
