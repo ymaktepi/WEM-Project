@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+MANIFEST
+application/WemIndexer*
+
 # C extensions
 *.so
 
