@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from wem import app
+from backend import app
 
 def main():
     import os

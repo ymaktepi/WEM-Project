@@ -59,8 +59,8 @@ class ctftimeScraper(iScraper):
         self._urlList = urls
         self.saveToPickle(self._urlList)
 
-        print("List saved in : " + "./save/" + str(self._pickleFile))
-        return "./save/" + str(self._pickleFile)
+        print("List saved in : " + "/save/" + str(self._pickleFile))
+        return "/save/" + str(self._pickleFile)
 
     def saveToPickle(self, urls):
         """
@@ -68,8 +68,8 @@ class ctftimeScraper(iScraper):
         :return: filename of the pickle
         """
         self._urlList = urls
-        pickle.dump(self._urlList, open("./save/" + self._pickleFile, "wb"))
-        return "./save/" + self._pickleFile
+        pickle.dump(self._urlList, open("/save/" + self._pickleFile, "wb"))
+        return "/save/" + self._pickleFile
 
     def openPickle(self, filename):
         """

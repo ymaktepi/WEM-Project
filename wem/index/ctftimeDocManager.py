@@ -18,9 +18,9 @@ class ctftimeDocManager(iDocManager):
         :return: pickle file name
         """
         self._documents = documents
-        pickle.dump(documents, open("./save/" + self._pickleFile, "wb"))
-        print("docs saved into %s" %("./save/" + self._pickleFile))
-        return "./save/" + self._pickleFile
+        pickle.dump(documents, open("/save/" + self._pickleFile, "wb"))
+        print("docs saved into %s" %("/save/" + self._pickleFile))
+        return "/save/" + self._pickleFile
 
     def openPickle(self, filename):
         """

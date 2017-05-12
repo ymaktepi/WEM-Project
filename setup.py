@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(name='WemIndexer',
       version='0.1',
@@ -8,5 +8,5 @@ setup(name='WemIndexer',
       author='Gugger Joel, Caraccio Michael, Huguenin Nicolas',
       author_email='courgettesmaster@courgettes.club',
       url='https://courgettes.club',
-      packages=['wem'],
+      packages=find_packages(),
      )
