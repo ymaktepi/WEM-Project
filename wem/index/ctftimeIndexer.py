@@ -42,6 +42,7 @@ class ctftimeIndexer(iIndexer):
                               meta_twitter_description=TEXT(analyzer=self._analyser, stored=True)
                               )
 
+
     def createIndex(self, documentList):
 
         self._writer = AsyncWriter(self._index)
@@ -69,7 +70,6 @@ class ctftimeIndexer(iIndexer):
                 meta_twitter_title = metas['meta_twitter:title'] if 'meta_twitter:title' in metas else '',
                 meta_twitter_description = metas['meta_twitter:description'] if 'meta_twitter:description' in metas else ''
             )
-
 
 
     def getIndex(self):

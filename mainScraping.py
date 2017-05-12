@@ -8,7 +8,7 @@ def main():
     settings = {
         'get_url_web': False,
         'scraping_web': False,
-        'index_web': True,
+        'index_web': False,
 
         'file_urls':'./save/ctftime_urls_1493571830.p',
         'file_docs': './save/ctftime_docs_1493991150.p'
@@ -18,10 +18,10 @@ def main():
     docManager = ctftimeDocManager()
     indexer = ctftimeIndexer()
 
-
     # --------------------------------------------------------------------------
     # URL LIST
     # --------------------------------------------------------------------------
+
     if settings['get_url_web']:
 
         # Create url list
@@ -34,7 +34,7 @@ def main():
     # --------------------------------------------------------------------------
     # WEB SCRAPER
     # --------------------------------------------------------------------------
-    doc_file = None
+
     if settings['scraping_web']:
 
         # Create documents
@@ -49,8 +49,8 @@ def main():
     # --------------------------------------------------------------------------
     # INDEXER
     # --------------------------------------------------------------------------
-    if settings['index_web']:
 
+    if settings['index_web']:
 
         # Create Schema and create index
         indexer.createSchema()
@@ -64,7 +64,7 @@ def main():
 
     with QueryManager(indexer.getIndex()) as qm:
         for result in qm.textQuouairiz("javascript"):
-            print(result.__dict__["rank"])
+            print(result)
 
 
 if __name__ == '__main__':
