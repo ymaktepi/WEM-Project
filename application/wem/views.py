@@ -7,4 +7,4 @@ from wem import app
 
 @app.route("/")
 def route_home():
-    return "okay"
+    return render_template("index.html")
