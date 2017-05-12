@@ -12,6 +12,7 @@ services:
       volumes:
           - ./application:/app
           - ./save:/save
+          - ./indexdir:/indexdir
       env_file:
         - ./application/.env
       ports:

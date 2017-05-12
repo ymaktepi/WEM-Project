@@ -20,7 +20,7 @@ class ctftimeIndexer(iIndexer):
 
 
         self._index = None
-        self._indexFolderName = "indexdir"
+        self._indexFolderName = "/indexdir"
         self._documentList = []
         self._analyser = StandardAnalyzer() | LowercaseFilter() | StopFilter() | CharsetFilter(accent_map)
         self._schema = Schema(id=ID(stored=True, unique=True),
