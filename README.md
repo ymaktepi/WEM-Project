@@ -136,9 +136,6 @@ In a fast, simple, yet extensible way.
 [Bootstrap](http://getbootstrap.com/)
 Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
 
-[AngularJS](https://angular.io/)
-AngularJS est un framework Javascript porté par Google pour la création d'interfaces utilisateurs riches et intéractive.
-
 
 
 ## 6. Conclusion
