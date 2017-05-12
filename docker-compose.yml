@@ -1,0 +1,18 @@
+version: '2.1'
+services:
+
+### Application Code Container
+
+  wem_application:
+      command: python /app/server.py
+      container_name: wem_app
+      restart: always
+      build: ./application
+      image: wem/wem_app
+      volumes:
+          - ./application:/app
+          - ./save:/save
+      env_file:
+        - ./application/.env
+      ports:
+          - "127.0.0.1:8008:5000"

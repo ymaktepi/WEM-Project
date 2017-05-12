@@ -1,0 +1,49 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+#base-code {
+	max-width: 100%;
+}
+
+#results-content .result-panel {
+  cursor: move;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+#piping-result .panel-title {
+  line-height: 22px;
+}
+
+#droppable-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px dashed #eee;
+  height: 5em;
+  margin-bottom: 15px;
+  color: #ccc;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#droppable-result.piping-result {
+  justify-content: flex-start;
+  border: 0px;
+  height: auto;
+}
+
+#droppable-result.droppable-result-highlight {
+  border-color: rgb(51, 122, 183);
+}
