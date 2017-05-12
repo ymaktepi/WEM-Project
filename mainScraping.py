@@ -4,25 +4,11 @@ from wem.index.ctftimeDocGenerator import ctftimeDocGenerator
 from wem.index.ctftimeIndexer import ctftimeIndexer
 from wem.index.quouairiManadgeure import QueryManager
 
-import requests, time
-from multiprocessing import Pool
-
-def para_docs(doc):
-    url = 'https://ctftime.org/writeup/' + str(doc.getId())
-
-    #print(doc.getId())
-
-    if (doc.getMeta()['url'] != url):
-        text = doc.getContentRaw()
-        doc.setMeta(gen.getWriteupMeta(text, doc.getMeta()))
-
-    return doc
-
 def main():
     settings = {
         'get_url_web': False,
-        'index_web': False,
         'scraping_web': False,
+        'index_web': True,
 
         'file_urls':'./save/ctftime_urls_1493571830.p',
         'file_docs': './save/ctftime_docs_1493991150.p'
@@ -71,7 +57,7 @@ def main():
         indexer.createIndex(doc_file)
 
         # Save in indexdir directory
-        index_dir = indexer.saveIndex()
+        indexer.saveIndex()
     else:
         # Load indexed documents
         indexer.restoreIndex()

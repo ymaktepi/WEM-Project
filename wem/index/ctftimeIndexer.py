@@ -23,27 +23,26 @@ class ctftimeIndexer(iIndexer):
         self._indexFolderName = "indexdir"
         self._documentList = []
         self._analyser = StandardAnalyzer() | LowercaseFilter() | StopFilter() | CharsetFilter(accent_map)
-
-    def createIndex(self, documentList):
-
         self._schema = Schema(id=ID(stored=True, unique=True),
                               text=TEXT(analyzer=self._analyser, stored=True),
                               title=TEXT(stored=True),
-                              author=TEXT,
+                              author=TEXT(stored=True),
                               tags=KEYWORD(lowercase=True, scorable=True, stored=True),
-                              event=TEXT,
+                              event=TEXT(stored=True),
                               url=TEXT(stored=True),
 
-                              tag_title=TEXT,
+                              tag_title=TEXT(stored=True),
 
-                              meta_title=TEXT,
-                              meta_description=TEXT,
-                              meta_keywords=KEYWORD(lowercase=True, scorable=True),
-                              meta_og_title=TEXT,
-                              meta_og_description=TEXT,
-                              meta_twitter_title=TEXT,
-                              meta_twitter_description=TEXT
+                              meta_title=TEXT(stored=True),
+                              meta_description=TEXT(analyzer=self._analyser, stored=True),
+                              meta_keywords=KEYWORD(lowercase=True, scorable=True, stored=True),
+                              meta_og_title=TEXT(stored=True),
+                              meta_og_description=TEXT(analyzer=self._analyser, stored=True),
+                              meta_twitter_title=TEXT(stored=True),
+                              meta_twitter_description=TEXT(analyzer=self._analyser, stored=True)
                               )
+
+    def createIndex(self, documentList):
 
         self._writer = AsyncWriter(self._index)
 
