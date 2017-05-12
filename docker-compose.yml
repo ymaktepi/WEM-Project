@@ -13,6 +13,7 @@ services:
           - ./application:/app
           - ./save:/save
           - ./indexdir:/indexdir
+          - ./dict:/dict
       env_file:
         - ./application/.env
       ports:

@@ -3,20 +3,27 @@ from wem.index.ctftimeDocManager import ctftimeDocManager
 from wem.index.ctftimeDocGenerator import ctftimeDocGenerator
 from wem.index.ctftimeIndexer import ctftimeIndexer
 from wem.index.quouairiManadgeure import QueryManager
+from wem.index.toolsIndexer import toolsIndexer
 
 def main():
     settings = {
         'get_url_web': False,
         'scraping_web': False,
         'index_web': False,
+        'index_tool': False,
 
-        'file_urls':'/save/ctftime_urls_1493571830.p',
-        'file_docs': '/save/ctftime_docs_1493991150.p'
+        'file_urls':'./save/ctftime_urls_1493571830.p',
+        'file_docs': './save/ctftime_docs_1493991150.p',
+        'dict_tools': './dict/tools.csv',
+
+        'root': '.'
     }
 
-    scrapper = ctftimeScraper()
-    docManager = ctftimeDocManager()
-    indexer = ctftimeIndexer()
+    scrapper = ctftimeScraper(settings['file_urls'])
+    docManager = ctftimeDocManager(settings['file_docs'])
+    indexer = ctftimeIndexer(settings['root'])
+    toolIndex = toolsIndexer(settings['root'], settings['dict_tools'])
+
 
     # --------------------------------------------------------------------------
     # URL LIST
@@ -62,9 +69,31 @@ def main():
         # Load indexed documents
         indexer.restoreIndex()
 
-    with QueryManager(indexer.getIndex()) as qm:
+    with QueryManager(indexer.getIndex(), 'text') as qm:
         for result in qm.textQuouairiz("javascript"):
             print(result)
+
+    # --------------------------------------------------------------------------
+    # TOOL INDEXER
+    # --------------------------------------------------------------------------
+
+    if settings['index_tool']:
+
+        # Create Schema and create index
+        toolIndex.createSchema()
+        toolIndex.createIndex(None)
+
+        # Save in indexdir directory
+        toolIndex.saveIndex()
+    else:
+        # Load indexed documents
+        toolIndex.restoreIndex()
+
+    with QueryManager(toolIndex.getIndex(), 'description') as qm:
+        for result in qm.textQuouairiz("tcpdump"):
+            print(result['title'])
+
+    return indexer, toolIndex
 
 
 if __name__ == '__main__':
