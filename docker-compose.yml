@@ -11,6 +11,7 @@ services:
       image: wem/wem_app
       volumes:
           - ./application:/app
+          - ./save:/save
       env_file:
         - ./application/.env
       ports:
