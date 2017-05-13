@@ -4,6 +4,12 @@
 (function($) {
   $(document).ready(function() {
 
+
+    $.addTemplateFormatter("RoundFormatter",
+      function(value, template) {
+        return Math.floor(value);
+      });
+
     /**
      * ELEMENT REFERENCES
      */
@@ -12,6 +18,7 @@
       categoriesContainer = $('.categories-container'),
       languagesContainer = $('.languages-container'),
       noResults = $('#no-results'),
+      noQuery = $('#no-query'),
       results = $('#results'),
       spinner = $('#spinner'),
       seachButton = $('#search-button'),
@@ -70,7 +77,7 @@
 
       spinner.hide();
       results.empty();
-
+      noResults.hide();
     }
     Init();
 
@@ -78,6 +85,7 @@
       spinner.show();
       noResults.hide();
       results.hide();
+      noQuery.hide();
       $.ajax({
         url: '/static/json/results.json?' + filtersForm.serialize(),
         data: {
@@ -90,7 +98,7 @@
           var templ = (displayAdvanced)
             ? "/static/scripts/templates/results-complete.html"
             : "/static/scripts/templates/results-simple.html";
-
+          console.log(data);
           results.loadTemplate(templ, data, {
             overwriteCache: true,
             success: function() {

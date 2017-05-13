@@ -127,17 +127,15 @@ body.loading {
 
 
 /******************************************************************************
-**  NO RESULTS
+**  NO RESULTS, NO QUERY
 ******************************************************************************/
 
+#no-query,
 #no-results {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 8em;
-}
-
-#no-results {
   font-size: 2.5em;
   color: #ccc;
   text-transform: uppercase;
@@ -153,6 +151,10 @@ body.loading {
 #results .panel-body h3,
 #results .panel-body h4 {
   margin-top: 0;
+}
+
+#results h3.big {
+  margin-bottom: 15px;
 }
 
 #results .panel-body p:last-child {
