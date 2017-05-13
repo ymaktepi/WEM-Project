@@ -4,45 +4,34 @@ from wem.index.ctftimeDocGenerator import ctftimeDocGenerator
 from wem.index.ctftimeIndexer import ctftimeIndexer
 from wem.index.quouairiManadgeure import QueryManager
 from wem.index.toolsIndexer import toolsIndexer
+from wem.index.settings import Settings
 
 def main():
-    settings = {
-        'get_url_web': False,
-        'scraping_web': False,
-        'index_web': False,
-        'index_tool': False,
 
-        'file_urls':'./save/ctftime_urls_1493571830.p',
-        'file_docs': './save/ctftime_docs_1493991150.p',
-        'dict_tools': './dict/tools.csv',
-
-        'root': '.'
-    }
-
-    scrapper = ctftimeScraper(settings['file_urls'])
-    docManager = ctftimeDocManager(settings['file_docs'])
-    indexer = ctftimeIndexer(settings['root'])
-    toolIndex = toolsIndexer(settings['root'], settings['dict_tools'])
+    scrapper = ctftimeScraper(Settings._FILE_URLS)
+    docManager = ctftimeDocManager(Settings._FILE_DOCS)
+    indexer = ctftimeIndexer()
+    toolIndex = toolsIndexer()
 
 
     # --------------------------------------------------------------------------
     # URL LIST
     # --------------------------------------------------------------------------
 
-    if settings['get_url_web']:
+    if Settings._GET_URL_WEB:
 
         # Create url list
         url_file = scrapper.createUrlList()
         print("Saved url list into: %s" % url_file)
     else:
-        scrapper.openPickle(settings['file_urls'])
+        scrapper.openPickle(Settings._FILE_URLS)
 
 
     # --------------------------------------------------------------------------
     # WEB SCRAPER
     # --------------------------------------------------------------------------
 
-    if settings['scraping_web']:
+    if Settings._SCRAPING_WEB:
 
         # Create documents
         gen = ctftimeDocGenerator(scrapper)
@@ -51,13 +40,13 @@ def main():
         # Save documents in pickle
         doc_file = docManager.saveToPickle(gen.getDocumentTuple())
     else:
-        doc_file = docManager.openPickle(settings['file_docs'])
+        doc_file = docManager.openPickle(Settings._FILE_DOCS)
 
     # --------------------------------------------------------------------------
     # INDEXER
     # --------------------------------------------------------------------------
 
-    if settings['index_web']:
+    if Settings._INDEX_WEB:
 
         # Create Schema and create index
         indexer.createSchema()
@@ -77,7 +66,7 @@ def main():
     # TOOL INDEXER
     # --------------------------------------------------------------------------
 
-    if settings['index_tool']:
+    if Settings._INDEX_TOOL:
 
         # Create Schema and create index
         toolIndex.createSchema()

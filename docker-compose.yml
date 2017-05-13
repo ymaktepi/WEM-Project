@@ -12,9 +12,8 @@ services:
       volumes:
           - ./application:/app
           - ./save:/save
-          - ./indexdir:/indexdir
           - ./dict:/dict
-          - ./toolindexdir:/toolindexdir
+          - ./index:/index
       env_file:
         - ./application/.env
       ports:

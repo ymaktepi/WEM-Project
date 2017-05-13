@@ -1,4 +1,7 @@
 from wem.index.spec.iIndexer import iIndexer
+from wem.index.toolsIndexer import toolsIndexer
+from wem.index.settings import Settings
+
 from bs4 import BeautifulSoup
 
 from whoosh import index
@@ -8,15 +11,15 @@ from whoosh.writing import AsyncWriter
 from whoosh.support.charset import accent_map
 from whoosh.analysis import LowercaseFilter, StopFilter, CharsetFilter, StandardAnalyzer
 
-import os, os.path
+import os, os.path, csv
 
 
 class ctftimeIndexer(iIndexer):
-    def __init__(self, root):
+    def __init__(self):
         super().__init__()
 
         self._index = None
-        self._indexFolderName = root + "/indexdir"
+        self._indexFolderName = Settings._ROOT + Settings._INDEX_CTF_DIR
         self._documentList = []
         self._analyser = StandardAnalyzer() | LowercaseFilter() | StopFilter() | CharsetFilter(accent_map)
         self._schema = Schema(id=ID(stored=True, unique=True),
@@ -26,9 +29,10 @@ class ctftimeIndexer(iIndexer):
                               tags=KEYWORD(lowercase=True, scorable=True, stored=True),
                               event=TEXT(stored=True),
                               url=TEXT(stored=True),
-
+                              language=TEXT(stored=True),
+                              category=TEXT(stored=True),
+                              tool=KEYWORD(lowercase=True, scorable=True, stored=True),
                               tag_title=TEXT(stored=True),
-
                               meta_title=TEXT(stored=True),
                               meta_description=TEXT(analyzer=self._analyser, stored=True),
                               meta_keywords=KEYWORD(lowercase=True, scorable=True, stored=True),
@@ -37,6 +41,9 @@ class ctftimeIndexer(iIndexer):
                               meta_twitter_title=TEXT(stored=True),
                               meta_twitter_description=TEXT(analyzer=self._analyser, stored=True)
                               )
+        self._toolsNames = [tool[1] for tool in toolsIndexer.getToolsList()]
+        self._categoriesNames = self.getCategoriesNames()
+        self._languagesNames = self.getLanguagesNames()
 
     def createIndex(self, documentList):
 
@@ -46,6 +53,11 @@ class ctftimeIndexer(iIndexer):
             text = ' '.join(self.getContent(doc.getContentRaw()))
 
             metas = doc.getMeta()
+
+            tools = self.intersectTools(text)
+            category = self.intersectCategory(text + " " + " ".join([str(value) for value in metas.values()]))
+            language = self.intersectLanguage(text)
+
             self._writer.add_document(
                 text=text,
                 title=metas['title'],
@@ -53,7 +65,9 @@ class ctftimeIndexer(iIndexer):
                 tags=metas['tag'],
                 event=metas['event'],
                 url=metas['url'],
-
+                tool=tools,
+                category=[x[0] for x in category],
+                language=[lang[0] for lang in language],
                 tag_title=metas['tag_title'] if 'tag_title' in metas else '',
 
                 meta_title=metas['meta_title'] if 'meta_title' in metas else '',
@@ -98,3 +112,42 @@ class ctftimeIndexer(iIndexer):
         result = [i for i in result if (not i.startswith(tuple(removeItems)) and len(i) > 3)]
 
         return result
+
+    def intersectTools(self, text):
+        text = text.lower().split(" ")
+        return [tool for tool in self._toolsNames if tool in text]
+
+    def intersectCategory(self, text):
+
+        text = text.lower().split(" ")
+
+        categoriesCounter = list(map(lambda x: (x[0], sum([text.count(xi) for xi in x])), self._categoriesNames))
+        categoriesCounter = list(filter(lambda x: x[1] > 0, categoriesCounter))
+        categoriesCounter = sorted(categoriesCounter, key=lambda tup: -tup[1])
+
+        return categoriesCounter
+
+    def getCategoriesNames(self):
+        categories = []
+        with open(Settings._DICT_CATEGORIES, newline='') as csvfile:
+            docs = csv.reader(csvfile, delimiter=';')
+            for doc in docs:
+                categories.append([truc.lower() for truc in doc])
+        return categories
+
+    def getLanguagesNames(self):
+        languages = []
+        with open(Settings._DICT_LANGUAGES, newline='') as csvfile:
+            docs = csv.reader(csvfile, delimiter=';')
+            for doc in docs:
+                languages.append([truc.lower() for truc in doc])
+        return languages
+
+    def intersectLanguage(self, text):
+        text = text.lower().split(" ")
+
+        languagesCounter = list(map(lambda x: (x[0], sum([text.count(xi) for xi in x])), self._languagesNames))
+        languagesCounter = list(filter(lambda x: x[1] > 0, languagesCounter))
+        languagesCounter = sorted(languagesCounter, key=lambda tup: -tup[1])
+
+        return languagesCounter

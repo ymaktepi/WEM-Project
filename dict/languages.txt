@@ -1,122 +1,54 @@
-Markup
-CSS
 C
 JavaScript
-ABAP
 ActionScript
 Ada
-Apache Configuration
-APL
-AppleScript
-AsciiDoc
-ASP.NET (C#)
-AutoIt
-AutoHotkey
+ASP.NET
+.NET
 Bash
 BASIC
-Batch
-Bison
-Brainfuck
-Bro
-C
 C#
 C++
 CoffeeScript
-Crystal
-CSS Extras
-D
 Dart
-Django/Jinja2
-Diff
+Django
 Docker
-Eiffel
-Elixir
 Erlang
 F#
 Fortran
-Gherkin
-Git
-GLSL
 Go
-GraphQL
-Groovy
-Haml
-Handlebars
 Haskell
-Haxe
 HTTP
-Icon
-Inform 7
-Ini
-J
-Jade
 Java
-Jolie
 JSON
-Julia
-Keyman
-Kotlin
-LaTeX
-Less
-LiveScript
-LOLCODE
 Lua
 Makefile
 Markdown
 MATLAB
-MEL
-Mizar
-Monkey
-NASM
 nginx
-Nim
-Nix
-NSIS
-Objective
-OCaml
-Oz
-PARI/GP
-Parser
+Objective-C
 Pascal
 Perl
 PHP
-PHP Extras
 PowerShell
 Processing
 Prolog
-.properties
-Protocol Buffers
 Puppet
-Pure
 Python
-Q
-Qore
-R
-React JSX
-Reason
-reST (reStructuredText)
-Rip
-Roboconf
+React
 Ruby
 Rust
 SAS
-Sass (Sass)
-Sass (Scss)
+Sass
 Scala
-Scheme
 Smalltalk
 Smarty
 SQL
-Stylus
 Swift
-Tcl
-Textile
 Twig
 TypeScript
 VB.Net
 Verilog
 VHDL
 vim
-Wiki markup
-Xojo (REALbasic)
+Xojo
 YAML

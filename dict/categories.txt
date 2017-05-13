@@ -1,0 +1,11 @@
+Web;Webserver;Webclient;Web Server;Web Client
+Cryptography;Crypto;Cryptanalysis
+Stegonography;Stegano;Stego
+Reverse Engineering;Reverse
+Binary Analysis;Binary
+Mobile Security;Mobile;Android;ios
+Forensics;Forensic
+Cracking
+Networking
+Misc;Miscellaneous
+Exploits

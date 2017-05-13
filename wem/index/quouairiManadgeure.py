@@ -1,18 +1,18 @@
-from whoosh.qparser import QueryParser
+from whoosh import scoring
+from whoosh.qparser import MultifieldParser
 
 
 class QueryManager(object):
-
-    def __init__(self, index, field):
+    def __init__(self, index, fieldList):
         """
         Creates a query manager
         :param index: a WHOOOOOSH index
         """
         self._index = index
-        self._queryParser = QueryParser(field, schema=self._index.schema)
+        self._queryParser = MultifieldParser(fieldList, schema=self._index.schema)
 
     def __enter__(self):
-        self._searcher = self._index.searcher()
+        self._searcher = self._index.searcher(weighting=scoring.TF_IDF())
         return self
 
     def __exit__(self, type, value, traceback):
@@ -22,17 +22,3 @@ class QueryManager(object):
         quouairy = self._queryParser.parse(text)
         results = self._searcher.search(quouairy)
         return results
-        '''with self._index.searcher() as searcher:
-            numdocs = searcher.doc_count()
-            print(numdocs)
-
-            results = searcher.document(tags="sqli")
-            print(results)
-
-        ix = open_dir(self._indexFolderName)
-        with ix.searcher() as searcher:
-            query = QueryParser("text", ix.schema).parse(u'begin')
-            results = searcher.search(query)
-            print(results)
-            for result in results:
-                print(result)'''
