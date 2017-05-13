@@ -16,7 +16,8 @@
       spinner = $('#spinner'),
       seachButton = $('#search-button'),
       inputSearch = $('#search-input'),
-      displayOption = $('input[name=displayOption]');
+      displayOption = $('input[name=displayOption]'),
+      filtersForm = $('#filters-form');
 
     /**
      * CONFIG VARIABLES
@@ -31,7 +32,9 @@
         dataType: 'json',
         method: 'GET'
       }).done(function(data) {
-        var p = categoriesContainer.loadTemplate("/static/scripts/templates/checkbox.html", data, {
+        var p = categoriesContainer.loadTemplate(
+          "/static/scripts/templates/checkbox.html",
+          data, {
           overwriteCache: true,
           success: function() {
             // ...
@@ -46,7 +49,9 @@
         dataType: 'json',
         method: 'GET'
       }).done(function(data) {
-        var p = languagesContainer.loadTemplate("/static/scripts/templates/checkbox.html", data, {
+        var p = languagesContainer.loadTemplate(
+          "/static/scripts/templates/checkbox.html",
+          data, {
           overwriteCache: true,
           success: function() {
             // ...
@@ -73,7 +78,7 @@
       spinner.show();
       noResults.hide();
       $.ajax({
-        url: '/static/json/results.json',
+        url: '/static/json/results.json?' + filtersForm.serialize(),
         data: {
           query: inputSearch.val()
         },
@@ -83,8 +88,6 @@
         setTimeout(function() {
           spinner.hide();
           if (data.length > 0) {
-            console.log(data);
-            // TODO select the right template in accords with the display option
             var templ = (displayAdvanced)
               ? "/static/scripts/templates/results-complete.html"
               : "/static/scripts/templates/results-simple.html";
