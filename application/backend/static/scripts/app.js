@@ -77,6 +77,7 @@
     function Search() {
       spinner.show();
       noResults.hide();
+      results.hide();
       $.ajax({
         url: '/static/json/results.json?' + filtersForm.serialize(),
         data: {
@@ -85,25 +86,24 @@
         dataType: 'json',
         method: 'GET'
       }).done(function(data) {
-        setTimeout(function() {
-          spinner.hide();
-          if (data.length > 0) {
-            var templ = (displayAdvanced)
-              ? "/static/scripts/templates/results-complete.html"
-              : "/static/scripts/templates/results-simple.html";
+        if (data.length > 0) {
+          var templ = (displayAdvanced)
+            ? "/static/scripts/templates/results-complete.html"
+            : "/static/scripts/templates/results-simple.html";
 
-            results.loadTemplate(templ, data, {
-              overwriteCache: true,
-              success: function() {
+          results.loadTemplate(templ, data, {
+            overwriteCache: true,
+            success: function() {
+              setTimeout(function() {
                 results.show();
                 noResults.hide();
-              }
-            });
-
-          } else {
-            noResults.show();
-          }
-        }, 250);
+                spinner.hide();
+              }, 250);
+            }
+          });
+        } else {
+          noResults.show();
+        }
       });
     }
     seachButton.on('click', function(e){
