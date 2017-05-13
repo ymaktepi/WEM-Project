@@ -3,13 +3,15 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
-    <div class="navbar-header navbar-center">
-      <form class="col-xs-8 col-xs-offset-4">
-        <div class="form-group">
-          <input id="search-input" type="text" class="form-control" placeholder="search key words">
-        </div>
-        <button id="search-button" type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-      </form>
+    <div class="navbar-header navbar-center row">
+      <div class="col-xs-8 col-xs-offset-4">
+        <form>
+          <div class="form-group">
+            <input id="search-input" type="text" class="form-control" placeholder="search key words">
+          </div>
+          <button id="search-button" type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+        </form>
+      </div>
     </div>
   </div>
 </nav>
@@ -17,7 +19,7 @@
 <div id="main-content" class="container theme-showcase" role="main">
 
   <div class="row">
-    <div class="col-xs-4">
+    <div class="col-xs-4 options-col">
       <div class="panel panel-default">
         <div class="panel-body">
 
@@ -44,13 +46,13 @@
           <div class="display-container">
             <div class="radio">
               <label>
-                <input type="radio" name="displayOption" id="optionsRadios1" value="simple" checked>
+                <input type="radio" name="displayOption" id="displayOptionSimple" value="simple" checked>
                 Simple
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="displayOption" id="optionsRadios2" value="complete">
+                <input type="radio" name="displayOption" id="displayOptionComplete" value="complete">
                 Complete
               </label>
             </div>
@@ -67,31 +69,7 @@
       <div id="no-results">
         no result found
       </div>
-      <div id="results">
-
-        <div class="panel panel-default result-simple result-tool">
-          <div class="panel-body">
-            <h3><i class="glyphicon glyphicon-link"></i>&nbsp;<a href="#" target="_blank">http://localhost:8008/#</a></h3>
-            <p>Description</p>
-          </div>
-        </div>
-
-        <div class="panel panel-default result-complete result-url">
-          <div class="panel-body">
-            <h3><i class="glyphicon glyphicon-link"></i>&nbsp;<a href="#" target="_blank">http://localhost:8008/#</a></h3>
-            <p>
-              <i class="glyphicon glyphicon-tags"></i>&nbsp;
-              <span class="label label-default">Default</span>
-              <span class="label label-primary">Primary</span>
-              <span class="label label-success">Success</span>
-              <span class="label label-info">Info</span>
-              <span class="label label-warning">Warning</span>
-              <span class="label label-danger">Danger</span></p>
-            <p>Description</p>
-          </div>
-        </div>
-
-      </div>
+      <div id="results"></div>
       <div class="footer">
         Copyright &copy; 2017 N. Huguenin, M. Caraccio and J. Gugger – All Rights Reserved.
       </div>

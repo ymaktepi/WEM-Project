@@ -1,10 +1,12 @@
 body {
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 30px;
 }
 
-.navbar-center {
-  width: 100%;
+.container .navbar-center {
+  float: none;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .navbar-header form {
@@ -37,6 +39,11 @@ body {
   font-size: 0.85em;
   color: #aaa;
   border-top: 1px solid #eee;
+}
+
+.options-col {
+  position: sticky;
+  top: 75px;
 }
 
 
@@ -133,7 +140,9 @@ body.loading {
 **  RESULTS
 ******************************************************************************/
 
-#results .panel-body h3 {
+#results .panel-body h2,
+#results .panel-body h3,
+#results .panel-body h4 {
   margin-top: 0;
 }
 

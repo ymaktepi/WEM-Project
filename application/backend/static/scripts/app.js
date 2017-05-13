@@ -4,6 +4,9 @@
 (function($) {
   $(document).ready(function() {
 
+    /**
+     * ELEMENT REFERENCES
+     */
     var loadingPage = $('#loading-page'),
       body = $('body'),
       categoriesContainer = $('.categories-container'),
@@ -12,12 +15,22 @@
       results = $('#results'),
       spinner = $('#spinner'),
       seachButton = $('#search-button'),
-      inputSearch = $('#search-input');
+      inputSearch = $('#search-input'),
+      displayOption = $('input[name=displayOption]');
+
+    /**
+     * CONFIG VARIABLES
+     */
+    var displayAdvanced = IsAdvanced();
 
     function Init() {
       body.addClass('loading');
       var promises = [];
-      var cat = $.ajax({url: '/static/json/categories.json', dataType: 'json', method: 'GET'}).done(function(data) {
+      var cat = $.ajax({
+        url: '/static/json/categories.json',
+        dataType: 'json',
+        method: 'GET'
+      }).done(function(data) {
         var p = categoriesContainer.loadTemplate("/static/scripts/templates/checkbox.html", data, {
           overwriteCache: true,
           success: function() {
@@ -28,7 +41,11 @@
       });
       promises.push(cat);
 
-      var lang = $.ajax({url: '/static/json/languages.json', dataType: 'json', method: 'GET'}).done(function(data) {
+      var lang = $.ajax({
+        url: '/static/json/languages.json',
+        dataType: 'json',
+        method: 'GET'
+      }).done(function(data) {
         var p = languagesContainer.loadTemplate("/static/scripts/templates/checkbox.html", data, {
           overwriteCache: true,
           success: function() {
@@ -64,10 +81,22 @@
         method: 'GET'
       }).done(function(data) {
         setTimeout(function() {
-          console.log(data);
           spinner.hide();
-          if (data.lenth > 0) {
-            noResults.hide();
+          if (data.length > 0) {
+            console.log(data);
+            // TODO select the right template in accords with the display option
+            var templ = (displayAdvanced)
+              ? "/static/scripts/templates/results-complete.html"
+              : "/static/scripts/templates/results-simple.html";
+
+            results.loadTemplate(templ, data, {
+              overwriteCache: true,
+              success: function() {
+                results.show();
+                noResults.hide();
+              }
+            });
+
           } else {
             noResults.show();
           }
@@ -76,7 +105,14 @@
     }
     seachButton.on('click', function(e){
       e.preventDefault();
-      console.log('hello');
+      Search();
+    });
+
+    function IsAdvanced() {
+      return $('input[name=displayOption]:checked').val() === "complete";
+    }
+    displayOption.on('change', function() {
+      displayAdvanced = IsAdvanced();
       Search();
     });
 
