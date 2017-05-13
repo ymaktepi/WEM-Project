@@ -4,19 +4,44 @@
 (function($) {
   $(document).ready(function() {
 
+
+    $.addTemplateFormatter("RoundFormatter",
+      function(value, template) {
+        return Math.floor(value);
+      });
+
+    /**
+     * ELEMENT REFERENCES
+     */
     var loadingPage = $('#loading-page'),
       body = $('body'),
       categoriesContainer = $('.categories-container'),
       languagesContainer = $('.languages-container'),
       noResults = $('#no-results'),
+      noQuery = $('#no-query'),
       results = $('#results'),
-      spinner = $('#spinner');
+      spinner = $('#spinner'),
+      seachButton = $('#search-button'),
+      inputSearch = $('#search-input'),
+      displayOption = $('input[name=displayOption]'),
+      filtersForm = $('#filters-form');
+
+    /**
+     * CONFIG VARIABLES
+     */
+    var displayAdvanced = IsAdvanced();
 
     function Init() {
       body.addClass('loading');
       var promises = [];
-      var cat = $.ajax({url: '/static/json/categories.json', dataType: 'json', method: 'GET'}).done(function(data) {
-        var p = categoriesContainer.loadTemplate("/static/scripts/templates/checkbox.html", data, {
+      var cat = $.ajax({
+        url: '/static/json/categories.json',
+        dataType: 'json',
+        method: 'GET'
+      }).done(function(data) {
+        var p = categoriesContainer.loadTemplate(
+          "/static/scripts/templates/checkbox.html",
+          data, {
           overwriteCache: true,
           success: function() {
             // ...
@@ -26,8 +51,14 @@
       });
       promises.push(cat);
 
-      var lang = $.ajax({url: '/static/json/languages.json', dataType: 'json', method: 'GET'}).done(function(data) {
-        var p = languagesContainer.loadTemplate("/static/scripts/templates/checkbox.html", data, {
+      var lang = $.ajax({
+        url: '/static/json/languages.json',
+        dataType: 'json',
+        method: 'GET'
+      }).done(function(data) {
+        var p = languagesContainer.loadTemplate(
+          "/static/scripts/templates/checkbox.html",
+          data, {
           overwriteCache: true,
           success: function() {
             // ...
@@ -46,9 +77,55 @@
 
       spinner.hide();
       results.empty();
-
+      noResults.hide();
     }
     Init();
+
+    function Search() {
+      spinner.show();
+      noResults.hide();
+      results.hide();
+      noQuery.hide();
+      $.ajax({
+        url: '/static/json/results.json?' + filtersForm.serialize(),
+        data: {
+          query: inputSearch.val()
+        },
+        dataType: 'json',
+        method: 'GET'
+      }).done(function(data) {
+        if (data.length > 0) {
+          var templ = (displayAdvanced)
+            ? "/static/scripts/templates/results-complete.html"
+            : "/static/scripts/templates/results-simple.html";
+          console.log(data);
+          results.loadTemplate(templ, data, {
+            overwriteCache: true,
+            success: function() {
+              setTimeout(function() {
+                results.show();
+                noResults.hide();
+                spinner.hide();
+              }, 250);
+            }
+          });
+        } else {
+          noResults.show();
+        }
+      });
+    }
+    seachButton.on('click', function(e){
+      e.preventDefault();
+      Search();
+    });
+
+    function IsAdvanced() {
+      return $('input[name=displayOption]:checked').val() === "complete";
+    }
+    displayOption.on('change', function() {
+      displayAdvanced = IsAdvanced();
+      Search();
+    });
 
   })
 })(jQuery);

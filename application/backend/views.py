@@ -24,7 +24,6 @@ listFields = ['text',
 def route_home():
     return render_template("index.html")
 
-
 @app.route("/api/search", methods=["GET"])
 def search():
     results = []
