@@ -7,9 +7,9 @@ class ctftimeDocManager(iDocManager):
     Document Manager can save/load document to/from a pickle file
     """
 
-    def __init__(self):
+    def __init__(self, filename):
         super().__init__()
-        self._pickleFile = "ctftime_docs_" + str(int(time.time())) + ".p"
+        self._pickleFile = filename
         self._documents = None
 
     def saveToPickle(self, documents):
@@ -18,9 +18,9 @@ class ctftimeDocManager(iDocManager):
         :return: pickle file name
         """
         self._documents = documents
-        pickle.dump(documents, open("/save/" + self._pickleFile, "wb"))
-        print("docs saved into %s" %("/save/" + self._pickleFile))
-        return "/save/" + self._pickleFile
+        pickle.dump(documents, open(self._pickleFile, "wb"))
+        print("docs saved into %s" %(self._pickleFile))
+        return self._pickleFile
 
     def openPickle(self, filename):
         """

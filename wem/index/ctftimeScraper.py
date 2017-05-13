@@ -10,11 +10,11 @@ class ctftimeScraper(iScraper):
     a pickle file.
     """
 
-    def __init__(self):
+    def __init__(self, filename):
         super().__init__()
         self._rootUrl = "https://ctftime.org/writeup/"
         self._urlList = []
-        self._pickleFile = "ctftime_urls_" + str(int(time.time())) + ".p"
+        self._pickleFile = filename
         self._fakeUserAgent = FakeUserAgent()
 
     def getUrlList(self):
@@ -59,8 +59,8 @@ class ctftimeScraper(iScraper):
         self._urlList = urls
         self.saveToPickle(self._urlList)
 
-        print("List saved in : " + "/save/" + str(self._pickleFile))
-        return "/save/" + str(self._pickleFile)
+        print("List saved in : " + str(self._pickleFile))
+        return str(self._pickleFile)
 
     def saveToPickle(self, urls):
         """
@@ -68,8 +68,8 @@ class ctftimeScraper(iScraper):
         :return: filename of the pickle
         """
         self._urlList = urls
-        pickle.dump(self._urlList, open("/save/" + self._pickleFile, "wb"))
-        return "/save/" + self._pickleFile
+        pickle.dump(self._urlList, open(self._pickleFile, "wb"))
+        return self._pickleFile
 
     def openPickle(self, filename):
         """

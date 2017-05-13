@@ -3,13 +3,13 @@ from whoosh.qparser import QueryParser
 
 class QueryManager(object):
 
-    def __init__(self, index):
+    def __init__(self, index, field):
         """
         Creates a query manager
         :param index: a WHOOOOOSH index
         """
         self._index = index
-        self._queryParser = QueryParser("text", schema=self._index.schema)
+        self._queryParser = QueryParser(field, schema=self._index.schema)
 
     def __enter__(self):
         self._searcher = self._index.searcher()

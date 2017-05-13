@@ -4,7 +4,7 @@ from flask import Flask
 from backend.loadScraper import loadScraper
 
 app = Flask(__name__)
-indexer = loadScraper()
+indexer, toolIndex = loadScraper()
 
 import backend.views
 import backend.errors
