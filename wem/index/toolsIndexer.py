@@ -1,4 +1,5 @@
 from wem.index.spec.iIndexer import iIndexer
+from wem.index.settings import Settings
 
 from whoosh import index
 from whoosh.index import create_in
@@ -9,28 +10,40 @@ from whoosh.analysis import LowercaseFilter, StopFilter, CharsetFilter, Standard
 
 import os, os.path, csv
 
+
+def createToolsList(filename):
+    l = []
+    with open(filename, newline='') as csvfile:
+        docs = csv.reader(csvfile, delimiter=';')
+        for doc in docs:
+            l.append([truc.lower() for truc in doc])
+    return l
+
+
 class toolsIndexer(iIndexer):
-    def __init__(self, root, filename):
+    _LIST_TOOLS = createToolsList(Settings._ROOT + Settings._DICT_TOOLS)
+
+    def __init__(self):
         super().__init__()
 
-
         self._index = None
-        self._indexFolderName = root + "/toolindexdir"
+        self._indexFolderName = Settings._ROOT + Settings._INDEX_TOOL_DIR
         self._documentList = []
         self._analyser = StandardAnalyzer() | LowercaseFilter() | StopFilter() | CharsetFilter(accent_map)
+        self._analyserLower = self._analyser = StandardAnalyzer() | LowercaseFilter()
+
         self._schema = Schema(id=ID(stored=True, unique=True),
-                              category=TEXT(stored=True),
-                              title=TEXT(stored=True),
+                              category=TEXT(analyzer=self._analyserLower, stored=True),
+                              title=TEXT(analyzer=self._analyserLower, stored=True),
                               url=TEXT(stored=True),
                               description=TEXT(analyzer=self._analyser, stored=True)
                               )
-        self._filename = filename
 
     def createIndex(self, documentList):
 
         self._writer = AsyncWriter(self._index)
 
-        with open(self._filename, newline='') as csvfile:
+        with open(Settings._DICT_TOOLS, newline='') as csvfile:
             docs = csv.reader(csvfile, delimiter=';')
             for doc in docs:
                 self._writer.add_document(
@@ -40,6 +53,9 @@ class toolsIndexer(iIndexer):
                     description=doc[3]
                 )
 
+    @staticmethod
+    def getToolsList():
+        return toolsIndexer._LIST_TOOLS
 
     def getIndex(self):
         return self._index
@@ -55,4 +71,3 @@ class toolsIndexer(iIndexer):
             os.mkdir(self._indexFolderName)
 
         self._index = create_in(self._indexFolderName, self._schema)
-
