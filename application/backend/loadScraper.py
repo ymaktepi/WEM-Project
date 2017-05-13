@@ -2,21 +2,26 @@ from wem.index.ctftimeScraper import ctftimeScraper
 from wem.index.ctftimeDocManager import ctftimeDocManager
 from wem.index.ctftimeDocGenerator import ctftimeDocGenerator
 from wem.index.ctftimeIndexer import ctftimeIndexer
-from wem.index.quouairiManadgeure import QueryManager
+from wem.index.toolsIndexer import toolsIndexer
 
 def loadScraper():
     settings = {
         'get_url_web': False,
         'scraping_web': False,
         'index_web': False,
+        'index_tool': False,
 
         'file_urls': '/save/ctftime_urls_1493571830.p',
-        'file_docs': '/save/ctftime_docs_1493991150.p'
+        'file_docs': '/save/ctftime_docs_1493991150.p',
+        'dict_tools': '/dict/tools.csv',
+
+        'root': ''
     }
 
-    scrapper = ctftimeScraper()
-    docManager = ctftimeDocManager()
-    indexer = ctftimeIndexer()
+    scrapper = ctftimeScraper(settings['file_urls'])
+    docManager = ctftimeDocManager(settings['file_docs'])
+    indexer = ctftimeIndexer(settings['root'])
+    toolIndex = toolsIndexer(settings['root'], settings['dict_tools'])
 
     # --------------------------------------------------------------------------
     # URL LIST
@@ -61,4 +66,21 @@ def loadScraper():
         # Load indexed documents
         indexer.restoreIndex()
 
-    return indexer
+
+    # --------------------------------------------------------------------------
+    # TOOL INDEXER
+    # --------------------------------------------------------------------------
+
+    if settings['index_tool']:
+
+        # Create Schema and create index
+        toolIndex.createSchema()
+        toolIndex.createIndex(None)
+
+        # Save in indexdir directory
+        toolIndex.saveIndex()
+    else:
+        # Load indexed documents
+        toolIndex.restoreIndex()
+
+    return indexer, toolIndex

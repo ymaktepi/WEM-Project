@@ -1,26 +1,22 @@
 from wem.index.spec.iIndexer import iIndexer
 from bs4 import BeautifulSoup
 
-from whoosh.fields import Schema, TEXT, KEYWORD, ID, STORED
-from whoosh.analysis import StemmingAnalyzer
+from whoosh import index
+from whoosh.index import create_in
+from whoosh.fields import *
+from whoosh.writing import AsyncWriter
+from whoosh.support.charset import accent_map
 from whoosh.analysis import LowercaseFilter, StopFilter, CharsetFilter, StandardAnalyzer
 
 import os, os.path
-from whoosh import index
-from whoosh.index import create_in, open_dir
-from whoosh.fields import *
-from whoosh.writing import AsyncWriter
-from whoosh.qparser import QueryParser
-from whoosh.support.charset import accent_map
 
 
 class ctftimeIndexer(iIndexer):
-    def __init__(self):
+    def __init__(self, root):
         super().__init__()
 
-
         self._index = None
-        self._indexFolderName = "/indexdir"
+        self._indexFolderName = root + "/indexdir"
         self._documentList = []
         self._analyser = StandardAnalyzer() | LowercaseFilter() | StopFilter() | CharsetFilter(accent_map)
         self._schema = Schema(id=ID(stored=True, unique=True),
@@ -42,35 +38,33 @@ class ctftimeIndexer(iIndexer):
                               meta_twitter_description=TEXT(analyzer=self._analyser, stored=True)
                               )
 
-
     def createIndex(self, documentList):
 
         self._writer = AsyncWriter(self._index)
 
         for doc in documentList:
-
             text = ' '.join(self.getContent(doc.getContentRaw()))
 
             metas = doc.getMeta()
-            self._writer.add_document (
-                text = text,
-                title = metas['title'],
-                author = metas['author'],
-                tags = metas['tag'],
-                event = metas['event'],
-                url = metas['url'],
+            self._writer.add_document(
+                text=text,
+                title=metas['title'],
+                author=metas['author'],
+                tags=metas['tag'],
+                event=metas['event'],
+                url=metas['url'],
 
-                tag_title = metas['tag_title'] if 'tag_title' in metas else '',
+                tag_title=metas['tag_title'] if 'tag_title' in metas else '',
 
-                meta_title = metas['meta_title'] if 'meta_title' in metas else '',
-                meta_description = metas['meta_description'] if 'meta_description' in metas else '',
-                meta_keywords = metas['meta_keywords'] if 'meta_keywords' in metas else '',
-                meta_og_title = metas['meta_og:title'] if 'meta_og:title' in metas else '',
-                meta_og_description = metas['meta_og:description'] if 'meta_og:description' in metas else '',
-                meta_twitter_title = metas['meta_twitter:title'] if 'meta_twitter:title' in metas else '',
-                meta_twitter_description = metas['meta_twitter:description'] if 'meta_twitter:description' in metas else ''
+                meta_title=metas['meta_title'] if 'meta_title' in metas else '',
+                meta_description=metas['meta_description'] if 'meta_description' in metas else '',
+                meta_keywords=metas['meta_keywords'] if 'meta_keywords' in metas else '',
+                meta_og_title=metas['meta_og:title'] if 'meta_og:title' in metas else '',
+                meta_og_description=metas['meta_og:description'] if 'meta_og:description' in metas else '',
+                meta_twitter_title=metas['meta_twitter:title'] if 'meta_twitter:title' in metas else '',
+                meta_twitter_description=metas[
+                    'meta_twitter:description'] if 'meta_twitter:description' in metas else ''
             )
-
 
     def getIndex(self):
         return self._index

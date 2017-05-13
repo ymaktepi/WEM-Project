@@ -17,7 +17,7 @@ def search():
 
     results = []
     words = str(request.args.get('query'))
-    with QueryManager(indexer.getIndex()) as qm:
+    with QueryManager(indexer.getIndex(), 'text') as qm:
         for result in qm.textQuouairiz(words):
             results.append(str(result['url']))
 
