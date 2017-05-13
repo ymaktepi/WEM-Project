@@ -56,7 +56,7 @@
       spinner.show();
       noResults.hide();
       $.ajax({
-        url: '/api/search',
+        url: '/static/json/results.json',
         data: {
           query: inputSearch.val()
         },
