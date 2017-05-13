@@ -10,7 +10,9 @@
       languagesContainer = $('.languages-container'),
       noResults = $('#no-results'),
       results = $('#results'),
-      spinner = $('#spinner');
+      spinner = $('#spinner'),
+      seachButton = $('#search-button'),
+      inputSearch = $('#search-input');
 
     function Init() {
       body.addClass('loading');
@@ -49,6 +51,34 @@
 
     }
     Init();
+
+    function Search() {
+      spinner.show();
+      noResults.hide();
+      $.ajax({
+        url: '/api/search',
+        data: {
+          query: inputSearch.val()
+        },
+        dataType: 'json',
+        method: 'GET'
+      }).done(function(data) {
+        setTimeout(function() {
+          console.log(data);
+          spinner.hide();
+          if (data.lenth > 0) {
+            noResults.hide();
+          } else {
+            noResults.show();
+          }
+        }, 250);
+      });
+    }
+    seachButton.on('click', function(e){
+      e.preventDefault();
+      console.log('hello');
+      Search();
+    });
 
   })
 })(jQuery);

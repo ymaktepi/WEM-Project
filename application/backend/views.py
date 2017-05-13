@@ -12,7 +12,7 @@ from wem.index.quouairiManadgeure import QueryManager
 def route_home():
     return render_template("index.html")
 
-@app.route("/search", methods=["GET"])
+@app.route("/api/search", methods=["GET"])
 def search():
 
     results = []
@@ -22,4 +22,3 @@ def search():
             results.append(str(result['url']))
 
     return str(results)
-
