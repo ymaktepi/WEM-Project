@@ -87,7 +87,7 @@
       results.hide();
       noQuery.hide();
       $.ajax({
-        url: '/static/json/results.json?' + filtersForm.serialize(),
+        url: '/api/search',
         data: {
           query: inputSearch.val()
         },
