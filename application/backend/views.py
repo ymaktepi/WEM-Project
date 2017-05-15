@@ -31,6 +31,8 @@ def route_home():
 def search():
     results = []
     words = str(request.args.get('query'))
+    filters = str(request.args.get('filters'))
+    # TODO integrate the filters in the request
     with QueryManager(indexer.getIndex(), listFields) as qm:
         for result in qm.textQuouairiz(words):
             results.append({field: result[field] for field in listFields})
@@ -38,3 +40,12 @@ def search():
             results[-1]['url'] = result['url']
 
     return jsonify(results)
+
+@app.route("/api/terms/<field>", methods=["GET"])
+def categories(field):
+    searcher = indexer.getIndex().searcher()
+    try:
+        res = [cat.decode("utf-8") for cat in list(searcher.lexicon(field))]
+        return jsonify(res)
+    except Exception:
+        return jsonify({'message': 'this field doesnt exists'}), 426

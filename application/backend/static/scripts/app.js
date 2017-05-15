@@ -35,35 +35,31 @@
       body.addClass('loading');
       var promises = [];
       var cat = $.ajax({
-        url: '/static/json/categories.json',
+        url: '/api/terms/category',
         dataType: 'json',
         method: 'GET'
       }).done(function(data) {
+        var d = data.map(function(field) {
+          return {name: field};
+        });
         var p = categoriesContainer.loadTemplate(
           "/static/scripts/templates/checkbox.html",
-          data, {
-          overwriteCache: true,
-          success: function() {
-            // ...
-          }
-        });
+          d, {});
         promises.push(p);
       });
       promises.push(cat);
 
       var lang = $.ajax({
-        url: '/static/json/languages.json',
+        url: '/api/terms/language',
         dataType: 'json',
         method: 'GET'
       }).done(function(data) {
+        var d = data.map(function(field) {
+          return {name: field};
+        });
         var p = languagesContainer.loadTemplate(
           "/static/scripts/templates/checkbox.html",
-          data, {
-          overwriteCache: true,
-          success: function() {
-            // ...
-          }
-        });
+          d, {});
         promises.push(p);
       });;
       promises.push(lang);
@@ -82,12 +78,15 @@
     Init();
 
     function Search() {
+      if (inputSearch.val() === "") return;
+      
       spinner.show();
       noResults.hide();
       results.hide();
       noQuery.hide();
+
       $.ajax({
-        url: '/api/search',
+        url: '/api/search?' + filtersForm.serialize(),
         data: {
           query: inputSearch.val()
         },
@@ -98,9 +97,7 @@
           var templ = (displayAdvanced)
             ? "/static/scripts/templates/results-complete.html"
             : "/static/scripts/templates/results-simple.html";
-          console.log(data);
           results.loadTemplate(templ, data, {
-            overwriteCache: true,
             success: function() {
               setTimeout(function() {
                 results.show();
@@ -110,6 +107,7 @@
             }
           });
         } else {
+          spinner.hide();
           noResults.show();
         }
       });

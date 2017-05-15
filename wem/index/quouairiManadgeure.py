@@ -20,5 +20,5 @@ class QueryManager(object):
 
     def textQuouairiz(self, text):
         quouairy = self._queryParser.parse(text)
-        results = self._searcher.search(quouairy)
+        results = self._searcher.search(quouairy, limit=50)
         return results
