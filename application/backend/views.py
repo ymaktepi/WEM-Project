@@ -7,8 +7,7 @@ from backend import app, indexer
 
 from wem.index.quouairiManadgeure import QueryManager
 
-listFields = ['text',
-              'tags',
+listFields = ['tags',
               'title',
               'tag_title',
               'tool',
@@ -31,10 +30,11 @@ def route_home():
 def search():
     results = []
     words = str(request.args.get('query'))
-    filters = str(request.args.get('filters'))
-    # TODO integrate the filters in the request
+    category = request.args.getlist('category')
+    language = request.args.getlist('language')
     with QueryManager(indexer.getIndex(), listFields) as qm:
-        for result in qm.textQuouairiz(words):
+        for result in qm.textQuouairiz(words, category_field="category",
+        category=category, language_field="language", language=language):
             results.append({field: result[field] for field in listFields})
             results[-1]['score'] = result.score
             results[-1]['url'] = result['url']

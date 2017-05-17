@@ -153,10 +153,19 @@ body.loading {
   margin-top: 0;
 }
 
+.panel-filters {
+  max-height: 80vh;
+  overflow-x: scroll;
+}
+
 #results h3.big {
   margin-bottom: 15px;
 }
 
 #results .panel-body p:last-child {
   margin-bottom: 0;
+}
+
+.results-complete-tags {
+  line-height: 23px;
 }

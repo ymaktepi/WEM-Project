@@ -1,6 +1,8 @@
 <div class="checkbox">
   <label>
-    <input type="checkbox" name="filters[]" data-value="name">
+    <input type="checkbox" data-template-bind='[
+      {"attribute": "name", "value": "type"}]'
+      data-value="name">
     <span data-content-text="name"></span>
   </label>
 </div>
