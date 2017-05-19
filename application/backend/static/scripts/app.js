@@ -50,12 +50,22 @@
         method: 'GET'
       }).done(function(data) {
         var d = data.map(function(field) {
-          return {name: field, type: 'category'};
+          return {
+            id: TransformToId(field),
+            name: field,
+            type: 'category'
+          };
         });
         nbCategories.html(data.length);
         var p = categoriesContainer.loadTemplate(
           "/static/scripts/templates/checkbox.html",
-          d, {});
+          d, {
+            success: function() {
+              categoriesContainer.find('input').on('change', function(e) {
+                Search();
+              });
+            }
+          });
         promises.push(p);
       });
       promises.push(cat);
@@ -66,12 +76,22 @@
         method: 'GET'
       }).done(function(data) {
         var d = data.map(function(field) {
-          return {name: field, type: 'language'};
+          return {
+            id: TransformToId(field),
+            name: field,
+            type: 'language'
+          };
         });
         nbLanguages.html(data.length);
         var p = languagesContainer.loadTemplate(
           "/static/scripts/templates/checkbox.html",
-          d, {});
+          d, {
+            success: function() {
+              languagesContainer.find('input').on('change', function(e) {
+                Search();
+              });
+            }
+          });
         promises.push(p);
       });
       promises.push(lang);
@@ -112,10 +132,10 @@
             : "/static/scripts/templates/results-simple.html";
           d = data.map(function(item) {
             item.categories = item.category.map(function(cat) {
-              return $('<span class="label label-primary">'+cat+'</span> <span></span>');
+              return GenerateTag("label label-primary", cat);
             });
             item.languages = item.language.map(function(lang) {
-              return $('<span class="label label-danger">'+lang+'</span> <span></span>');
+              return GenerateTag("label label-danger", lang);
             });
             if (item.tags != 'undefined')
               item.parsedTags = $('<span class="label label-success">'+item.tags+'</span> <span></span>');
@@ -127,6 +147,13 @@
                 results.show();
                 noResults.hide();
                 spinner.hide();
+
+                $('#results .results-complete-tags .label').on('click', function(e) {
+                  var tagId = $(this).attr('data-tag-id');
+                  $('#'+tagId).prop('checked', true);
+                  Search();
+                });
+
               }, 250);
             }
           });
@@ -139,7 +166,7 @@
           .loadTemplate("/static/scripts/templates/message.html", {
             classes: 'alert alert-danger',
             title: 'Error!',
-            message: 'An error occured, please retry later.'
+            message: 'An error occured, please retry later. ' + textStatus
             });
         spinner.hide();
       });
@@ -156,6 +183,14 @@
       displayAdvanced = IsAdvanced();
       Search();
     });
+
+    function GenerateTag(classes, tagName) {
+      return $('<span class="'+classes+'" data-tag-id="'+TransformToId(tagName)+'">'+tagName+'</span> <span></span>');
+    }
+
+    function TransformToId(val) {
+      return val.split(' ').join('-').toLowerCase();
+    }
 
   })
 })(jQuery);

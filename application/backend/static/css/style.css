@@ -169,3 +169,7 @@ body.loading {
 .results-complete-tags {
   line-height: 23px;
 }
+
+#results .results-complete-tags .label {
+  cursor: pointer;
+}
