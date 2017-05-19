@@ -32,6 +32,7 @@
       results = $('#results'),
       spinner = $('#spinner'),
       seachButton = $('#search-button'),
+      resetButton = $('#reset-button'),
       inputSearch = $('#search-input'),
       displayOption = $('input[name=displayOption]'),
       filtersForm = $('#filters-form');
@@ -174,6 +175,9 @@
     seachButton.on('click', function(e){
       e.preventDefault();
       Search();
+    });
+    resetButton.on('click', function(e){
+      filtersForm[0].reset();
     });
 
     function IsAdvanced() {

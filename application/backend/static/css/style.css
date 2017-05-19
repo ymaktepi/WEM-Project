@@ -24,6 +24,9 @@ nav.navbar {
   border-bottom-left-radius: 0px;
   border-left: 0px;
 }
+.navbar-center button#reset-button {
+  border-radius: 0px;
+}
 .navbar-center .form-control {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
