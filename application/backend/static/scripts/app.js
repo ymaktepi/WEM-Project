@@ -178,6 +178,8 @@
     });
     resetButton.on('click', function(e){
       filtersForm[0].reset();
+      results.empty().hide();
+      noQuery.show();
     });
 
     function IsAdvanced() {
