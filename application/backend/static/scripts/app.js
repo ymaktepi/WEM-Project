@@ -219,11 +219,12 @@
           noResults.show();
         }
       }).fail(function(jqXHR, textStatus) {
+        var data = JSON.parse(jqXHR.responseText);
         $('#alert-content')
           .loadTemplate("/static/scripts/templates/message.html", {
             classes: 'alert alert-danger',
             title: 'Error!',
-            message: 'An error occured, please retry later. ' + textStatus
+            message: data.message || 'An error occured, please retry later.'
             });
         spinner.hide();
       });

@@ -59,7 +59,7 @@ def main():
         indexer.restoreIndex()
 
     with QueryManager(indexer.getIndex(), 'text') as qm:
-        for result in qm.textQuouairiz("javascript"):
+        for result in qm.text_query("javascript"):
             print(result)
 
     # --------------------------------------------------------------------------
@@ -79,7 +79,7 @@ def main():
         toolIndex.restoreIndex()
 
     with QueryManager(toolIndex.getIndex(), 'description') as qm:
-        for result in qm.textQuouairiz("tcpdump"):
+        for result in qm.text_query("tcpdump"):
             print(result['title'])
 
     return indexer, toolIndex

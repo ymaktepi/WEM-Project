@@ -1,3 +1,4 @@
+import sys
 from whoosh import scoring
 from whoosh.qparser import MultifieldParser
 from whoosh.query import And, Or, Term
@@ -18,25 +19,31 @@ class QueryManager(object):
     def __exit__(self, type, value, traceback):
         self._searcher.close()
 
-    def textQuouairiz(self, text, category_field="", category=[], language_field="", language=[]):
-        query = self._queryParser.parse(text)
-        # return self._searcher.search(query, limit=50)
+    def text_query(self, text, metadata):
+        query_text = None
+        if text != "":
+            query_text = self._queryParser.parse(text)
+            
+        # Construct the filter terms object
         terms = None
-        categories = None
-        languages = None
+        terms_list = []
+        for field, values in metadata.items():
+            if len(values) > 0:
+                terms_list.append(And([Term(field, value) for value in values]))
+        if len(terms_list) > 0:
+            terms = And(terms_list)
 
-        if len(category) > 0:
-            categories = And([Term(category_field, cat) for cat in category])
-            terms = categories
+        print(query_text)
+        print(terms)
 
-        if len(language) > 0:
-            languages = And([Term(language_field, lang) for lang in language])
-            terms = languages
-
-        if len(category) > 0 and len(language) > 0:
-            terms = And([categories, languages])
-
-        if terms is not None:
-            return self._searcher.search(query, limit=50, filter=terms)
+        # Make the query with (i) just words, or (ii) both (iii) or just terms
+        if query_text is not None and terms is not None:
+            query = And([query_text, terms])
+        elif query_text is not None:
+            query = query_text
+        elif terms is not None:
+            query = terms
         else:
-            return self._searcher.search(query, limit=50)
+            raise Exception('No input provided!')
+
+        return self._searcher.search(query, limit=50)
