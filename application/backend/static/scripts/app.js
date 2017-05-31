@@ -23,6 +23,10 @@
      */
     var loadingPage = $('#loading-page'),
       body = $('body'),
+      tagsContainer = $('.tags-container'),
+      nbTags = $('.nb-tags'),
+      toolsContainer = $('.tools-container'),
+      nbTools = $('.nb-tools'),
       categoriesContainer = $('.categories-container'),
       nbCategories = $('.nb-categories'),
       languagesContainer = $('.languages-container'),
@@ -45,6 +49,58 @@
     function Init() {
       body.addClass('loading');
       var promises = [];
+      var tag = $.ajax({
+        url: '/api/terms/tags',
+        dataType: 'json',
+        method: 'GET'
+      }).done(function(data) {
+        var d = data.map(function(field) {
+          return {
+            id: TransformToId(field, 'tag'),
+            name: field,
+            type: 'tags'
+          };
+        });
+        nbTags.html(data.length);
+        var p = tagsContainer.loadTemplate(
+          "/static/scripts/templates/checkbox.html",
+          d, {
+            success: function() {
+              tagsContainer.find('input').on('change', function(e) {
+                Search();
+              });
+            }
+          });
+        promises.push(p);
+      });
+      promises.push(tag);
+
+      var tool = $.ajax({
+        url: '/api/terms/tool',
+        dataType: 'json',
+        method: 'GET'
+      }).done(function(data) {
+        var d = data.map(function(field) {
+          return {
+            id: TransformToId(field, 'tool'),
+            name: field,
+            type: 'tool'
+          };
+        });
+        nbTools.html(data.length);
+        var p = toolsContainer.loadTemplate(
+          "/static/scripts/templates/checkbox.html",
+          d, {
+            success: function() {
+              toolsContainer.find('input').on('change', function(e) {
+                Search();
+              });
+            }
+          });
+        promises.push(p);
+      });
+      promises.push(tool);
+
       var cat = $.ajax({
         url: '/api/terms/category',
         dataType: 'json',
@@ -52,7 +108,7 @@
       }).done(function(data) {
         var d = data.map(function(field) {
           return {
-            id: TransformToId(field),
+            id: TransformToId(field, 'cat'),
             name: field,
             type: 'category'
           };
@@ -78,7 +134,7 @@
       }).done(function(data) {
         var d = data.map(function(field) {
           return {
-            id: TransformToId(field),
+            id: TransformToId(field, 'lang'),
             name: field,
             type: 'language'
           };
@@ -111,7 +167,6 @@
     Init();
 
     function Search() {
-      if (inputSearch.val() === "") return;
 
       spinner.show();
       noResults.hide();
@@ -133,13 +188,14 @@
             : "/static/scripts/templates/results-simple.html";
           d = data.map(function(item) {
             item.categories = item.category.map(function(cat) {
-              return GenerateTag("label label-primary", cat);
+              return GenerateTag("label label-primary", cat, 'cat');
             });
             item.languages = item.language.map(function(lang) {
-              return GenerateTag("label label-danger", lang);
+              return GenerateTag("label label-danger", lang, 'lang');
             });
             if (item.tags != 'undefined')
-              item.parsedTags = $('<span class="label label-success">'+item.tags+'</span> <span></span>');
+              item.parsedTags = GenerateTag("label label-success", item.tags, 'tag');
+              // $('<span class="label label-success">'+item.tags+'</span> <span></span>');
             return item;
           });
           results.loadTemplate(templ, d, {
@@ -179,6 +235,8 @@
     resetButton.on('click', function(e){
       filtersForm[0].reset();
       results.empty().hide();
+      spinner.hide();
+      noResults.hide();
       noQuery.show();
     });
 
@@ -190,12 +248,12 @@
       Search();
     });
 
-    function GenerateTag(classes, tagName) {
-      return $('<span class="'+classes+'" data-tag-id="'+TransformToId(tagName)+'">'+tagName+'</span> <span></span>');
+    function GenerateTag(classes, tagName, prefix) {
+      return $('<span class="'+classes+'" data-tag-id="'+TransformToId(tagName, prefix)+'">'+tagName+'</span> <span></span>');
     }
 
-    function TransformToId(val) {
-      return val.split(' ').join('-').toLowerCase();
+    function TransformToId(val, prefix) {
+      return prefix + '-' + val.split(' ').join('-').toLowerCase();
     }
 
   })
