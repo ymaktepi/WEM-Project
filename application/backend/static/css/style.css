@@ -188,9 +188,11 @@ body.loading {
 }
 
 .results-complete-tags {
-  line-height: 23px;
+  line-height: 21px;
 }
 
 #results .results-complete-tags .label {
   cursor: pointer;
+  margin-right: 3px;
+  display: inline-block;
 }

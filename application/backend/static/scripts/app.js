@@ -193,7 +193,10 @@
             item.languages = item.language.map(function(lang) {
               return GenerateTag("label label-danger", lang, 'lang');
             });
-            if (item.tags != 'undefined')
+            item.tools = item.tool.map(function(tool) {
+              return GenerateTag("label label-warning", tool, 'tool');
+            });
+            if (item.tags != 'undefined' && item.tags != '')
               item.parsedTags = GenerateTag("label label-success", item.tags, 'tag');
               // $('<span class="label label-success">'+item.tags+'</span> <span></span>');
             return item;
@@ -250,7 +253,12 @@
     });
 
     function GenerateTag(classes, tagName, prefix) {
-      return $('<span class="'+classes+'" data-tag-id="'+TransformToId(tagName, prefix)+'">'+tagName+'</span> <span></span>');
+      var html = `<span
+        class="${classes}"
+        data-tag-id="${TransformToId(tagName, prefix)}">
+          ${tagName}
+        </span>`;
+      return $(html);
     }
 
     function TransformToId(val, prefix) {
