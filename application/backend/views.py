@@ -34,6 +34,11 @@ def search(page):
     if words is not None:
         words = str(request.args.get('query'))
 
+    scoring = request.args.get('scoring')
+    if scoring is not None:
+        scoring = str(request.args.get('scoring'))
+
+
     metadata = {
         'category': request.args.getlist('category'),
         'language': request.args.getlist('language'),
@@ -43,7 +48,7 @@ def search(page):
 
     try:
         with QueryManager(indexer.getIndex(), listFields) as qm:
-            res = qm.text_query(words, metadata, page)
+            res = qm.text_query(scoring, words, metadata, page)
 
             found = res.scored_length()
             on = len(res)

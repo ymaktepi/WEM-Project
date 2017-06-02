@@ -155,6 +155,15 @@ body.loading {
 
 
 /******************************************************************************
+**  CONFIGURATION BAR
+******************************************************************************/
+
+.config-bar {
+  padding-bottom: 15px;
+}
+
+
+/******************************************************************************
 **  RESULTS
 ******************************************************************************/
 
@@ -165,7 +174,7 @@ body.loading {
 }
 
 .panel-filters {
-  max-height: 85vh;
+  max-height: 80vh;
   overflow-x: scroll;
   box-sizing: border-box;
 }
@@ -191,6 +200,15 @@ body.loading {
 
 #results h3.big {
   margin-bottom: 15px;
+}
+
+#results h3.big span:last-child {
+  line-height: 1.4;
+}
+
+#results h5,
+#results .panel-body p:last-child {
+  word-wrap: break-word;
 }
 
 #results .panel-body p:last-child {

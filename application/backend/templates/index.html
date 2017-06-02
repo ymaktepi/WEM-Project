@@ -18,6 +18,34 @@
 </nav>
 
 <div id="main-content" class="container theme-showcase" role="main">
+  <div class="row">
+    <div class="col-xs-4 config-bar">
+      <strong>Display: </strong>&nbsp;
+      <label class="radio-inline">
+        <input type="radio" name="displayOption" id="displayOptionSimple" value="simple" required>
+        Simple
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="displayOption" id="displayOptionComplete" value="complete" required checked>
+        Complete
+      </label>
+    </div>
+    <div class="col-xs-8 config-bar">
+      <strong>Scoring: </strong>&nbsp;
+      <label class="radio-inline">
+        <input type="radio" name="scoringOption" id="scoringOptionTFIDF" value="tfidf" required checked>
+        TF IDF
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="scoringOption" id="scoringOptionFrequency" value="frequency" required>
+        Frequency
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="scoringOption" id="scoringOptionBM25F" value="bm25f" required>
+        BM25F
+      </label>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-xs-4 options-col">
@@ -33,22 +61,6 @@
             <h4><span class="label label-success">&nbsp;</span> Tags <span class="badge nb-tags">0</span></h4>
             <div class="tags-container"></div>
           </form>
-          <h4>Display</h4>
-          <div class="display-container">
-            <div class="radio">
-              <label>
-                <input type="radio" name="displayOption" id="displayOptionSimple" value="simple" required>
-                Simple
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="displayOption" id="displayOptionComplete" value="complete" required checked>
-                Complete
-              </label>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>

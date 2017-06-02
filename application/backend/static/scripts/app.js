@@ -42,6 +42,7 @@
       resetButton = $('#reset-button'),
       inputSearch = $('#search-input'),
       displayOption = $('input[name=displayOption]'),
+      scoringOptions = $('input[name=scoringOption]'),
       filtersForm = $('#filters-form');
 
     /**
@@ -49,6 +50,7 @@
      */
     var displayAdvanced = IsAdvanced();
     var currentPage = 1;
+    var scoringOption = GetScoringOption();
 
     function Init() {
       body.addClass('loading');
@@ -177,8 +179,14 @@
 
     function Search() {
 
-      var startTime = Date.now();
+      if (filtersForm.serialize() == "" && inputSearch.val() == "") {
+        results.hide();
+        loadMore.hide();
+        noQuery.show();
+        return;
+      }
 
+      var startTime = Date.now();
 
       noResults.hide();
       noQuery.hide();
@@ -190,7 +198,7 @@
       }
 
       $.ajax({
-        url: `/api/search/${currentPage}?` + filtersForm.serialize(),
+        url: `/api/search/${currentPage}?scoring=${scoringOption}&` + filtersForm.serialize(),
         data: {
           query: inputSearch.val()
         },
@@ -297,7 +305,17 @@
       return $('input[name=displayOption]:checked').val() === "complete";
     }
     displayOption.on('change', function() {
+      currentPage = 1;
       displayAdvanced = IsAdvanced();
+      Search();
+    });
+
+    function GetScoringOption() {
+      return $('input[name=scoringOption]:checked').val();
+    }
+    scoringOptions.on('change', function() {
+      currentPage = 1;
+      scoringOption = GetScoringOption();
       Search();
     });
 

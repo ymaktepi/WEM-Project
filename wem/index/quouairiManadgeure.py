@@ -13,13 +13,25 @@ class QueryManager(object):
         self._queryParser = MultifieldParser(fieldList, schema=self._index.schema)
 
     def __enter__(self):
-        self._searcher = self._index.searcher(weighting=scoring.TF_IDF())
         return self
 
     def __exit__(self, type, value, traceback):
         self._searcher.close()
 
-    def text_query(self, text, metadata, page):
+    def get_scoring_by_name(self, name):
+        if (name == "tfidf"):
+            return scoring.TF_IDF()
+        elif (name == "frequency"):
+            return scoring.Frequency
+        elif (name == "bm25f"):
+            return scoring.BM25F
+
+    def text_query(self, scoring, text, metadata, page):
+        # Get the scoring method and create the searcher
+        print(scoring, sys.stderr)
+        sc = self.get_scoring_by_name(scoring)
+        self._searcher = self._index.searcher(weighting=sc)
+
         query_text = None
         if text != "":
             query_text = self._queryParser.parse(text)
@@ -32,9 +44,6 @@ class QueryManager(object):
                 terms_list.append(And([Term(field, value) for value in values]))
         if len(terms_list) > 0:
             terms = And(terms_list)
-
-        print(query_text)
-        print(terms)
 
         # Make the query with (i) just words, or (ii) both (iii) or just terms
         if query_text is not None and terms is not None:
