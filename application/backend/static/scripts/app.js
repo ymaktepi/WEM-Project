@@ -34,6 +34,9 @@
       noResults = $('#no-results'),
       noQuery = $('#no-query'),
       results = $('#results'),
+      resultsContent = $('#results .content'),
+      resultsHeader = $('#results .header'),
+      loadMore = $('#load-more'),
       spinner = $('#spinner'),
       seachButton = $('#search-button'),
       resetButton = $('#reset-button'),
@@ -45,6 +48,7 @@
      * CONFIG VARIABLES
      */
     var displayAdvanced = IsAdvanced();
+    var currentPage = 1;
 
     function Init() {
       body.addClass('loading');
@@ -67,6 +71,7 @@
           d, {
             success: function() {
               tagsContainer.find('input').on('change', function(e) {
+                currentPage = 1;
                 Search();
               });
             }
@@ -93,6 +98,7 @@
           d, {
             success: function() {
               toolsContainer.find('input').on('change', function(e) {
+                currentPage = 1;
                 Search();
               });
             }
@@ -119,6 +125,7 @@
           d, {
             success: function() {
               categoriesContainer.find('input').on('change', function(e) {
+                currentPage = 1;
                 Search();
               });
             }
@@ -145,6 +152,7 @@
           d, {
             success: function() {
               languagesContainer.find('input').on('change', function(e) {
+                currentPage = 1;
                 Search();
               });
             }
@@ -161,27 +169,36 @@
       }, function(e) {});
 
       spinner.hide();
-      results.empty();
+      resultsContent.empty();
       noResults.hide();
+      loadMore.hide();
     }
     Init();
 
     function Search() {
 
-      spinner.show();
+      var startTime = Date.now();
+
+
       noResults.hide();
-      results.hide();
       noQuery.hide();
 
+      if (currentPage == 1) {
+        spinner.show();
+        results.hide();
+        loadMore.hide();
+      }
+
       $.ajax({
-        url: '/api/search?' + filtersForm.serialize(),
+        url: `/api/search/${currentPage}?` + filtersForm.serialize(),
         data: {
           query: inputSearch.val()
         },
         dataType: 'json',
         method: 'GET'
-      }).done(function(data) {
+      }).done(function(res) {
         $('#alert-content').empty();
+        var data = res.data;
         if (data.length > 0) {
           var templ = (displayAdvanced)
             ? "/static/scripts/templates/results-complete.html"
@@ -198,21 +215,39 @@
             });
             if (item.tags != 'undefined' && item.tags != '')
               item.parsedTags = GenerateTag("label label-success", item.tags, 'tag');
-              // $('<span class="label label-success">'+item.tags+'</span> <span></span>');
             return item;
           });
-          results.loadTemplate(templ, d, {
+
+          resultsContent.loadTemplate(templ, d, {
+            append: currentPage > 1,
             success: function() {
               setTimeout(function() {
+
                 results.show();
                 noResults.hide();
                 spinner.hide();
+                loadMore.removeAttr("disabled");
+                if (res.metadata.hasMore) {
+                  loadMore.show();
+                } else {
+                  loadMore.hide();
+                }
 
                 $('#results .results-complete-tags .label').on('click', function(e) {
                   var tagId = $(this).attr('data-tag-id');
                   $('#'+tagId).prop('checked', true);
+                  currentPage = 1;
                   Search();
                 });
+
+                var time = (Date.now() - startTime) / 1000;
+
+                resultsHeader.html(`<span
+                  class="nb-results">
+                    ${res.metadata.found} results
+                  </span> on ${res.metadata.on}, <span>
+                    in ${time} sec
+                  </span>`);
 
               }, 250);
             }
@@ -237,11 +272,25 @@
       Search();
     });
     resetButton.on('click', function(e){
+      currentPage = 1;
       filtersForm[0].reset();
-      results.empty().hide();
+      results.hide();
       spinner.hide();
       noResults.hide();
       noQuery.show();
+      loadMore.hide();
+    });
+
+    function LoadMore() {
+      loadMore.attr("disabled", "disabled");
+      currentPage += 1;
+      Search();
+    }
+    loadMore.on('click', function(e) {
+      e.preventDefault();
+      if (loadMore.attr("disabled") != "disabled") {
+        LoadMore();
+      }
     });
 
     function IsAdvanced() {

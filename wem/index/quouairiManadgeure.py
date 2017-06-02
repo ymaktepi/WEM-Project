@@ -19,7 +19,7 @@ class QueryManager(object):
     def __exit__(self, type, value, traceback):
         self._searcher.close()
 
-    def text_query(self, text, metadata):
+    def text_query(self, text, metadata, page):
         query_text = None
         if text != "":
             query_text = self._queryParser.parse(text)
@@ -46,4 +46,5 @@ class QueryManager(object):
         else:
             raise Exception('No input provided!')
 
-        return self._searcher.search(query, limit=50)
+        return self._searcher.search_page(query, page, pagelen=20)
+        # return self._searcher.search(query, limit=50)

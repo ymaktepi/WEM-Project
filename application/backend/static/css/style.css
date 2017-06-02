@@ -179,6 +179,16 @@ body.loading {
   padding-bottom: 10px;
 }
 
+#results .header {
+  margin-bottom: 15px;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+#results .header .nb-results {
+  font-weight: bold;
+}
+
 #results h3.big {
   margin-bottom: 15px;
 }
@@ -188,11 +198,16 @@ body.loading {
 }
 
 .results-complete-tags {
-  line-height: 21px;
+  line-height: 20px;
 }
 
 #results .results-complete-tags .label {
   cursor: pointer;
   margin-right: 3px;
   display: inline-block;
+}
+
+#results .has-more {
+  display: flex;
+  justify-content: center;
 }

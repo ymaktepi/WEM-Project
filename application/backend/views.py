@@ -27,8 +27,8 @@ listFields = ['tags',
 def route_home():
     return render_template("index.html")
 
-@app.route("/api/search", methods=["GET"])
-def search():
+@app.route("/api/search/<int:page>", methods=["GET"])
+def search(page):
     results = []
     words = request.args.get('query')
     if words is not None:
@@ -43,12 +43,24 @@ def search():
 
     try:
         with QueryManager(indexer.getIndex(), listFields) as qm:
-            for result in qm.text_query(words, metadata):
+            res = qm.text_query(words, metadata, page)
+
+            found = res.scored_length()
+            on = len(res)
+
+            for result in res:
                 results.append({field: result[field] for field in listFields})
                 results[-1]['score'] = result.score
                 results[-1]['url'] = result['url']
 
-        return jsonify(results)
+        return jsonify({
+            'metadata': {
+                'found': found,
+                'on': on,
+                'hasMore': found < on
+            },
+            'data': results
+        })
     except Exception:
         return jsonify({'message': 'No input provided!'}), 426
 
