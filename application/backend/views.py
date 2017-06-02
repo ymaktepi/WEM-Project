@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import sys
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 
 from backend import app, indexer
@@ -26,20 +27,47 @@ listFields = ['tags',
 def route_home():
     return render_template("index.html")
 
-@app.route("/api/search", methods=["GET"])
-def search():
+@app.route("/api/search/<int:page>", methods=["GET"])
+def search(page):
     results = []
-    words = str(request.args.get('query'))
-    category = request.args.getlist('category')
-    language = request.args.getlist('language')
-    with QueryManager(indexer.getIndex(), listFields) as qm:
-        for result in qm.textQuouairiz(words, category_field="category",
-        category=category, language_field="language", language=language):
-            results.append({field: result[field] for field in listFields})
-            results[-1]['score'] = result.score
-            results[-1]['url'] = result['url']
+    words = request.args.get('query')
+    if words is not None:
+        words = str(request.args.get('query'))
 
-    return jsonify(results)
+    scoring = request.args.get('scoring')
+    if scoring is not None:
+        scoring = str(request.args.get('scoring'))
+
+
+    metadata = {
+        'category': request.args.getlist('category'),
+        'language': request.args.getlist('language'),
+        'tool': request.args.getlist('tool'),
+        'tags': request.args.getlist('tags'),
+    }
+
+    try:
+        with QueryManager(indexer.getIndex(), listFields) as qm:
+            res = qm.text_query(scoring, words, metadata, page)
+
+            found = res.scored_length()
+            on = len(res)
+
+            for result in res:
+                results.append({field: result[field] for field in listFields})
+                results[-1]['score'] = result.score
+                results[-1]['url'] = result['url']
+
+        return jsonify({
+            'metadata': {
+                'found': found,
+                'on': on,
+                'hasMore': found < on
+            },
+            'data': results
+        })
+    except Exception:
+        return jsonify({'message': 'No input provided!'}), 426
 
 @app.route("/api/terms/<field>", methods=["GET"])
 def categories(field):
@@ -48,4 +76,4 @@ def categories(field):
         res = [cat.decode("utf-8") for cat in list(searcher.lexicon(field))]
         return jsonify(res)
     except Exception:
-        return jsonify({'message': 'this field doesnt exists'}), 426
+        return jsonify({'message': 'This field doesnt exists!'}), 426

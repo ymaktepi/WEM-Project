@@ -9,6 +9,7 @@
           <div class="form-group">
             <input id="search-input" type="text" class="form-control" placeholder="search key words">
           </div>
+          <button id="reset-button" type="reset" class="btn btn-default"><i class="glyphicon glyphicon-remove"></i></button>
           <button id="search-button" type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
         </form>
       </div>
@@ -17,40 +18,56 @@
 </nav>
 
 <div id="main-content" class="container theme-showcase" role="main">
+  <div class="row">
+    <div class="col-xs-4 config-bar">
+      <strong>Display: </strong>&nbsp;
+      <label class="radio-inline">
+        <input type="radio" name="displayOption" id="displayOptionSimple" value="simple" required>
+        Simple
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="displayOption" id="displayOptionComplete" value="complete" required checked>
+        Complete
+      </label>
+    </div>
+    <div class="col-xs-8 config-bar">
+      <strong>Scoring: </strong>&nbsp;
+      <label class="radio-inline">
+        <input type="radio" name="scoringOption" id="scoringOptionTFIDF" value="tfidf" required checked>
+        TF IDF
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="scoringOption" id="scoringOptionFrequency" value="frequency" required>
+        Frequency
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="scoringOption" id="scoringOptionBM25F" value="bm25f" required>
+        BM25F
+      </label>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-xs-4 options-col">
       <div class="panel panel-default panel-filters">
         <div class="panel-body">
           <form action="GET" id="filters-form">
-            <h4>Categories <span class="badge nb-categories">0</span></h4>
+            <h4><span class="label label-primary">&nbsp;</span> Categories <span class="badge nb-categories">0</span></h4>
             <div class="categories-container"></div>
-            <h4>Languages <span class="badge nb-languages">0</span></h4>
+            <h4><span class="label label-danger">&nbsp;</span> Languages <span class="badge nb-languages">0</span></h4>
             <div class="languages-container"></div>
+            <h4><span class="label label-warning">&nbsp;</span> Tools <span class="badge nb-tools">0</span></h4>
+            <div class="tools-container"></div>
+            <h4><span class="label label-success">&nbsp;</span> Tags <span class="badge nb-tags">0</span></h4>
+            <div class="tags-container"></div>
           </form>
-          <h4>Display</h4>
-          <div class="display-container">
-            <div class="radio">
-              <label>
-                <input type="radio" name="displayOption" id="displayOptionSimple" value="simple" required>
-                Simple
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="displayOption" id="displayOptionComplete" value="complete" required checked>
-                Complete
-              </label>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
     <div class="col-xs-8">
       <div id="alert-content"></div>
       <div id="no-query">
-        make the first query
+        make a query
       </div>
       <div id="spinner">
         <i class="glyphicon glyphicon-hourglass"></i>
@@ -58,7 +75,13 @@
       <div id="no-results">
         no result found
       </div>
-      <div id="results"></div>
+      <div id="results">
+        <div class="header"></div>
+        <div class="content"></div>
+      </div>
+      <div class="has-more">
+        <a id="load-more" class="btn btn-default btn-block" href="#" role="button">Load more</a>
+      </div>
       <div class="footer">
         Copyright &copy; 2017 N. Huguenin, M. Caraccio and J. Gugger – All Rights Reserved.
       </div>

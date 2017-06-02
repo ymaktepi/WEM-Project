@@ -1,3 +1,4 @@
+import sys
 from whoosh import scoring
 from whoosh.qparser import MultifieldParser
 from whoosh.query import And, Or, Term
@@ -12,31 +13,47 @@ class QueryManager(object):
         self._queryParser = MultifieldParser(fieldList, schema=self._index.schema)
 
     def __enter__(self):
-        self._searcher = self._index.searcher(weighting=scoring.TF_IDF())
         return self
 
     def __exit__(self, type, value, traceback):
         self._searcher.close()
 
-    def textQuouairiz(self, text, category_field="", category=[], language_field="", language=[]):
-        query = self._queryParser.parse(text)
-        # return self._searcher.search(query, limit=50)
+    def get_scoring_by_name(self, name):
+        if (name == "tfidf"):
+            return scoring.TF_IDF()
+        elif (name == "frequency"):
+            return scoring.Frequency
+        elif (name == "bm25f"):
+            return scoring.BM25F
+
+    def text_query(self, scoring, text, metadata, page):
+        # Get the scoring method and create the searcher
+        print(scoring, sys.stderr)
+        sc = self.get_scoring_by_name(scoring)
+        self._searcher = self._index.searcher(weighting=sc)
+
+        query_text = None
+        if text != "":
+            query_text = self._queryParser.parse(text)
+            
+        # Construct the filter terms object
         terms = None
-        categories = None
-        languages = None
+        terms_list = []
+        for field, values in metadata.items():
+            if len(values) > 0:
+                terms_list.append(And([Term(field, value) for value in values]))
+        if len(terms_list) > 0:
+            terms = And(terms_list)
 
-        if len(category) > 0:
-            categories = And([Term(category_field, cat) for cat in category])
-            terms = categories
-
-        if len(language) > 0:
-            languages = And([Term(language_field, lang) for lang in language])
-            terms = languages
-
-        if len(category) > 0 and len(language) > 0:
-            terms = And([categories, languages])
-
-        if terms is not None:
-            return self._searcher.search(query, limit=50, filter=terms)
+        # Make the query with (i) just words, or (ii) both (iii) or just terms
+        if query_text is not None and terms is not None:
+            query = And([query_text, terms])
+        elif query_text is not None:
+            query = query_text
+        elif terms is not None:
+            query = terms
         else:
-            return self._searcher.search(query, limit=50)
+            raise Exception('No input provided!')
+
+        return self._searcher.search_page(query, page, pagelen=20)
+        # return self._searcher.search(query, limit=50)
