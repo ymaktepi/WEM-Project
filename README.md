@@ -139,4 +139,4 @@ Bootstrap is the most popular HTML, CSS, and JS framework for developing respons
 
 
 ## 6. Conclusion
-TODO
+Les objectifs fixés (la recherche de writeups, d'outils, et par langages) ont étés atteints. Le projet -fonctionnel- est actuellement en production sur [ce site](https://ctf.courgettes.club), et une API "publique" est en préparation pour le futur. 
