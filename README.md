@@ -135,7 +135,41 @@ Beautiful Soup is a Python library for pulling data out of HTML and XML files. I
 [Bootstrap](http://getbootstrap.com/)
 Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
 
+### 5.2 Architecture
 
+```
+                                                      +-----------------+
+                                                      |                 |
+                                      +----------->   |    Writeup      +------------+
+                                      |               |    ctftime.org  |            v
+                                      |               |                 |
++-----------------+          +--------+-------+       +-----------------+    +-----------------+
+|                 |          |                |                              |                 |   +-----------+
+|                 |          |                |                              |    Parsing      |   |           |
+|   ctftime.org   | +------> |    Parsing     |                              |    Filtering    +-> |  Storage  |
+|                 |          |                |                              |                 |   |           |
+|                 |          |                |                              |                 |   +-----+-----+
++-----------------+          +--------+-------+       +-----------------+    +-----------+-----+         |
+                                      |               |                 |                |               |
+                                      |               |    Writeup      |            ^   |               |
+                                      +----------->   |    Other site   +------------+   |               |
+                                                      |                 |                |               |
+                                                      +-----------------+                v               |
+                                                                                                         |
+                      +-------------------------+         +---------+        +-----------------+         |
+                      |                         |         |         |        |                 |         |
+                      |   Website               |  <------+  JSON   |  <-----+   Indexing      | <-------+
+                      |   ctf.courgettes.club   |         |  API    |        |                 |
+                      |                         |         |         |        |                 |
+                      +-------------------------+         +---------+        +--------+--------+
+                                                                                      v
+                                                               ^
+                                                               |                +-----------+
+                                                               |                |           |
+                                                               +----------------+  Storage  |
+                                                                                |           |
+                                                                                +-----------+
+```
 
 ## 6. Conclusion
 Les objectifs fixés (la recherche de writeups, d'outils, et par langages) ont étés atteints. Le projet -fonctionnel- est actuellement en production sur [ce site](https://ctf.courgettes.club), et une API "publique" est en préparation pour le futur. 
