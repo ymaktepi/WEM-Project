@@ -3,6 +3,14 @@
 ### Auteurs
 
 Michael Caraccio, Joel Gugger et Nicolas Huguenin
+## Table of contents
+
+* [Contexte et objectifs du projet](#1-contexte-et-objectifs-du-projet)
+* [Données à analyser](#2-données-à-analyser)
+* [Planification, répartition du travail](#3-planification-répartition-du-travail)
+* [Fonctionnalités / cas d’utilisation](#4-fonctionnalités--cas-dutilisation)
+* [Techniques, algorithmes et outils utilisés](#5-techniques-algorithmes-et-outils-utilisés)
+* [Conclusion](#6-conclusion)
 
 ## 1. Contexte et objectifs du projet
 
