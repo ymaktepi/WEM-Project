@@ -137,11 +137,11 @@ La planification et la répartition du travail a été effectuée dans la sectio
 
 - **Librairies** :
 
-[BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-Beautiful Soup is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree.
+  - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree.
 
-[Bootstrap](http://getbootstrap.com/)
-Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+  - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+
+  - [Whoosh](https://pypi.python.org/pypi/Whoosh/) is a fast, featureful full-text indexing and searching library implemented in pure Python.
 
 ### 5.2 Architecture
 
